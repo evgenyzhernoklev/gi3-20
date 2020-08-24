@@ -1,0 +1,51 @@
+@mixin clearfix() {
+  overflow: hidden;
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin background-image($name, $width, $height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../images/gi3/svg/#{$name}.svg');
+  background-size: $width $height;
+}
+
+@mixin linear-gradient($angle, $from, $to) {
+  background: $from;
+  background: linear-gradient($angle, $from 0%, $to 100%);
+}
+
+@mixin show() {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity $transition-normal, visibility $transition-normal;
+}
+
+@mixin hide() {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity $transition-normal, visibility $transition-normal;
+}
+
+
+
+//You want X lines of text. Anything after that gracefully cut off
+@mixin maxTextLines($maxLinesNumber) {
+  display: -webkit-box;
+  -webkit-line-clamp: $maxLinesNumber;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

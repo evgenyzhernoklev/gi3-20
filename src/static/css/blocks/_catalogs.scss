@@ -1,0 +1,124 @@
+.catalogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -50px;
+  padding: 0 45px;
+
+  .slick-track {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .slick-slide,
+  .slick-slide > div {
+    display: flex!important;
+    align-items: stretch;
+  }
+
+  .slick-slide > div {
+    flex-basis: 100%;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    border-radius: 50%;
+    border: solid 1px #e1e1e1;
+    background: $white url('../images/gi3/svg/arrow-small-red.svg') no-repeat center center;
+    background-size: 10px 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white-light;
+    }
+  }
+
+  .slick-prev {
+    left: -20px;
+    transform: rotate(90deg);
+  }
+
+  .slick-next {
+    right: -20px;
+    transform: rotate(-90deg);
+  }
+
+  &__item {
+    display: flex!important;
+    // flex-basis: 100%;
+    flex-basis: 25%;
+    align-items: stretch;
+    margin-bottom: 50px;
+  }
+
+  &__in {
+    flex-basis: 100%;
+    position: relative;
+    margin: 0 15px;
+    padding: 0 0 150px;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 22px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 2px;
+    font: 300 20px/1 $roboto;
+  }
+
+  &__info {
+    font: 14px/1.43 $roboto;
+    color: #a2acae;
+  }
+
+  &__button {
+    position: absolute;
+    left: 0;
+    bottom: 68px;
+    width: 100%;
+
+    &--copy {
+      bottom: 0;
+    }
+  }
+}
+
+@media ($desktop) {
+  .catalogs {
+    &__item {
+      flex-basis: 33.33%;
+    }
+  }
+}
+
+@media ($tablet) {
+  .catalogs {
+    padding: 0 0 20px;
+
+    .slick-prev {
+      left: -45px;
+    }
+
+    .slick-next {
+      right: -45px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .catalogs {
+    margin: 0 -15px -50px;
+    padding-bottom: 4px;
+
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+}

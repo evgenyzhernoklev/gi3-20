@@ -1,0 +1,105 @@
+.linkButton {
+  display: inline-block;
+  height: 38px;
+  padding: 0 13px;
+  line-height: 38px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &--header {
+    background-color: #FF7DA1;
+
+    &:hover {
+      background-color: #fb91af;
+    }
+  }
+
+  &--icon {
+
+  }
+
+  &--red {
+    padding: 18px 10px;
+    height: auto;
+    font: 500 16px/20px $roboto;
+    text-align: center;
+    color: $white;
+    border-radius: 4px;
+    background-color: $pink;
+
+    &:hover {
+      color: $white;
+      background-color: $pink-hover;
+    }
+  }
+
+  &--redTransparent {
+    padding: 17px 10px;
+    height: auto;
+    font: 500 16px/20px $roboto;
+    text-align: center;
+    color: $pink;
+    border: solid 1px $pink;
+    border-radius: 4px;
+    background-color: transparent;
+
+    &:hover {
+      color: $pink;
+      background-color: rgba(255, 151, 180, 0.1);
+      border-color: rgba(255, 151, 180, 0.1);
+    }
+  }
+
+  &--black {
+    padding: 17px 10px;
+    height: auto;
+    font: 500 16px/20px $roboto;
+    text-align: center;
+    color: $white;
+    background-color: $black;
+    border-radius: 4px;
+
+    &:hover {
+      color: $white;
+      background-color: #424242;
+    }
+  }
+
+  &--more {
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font: 15px/1.2 $roboto;
+    text-align: center;
+    color: #a1abad;
+    border-radius: 0;
+    background-color: $white;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &--small {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &__icon,
+  svg {
+    margin-right: 9px;
+    max-width: 12px;
+    max-height: 12px;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.47px;
+    color: $white;
+  }
+
+  &__sum {
+    font-size: 19px;
+  }
+}

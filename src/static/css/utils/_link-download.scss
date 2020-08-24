@@ -1,0 +1,17 @@
+.linkDownload {
+  display: inline-block;
+  padding-left: 30px;
+  font: 500 16px/1 $roboto;
+  letter-spacing: 0.01px;
+  color: $pink;
+  background: url('../images/gi3/svg/document.svg') no-repeat left top;
+
+  &:hover {
+    color: $pink-hover;
+  }
+
+  &__size {
+    font-size: 10px;
+    color: $gray-light;
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.911" height="46.51" viewBox="0 0 28.911 46.51">
+    <defs>
+        <style>
+            .cls-1{fill:#ff336d}
+        </style>
+    </defs>
+    <g id="phone" transform="translate(-93.28)">
+        <path id="Path_1" d="M117.947 0H97.525a4.25 4.25 0 0 0-4.245 4.245v38.02a4.25 4.25 0 0 0 4.245 4.245h20.422a4.25 4.25 0 0 0 4.245-4.245V4.245A4.25 4.25 0 0 0 117.947 0zm1.415 42.265a1.417 1.417 0 0 1-1.415 1.415H97.525a1.417 1.417 0 0 1-1.415-1.415V39.02h23.252zm0-6.075H96.11V10.32h23.252zm0-28.7H96.11V4.245a1.417 1.417 0 0 1 1.415-1.415h20.422a1.417 1.417 0 0 1 1.415 1.415z" class="cls-1" data-name="Path 1"/>
+        <path id="Path_2" d="M204.2 426.863h5.424a1.415 1.415 0 0 0 0-2.83H204.2a1.415 1.415 0 0 0 0 2.83z" class="cls-1" data-name="Path 2" transform="translate(-99.174 -384.035)"/>
+        <path id="Path_3" d="M235.122 39.033H229.7a1.415 1.415 0 0 0 0 2.83h5.424a1.415 1.415 0 0 0 0-2.83z" class="cls-1" data-name="Path 3" transform="translate(-122.269 -35.351)"/>
+        <path id="Path_4" d="M179.335 39.033h-.635a1.415 1.415 0 0 0 0 2.83h.637a1.415 1.415 0 0 0 0-2.83z" class="cls-1" data-name="Path 4" transform="translate(-76.079 -35.351)"/>
+    </g>
+</svg>

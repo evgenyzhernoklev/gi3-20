@@ -1,0 +1,62 @@
+.header {
+  position: fixed;
+  position: static;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  background: $pink;
+  text-align: center;
+
+  &__in {
+    position: relative;
+    margin: 0 auto;
+    padding: 22px 20px 0;
+    min-width: 1204px;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 19px;
+    left: 27px;
+    width: 30px;
+  }
+
+  &__user {
+    position: absolute;
+    top: 13px;
+    left: 75px;
+    padding-left: 20px;
+    border-left: 2px solid #FF7DA1;
+  }
+
+  .icon--logo {
+    width: 106px;
+    height: 22px;
+  }
+
+  &__addOrder {
+    position: absolute;
+    top: 13px;
+    right: 100px;
+  }
+
+  &__search {
+    position: absolute;
+    top: 13px;
+    right: 27px;
+    width: 40px;
+    height: 40px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -19px;
+      border-left: 2px solid #FF7DA1;
+    }
+  }
+}

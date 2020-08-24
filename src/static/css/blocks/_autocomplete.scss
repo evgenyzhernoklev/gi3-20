@@ -1,0 +1,18 @@
+.autocomplete-suggestions {
+  padding: 5px 0;
+  border: 0;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.autocomplete-suggestion {
+  padding: 5px 10px;
+  font: 14px/1.2 $roboto;
+  white-space: normal;
+  color: $gray;
+  cursor: pointer;
+  transition: background-color $transition-normal;
+
+  &:not(:last-child) {
+    border-bottom: solid 1px $white-light;
+  }
+}

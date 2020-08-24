@@ -1,0 +1,18 @@
+.menu {
+  line-height: 0;
+  text-align: center;
+
+  &__hamburger {
+    margin: 0 auto;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $white;
+    cursor: pointer;
+  }
+}

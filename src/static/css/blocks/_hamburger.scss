@@ -1,0 +1,33 @@
+.hamburger {
+  position: relative;
+  width: 20px;
+  height: 12px;
+  line-height: 12px;
+  cursor: pointer;
+
+  &__line {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: $white;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background-color: $white;
+    }
+
+    &:after {
+      top: 5px;
+    }
+  }
+}

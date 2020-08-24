@@ -1,0 +1,388 @@
+.form {
+  &__in {
+    padding: 29px 14% 0 16.6%;
+
+    &--cols {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+
+    &--submit {
+      margin: 49px 0 0 -40px;
+      padding-bottom: 78px;
+      border-top: 1px solid $white-light;
+    }
+  }
+
+  &__content {
+    flex-basis: calc(100% - 357px);
+  }
+
+  &__additional {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-basis: 325px;
+    margin-top: 23px;
+
+    .form__balance {
+      flex-basis: 100%;
+    }
+
+    .form__logos {
+      flex-basis: 100%;
+    }
+
+    .balance__info {
+      flex-basis: 100%;
+    }
+  }
+
+  &__block {
+    &--checkbox {
+      .form__label {
+        padding-left: 40px;
+      }
+
+      .form__field {
+        display: none;
+      }
+    }
+
+    &--center {
+      text-align: center;
+
+      .form__label {
+        display: inline-block;
+      }
+    }
+
+    &--sum {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .form__label {
+        &:first-child {
+          flex-basis: calc(100% - 132px);
+        }
+
+        &:last-child {
+          flex-basis: 120px;
+        }
+      }
+
+      .form__labelTitle {
+        margin-right: -132px;
+      }
+    }
+
+    &--cvv {
+      width: 84px;
+      text-align: center;
+
+      .form__labelTitle,
+      .form__blockInfo {
+        margin-bottom: 2px;
+        font: 10px/1.2 $roboto;
+        text-transform: uppercase;
+        color: $gray-light;
+      }
+
+      .form__blockInfo {
+        margin: 10px 0 0;
+      }
+
+      .form__field {
+        height: 50px;
+        font: 24px/50px $roboto;
+        text-align: center;
+        border: solid 1px $white-light;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    font-size: 0;
+
+    &--noCursor {
+      .form__labelDimension,
+      .form__labelTitle {
+        cursor: default;
+      }
+    }
+  }
+
+  &__labelIcon {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid $gray-light;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color $transition-normal, border-color $transition-normal;
+
+    &:hover {
+      border-color: $gray;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      @include background-image(checkmark, 12px, 9px);
+      background-size: cover;
+      @include hide();
+    }
+  }
+
+  &__field {
+    width: 100%;
+    height: 56px;
+    padding: 0 15px;
+    font: 16px/56px $roboto;
+    color: $black;
+    background-color: $white;
+    border: solid 1px $gray-light;
+    border-radius: 4px;
+    transition: border-color $transition-fast;
+
+    &:focus {
+      border-color: $pink;
+    }
+
+    &[readonly] {
+      border-color: $gray-light;
+    }
+
+    &:checked ~ .form__labelIcon {
+      background-color: $pink;
+      border-color: $pink;
+
+      &:before {
+        @include show();
+      }
+    }
+
+    &--textBold {
+      font-weight: 700;
+    }
+  }
+
+  &__select {
+    position: relative;
+    width: 90px;
+    height: 50px;
+    padding: 0 15px;
+    font: 16px/50px $roboto;
+    border-radius: 4px;
+    background: #f6f9f9 url('../images/gi3/sprites/sprite.svg#arrow-dropdown') no-repeat 95% center;
+    background-size: 24px auto;
+
+    option[disabled] {
+      color: $gray-light;
+    }
+  }
+
+  &__labelTitle {
+    display: block;
+    margin-bottom: 4px;
+    font: 16px/1.2 $roboto;
+    cursor: pointer;
+  }
+
+  &__labelInfo {
+    font: 14px/1.29 $roboto;
+    color: $gray-light;
+
+    a {
+      color: $gray-light;
+      border-bottom: 1px solid $gray-light;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  &__labelDimension {
+    position: absolute;
+    right: 8px;
+    bottom: 20px;
+    font: 14px/1.2 $roboto;
+    color: $gray-light;
+    cursor: pointer;
+  }
+
+  &__cols {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 29px auto 0;
+
+    &--marginTop {
+      margin-top: 40px;
+    }
+  }
+
+  &__col {
+    &--flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 20px;
+    }
+  }
+
+  &__linkFaq {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+    font: 500 14px/1.43 $roboto;
+    color: $gray-light;
+
+    &--question {
+      &:before {
+        top: -4px;
+        left: -40px;
+        @include background-image(question, 24px, 24px);
+        background-size: cover;
+      }
+    }
+
+    &--card {
+      &:before {
+        top: -2px;
+        left: -40px;
+        @include background-image(credit-card, 29px, 20px);
+        background-size: cover;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+    }
+
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  &__button {
+    width: 253px;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0;
+  }
+
+  &__securedImg {
+    max-width: 185px;
+    margin-right: 17px;
+  }
+}
+
+@media ($tablet) {
+  .form {
+    &__in {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &--submit {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+  .form {
+    &__in {
+      &--cols {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        .form__additional {
+          flex-basis: auto;
+        }
+      }
+
+      &--submit {
+        margin-top: 30px;
+        padding-bottom: 20px;
+      }
+    }
+
+    &__content {
+      flex-basis: 100%;
+    }
+
+    &__additional {
+      flex-basis: 280px;
+      margin: 0 auto 30px;
+    }
+
+    &__cols {
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      flex-basis: 100%;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &--flex {
+        flex-wrap: wrap;
+        margin: 0;
+      }
+    }
+
+    &__block {
+      &--sum {
+        .form__label {
+          &:first-child {
+            flex-basis: calc(100% - 92px);
+          }
+
+          &:last-child {
+            flex-basis: 80px;
+          }
+        }
+
+        .form__labelTitle {
+          margin-right: -92px;
+        }
+      }
+    }
+
+    &__button {
+      width: 100%;
+    }
+
+    &__linkFaq {
+      text-align: left;
+    }
+
+    &__securedImg {
+      margin: 0 auto 15px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.121" height="52.542" viewBox="0 0 64.121 52.542">
+    <defs>
+        <style>
+            .cls-1{fill:#ff336c}
+        </style>
+    </defs>
+    <g id="cloud-computing" transform="translate(0 -46.228)">
+        <g id="Group_124" data-name="Group 124" transform="translate(0 46.228)">
+            <g id="Group_123" data-name="Group 123">
+                <path id="Path_89" d="M50.842 63.916a17.928 17.928 0 0 0-35.474-3.438H15.2a15.2 15.2 0 1 0 0 30.392h5.577a1.367 1.367 0 0 0 0-2.735H15.2a12.461 12.461 0 1 1 0-24.922c.366 0 .753.02 1.183.06a1.369 1.369 0 0 0 1.479-1.173 15.193 15.193 0 0 1 30.246 2.07c0 .3-.056 1.082-.056 1.082a1.368 1.368 0 0 0 1.5 1.457 10.91 10.91 0 0 1 1.091-.055 10.742 10.742 0 1 1 0 21.485h-6.124a1.367 1.367 0 1 0 0 2.735h6.124a13.477 13.477 0 0 0 .2-26.953z" class="cls-1" data-name="Path 89" transform="translate(0 -46.228)"/>
+            </g>
+        </g>
+        <g id="Group_126" data-name="Group 126" transform="translate(21.508 52.655)">
+            <g id="Group_125" data-name="Group 125">
+                <path id="Path_90" d="M183.138 97.548a11.535 11.535 0 0 0-11.386 9.94 1.368 1.368 0 0 0 2.71.37 8.789 8.789 0 0 1 8.676-7.574 1.368 1.368 0 0 0 0-2.735z" class="cls-1" data-name="Path 90" transform="translate(-171.74 -97.548)"/>
+            </g>
+        </g>
+        <g id="Group_128" data-name="Group 128" transform="translate(25.711 76.46)">
+            <g id="Group_127" data-name="Group 127">
+                <path id="Path_91" d="M218.823 302.989a1.367 1.367 0 0 0-1.931-.109l-3.289 2.938V289a1.367 1.367 0 0 0-2.735 0v16.823l-3.289-2.938a1.367 1.367 0 1 0-1.822 2.04l4.974 4.444a2.256 2.256 0 0 0 3.009 0l4.974-4.444a1.367 1.367 0 0 0 .109-1.936z" class="cls-1" data-name="Path 91" transform="translate(-205.3 -287.628)"/>
+            </g>
+        </g>
+    </g>
+</svg>

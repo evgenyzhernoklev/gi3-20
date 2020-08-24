@@ -1,0 +1,227 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - program easy start
+  body
+    include header
+
+    .contentWrapper
+      .contentWrapper__content.content.content--marginMd
+
+        h1.content__title.content__title--big Лёгкий старт
+        include banners/program_easy_start
+        .content__results.results.results--rules
+          .results__cols
+            .results__col
+              .results__in.results__in--number
+                span.results__number 1
+                p.results__attention ВЫПОЛНЯЙ УСЛОВИЯ -
+                p.results__info.results__info--bold.results__info--pdBottom
+                  | размещай заказы по каждому Каталогу
+                  br/
+                  | в течение 4-х Кампаний
+            .results__col
+              .results__in.results__in--number
+                span.results__number 2
+                p.results__attention ВЫБИРАЙ И ЗАКАЗЫВАЙ ПРИЗЫ
+                p.results__info.results__info--bold.results__info--pdBottom
+                  | в следующей Кампании
+
+        .content__companyInfo.companyInfo.companyInfo--pdBottom
+          .companyInfo__in
+            h2.companyInfo__title Ты с нами 1-ю Кампанию
+            p.companyInfo__subtitle
+              | Размести свой первый заказ на сумму <strong>999 ₽</strong> и более.
+              br/
+              | В следующей Кампании ты сможешь заказать один из этих призов всего за <strong>50 ₽</strong>
+          .companyInfo__arrowWrapper
+            a.companyInfo__arrowLink.js-link-scroll href="#company_second_time"
+              include icons/arrow-down
+
+        #company_second_time.content__companyInfo.productGuides.companyInfo
+          .companyInfo__in
+            h2.companyInfo__title Ты с нами 2-ю Кампанию
+            p.companyInfo__subtitle
+              | Выбери и закажи приз за <strong>50 ₽</strong>
+          .productGuides__cols.colsFlex.colsFlex--wrap
+            .productGuides__item.colsFlex__col.colsFlex__col--3
+              .productGuides__in.productGuides__in--big
+                .productGuides__imgWrapper
+                  img.productGuides__img src="static/images/gi3/goods/good_4.png"
+                p.productGuides__description Аромат Luck для неё <br/>50ml
+                p.productGuides__code Код: <strong>54007</strong>
+                p.productGuides__price 50₽
+            .productGuides__item.colsFlex__col.colsFlex__col--3
+              .productGuides__in.productGuides__in--big
+                .productGuides__imgWrapper
+                  img.productGuides__img src="static/images/gi3/goods/good_5.png"
+                p.productGuides__description Аромат Luck для него <br/>50ml
+                p.productGuides__code Код: <strong>54135</strong>
+                p.productGuides__price 50₽
+            .productGuides__item.colsFlex__col.colsFlex__col--3
+              .productGuides__in.productGuides__in--big
+                .productGuides__imgWrapper
+                  img.productGuides__img src="static/images/gi3/goods/good_6.png"
+                p.productGuides__description Набор для глаз <br/>«Ровный тон и укрепление»
+                p.productGuides__code Код: <strong>54139</strong>
+                p.productGuides__price 50₽
+
+        .content__table.tablePrize
+          .tablePrize__header.tablePrize__cols
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__title РАЗМЕЩАЙ ЗАКАЗ В ЭТОЙ КАМПАНИИ
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__title ЗАКАЗЫВАЙ ПРИЗ В СЛЕДУЮЩЕЙ
+          .tablePrize__content.tablePrize__cols
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | На сумму <strong>1600 ₽ — 3999₽</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | Всего за <strong>99 ₽</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | На сумму <strong>4000 ₽ и более</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | Всего за <strong>9 ₽</strong>
+
+        .content__companyInfo.productGuides.companyInfo
+          .companyInfo__in
+            h2.companyInfo__title Ты с нами 3-ю Кампанию
+            p.companyInfo__subtitle
+              | Выбери и закажи приз за <strong>9 ₽</strong> или <strong>99 ₽</strong>
+          .productGuides__item.productGuides__item--single
+            .productGuides__imgWrapper
+              img.productGuides__img src="static/images/gi3/goods/good_7.png"
+            .productGuides__in
+              ul.productGuides__list
+                li.productGuides__listItem Набор для волос «Магия гиалурона»
+                li.productGuides__listItem Шампунь для тонких и нормальных волос, 250 мл.
+                li.productGuides__listItem Бальзам-ополаскиватель для тонких и нормальных волос, 250 мл.
+                li.productGuides__listItem Сыворотка для тонких и нормальных волос, 100 мл.
+              p.productGuides__code Код: <strong>57569</strong>
+              p.productGuides__price
+                | 9₽ <i>или</i> 99₽
+
+        .content__table.tablePrize
+          .tablePrize__header.tablePrize__cols
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__title РАЗМЕЩАЙ ЗАКАЗ В ЭТОЙ КАМПАНИИ
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__title ЗАКАЗЫВАЙ ПРИЗ В СЛЕДУЮЩЕЙ
+          .tablePrize__content.tablePrize__cols
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | На сумму <strong>1600 ₽ — 3999₽</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | Всего за <strong>99 ₽</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | На сумму <strong>4000 ₽ и более</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | Всего за <strong>9 ₽</strong>
+
+        .content__companyInfo.productGuides.companyInfo
+          .companyInfo__in
+            h2.companyInfo__title Ты с нами 4-ю Кампанию
+            p.companyInfo__subtitle
+              | Выбери и закажи приз за <strong>9 ₽</strong> или <strong>149 ₽</strong>
+          .productGuides__item.productGuides__item--single
+            .productGuides__imgWrapper
+              img.productGuides__img src="static/images/gi3/goods/good_25.png"
+            .productGuides__in
+              ul.productGuides__list
+                li.productGuides__listItem Набор «Лучшее от Avon»
+                li.productGuides__listItem Парфюмерная вода Avon Luck, 30 мл.
+                li.productGuides__listItem Крем для лица «Заряд энергии. Совершенство», 30 мл.
+                li.productGuides__listItem Тушь для ресниц «Питание и длина», 7 мл.
+              p.productGuides__code Код: <strong>11771</strong>
+              p.productGuides__price
+                | 9₽ <i>или</i> 149₽
+
+        .content__table.tablePrize
+          .tablePrize__header.tablePrize__cols
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__title РАЗМЕЩАЙ ЗАКАЗ В ЭТОЙ КАМПАНИИ
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__title ЗАКАЗЫВАЙ ПРИЗ В СЛЕДУЮЩЕЙ
+          .tablePrize__content.tablePrize__cols
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | На сумму <strong>1600 ₽ — 3999₽</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | Всего за <strong>99 ₽</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | На сумму <strong>4000 ₽ и более</strong>
+            .tablePrize__col
+              .tablePrize__colIn
+                p.tablePrize__info
+                  | Всего за <strong>9 ₽</strong>
+
+        .content__companyInfo.productGuides.companyInfo
+          .companyInfo__in
+            h2.companyInfo__title Ты с нами 4-ю Кампанию
+            p.companyInfo__subtitle
+              | Выбери и закажи приз за <strong>9 ₽</strong> или <strong>199 ₽</strong>
+          .productGuides__cols.colsFlex.colsFlex--wrap
+            .productGuides__item.colsFlex__col.colsFlex__col--3
+              .productGuides__in.productGuides__in--big
+                .productGuides__imgWrapper
+                  img.productGuides__img src="static/images/gi3/goods/good_27.png"
+                p.productGuides__description Наручные часы <br/>«Дина», розовые
+                p.productGuides__code Код: <strong>32038</strong>
+                p.productGuides__price 9₽ или 199₽
+            .productGuides__item.colsFlex__col.colsFlex__col--3
+              .productGuides__in.productGuides__in--big
+                .productGuides__imgWrapper
+                  img.productGuides__img src="static/images/gi3/goods/good_28.png"
+                p.productGuides__description Наручные часы <br/>«Дина», чёрныные
+                p.productGuides__code Код: <strong>18031</strong>
+                p.productGuides__price 9₽ или 199₽
+            .productGuides__item.colsFlex__col.colsFlex__col--3
+              .productGuides__in.productGuides__in--big
+                .productGuides__imgWrapper
+                  img.productGuides__img src="static/images/gi3/goods/good_29.png"
+                p.productGuides__description Наручные часы <br/>«Дина», белые
+                p.productGuides__code Код: <strong>62999</strong>
+                p.productGuides__price 9₽ или 199₽
+
+        p.content__download
+          a.content__downloadLink download="download" href="" Скачать подробные правила программы
+        .content__noteWrapper
+          p.content__note
+            | * Приз – призовой товар со скидкой к цене, определенной в каталоге,
+            |  стоимостью 49 руб. Организатором акции является
+            |  ООО «Эйвон Бьюти Продактс Компани», место нахождения: 119048,
+            |  г. Москва, ул. Усачева, д. 2, стр. 1, ОГРН 1037708067320.
+            |  Источником информации о подробных условиях и критериях участия
+            |  в акции является сайт avon.ru. Организатор акции оставляет
+            |  за собой право заменить призы, представленные в настоящей листовке,
+            |  на равноценные призы по своему усмотрению. Количество призов ограничено.
+            |  Представитель может заказать и получить только один приз в течении кампании.
+
+    include scripts
+    include footer

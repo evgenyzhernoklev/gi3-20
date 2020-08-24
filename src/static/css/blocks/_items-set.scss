@@ -1,0 +1,82 @@
+.itemsSet {
+  padding: 20px 60px 60px;
+  background-color: $white;
+
+  &__title {
+    margin-bottom: 28px;
+    padding-top: 58px;
+    font: 700 48px/1 $roboto;
+    text-align: center;
+    color: $gray;
+    border-top: solid 1px $white-light;
+  }
+
+  &__table {
+    border: solid 1px $white-light;
+    border-bottom: 0;
+  }
+
+  &__tableHeader {
+    padding: 10px 20px;
+    font: 700 16px/1.2 $roboto;
+    background-color: $white-light;
+  }
+
+  &__item {
+
+  }
+
+  &__itemTitle {
+    position: relative;
+    padding: 10px 20px 10px 50px;
+    font: 700 14px/1.2 $roboto;
+    border-bottom: solid 1px $white-light;
+    cursor: pointer;
+    transition: background-color $transition-normal;
+
+    &:hover {
+      background-color: #f6f9f9;
+    }
+
+    &.is-active {
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:before {
+      content: '';
+      @include background-image(arrow-small-black, 12px, 8px);
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      margin-top: -3px;
+      transition: transform 0.3s linear;
+    }
+  }
+
+  &__itemList {
+    background-color: #f6f9f9;
+  }
+
+  &__itemName {
+    position: relative;
+    padding: 10px 80px 10px 100px;
+    font: 14px/1.2 $roboto;
+    border-bottom: solid 1px $white-light;
+  }
+
+  &__itemCode {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  &__itemQuantity {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+}

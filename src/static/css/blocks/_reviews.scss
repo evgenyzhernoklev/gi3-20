@@ -1,0 +1,53 @@
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__col {
+    flex-basis: 48%;
+    margin-bottom: 4%;
+    border: solid 1px $white-light;
+    background-color: $white;
+
+    &:nth-child(2n + 1) {
+      margin-right: 4%;
+    }
+  }
+
+  &__in {
+    padding: 37px 45px 38px;
+  }
+
+  &__name {
+    margin-bottom: 27px;
+    font: 300 24px/1.2 $roboto;
+    letter-spacing: 0.8px;
+    color: #344447;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media ($mobile) {
+  .reviews {
+    &__col {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+
+      &:nth-child(2n + 1) {
+        margin-right: 0;
+      }
+    }
+
+    &__in {
+      padding: 27px 20px 28px;
+    }
+
+    &__name {
+      margin-bottom: 17px;
+      font-size: 21px;
+    }
+  }
+}

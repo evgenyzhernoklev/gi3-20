@@ -1,0 +1,90 @@
+doctype html
+html lang="ru"
+  head
+    meta charset="utf-8" /
+    meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" /
+    title ART
+    style
+      | * { vertical-align: baseline; font-weight: inherit; font-family: inherit; font-style: inherit; font-size: 100%; border: 0 none; outline: 0; padding: 0; margin: 0; box-sizing: border-box; } h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; } ul, ol { list-style: none; } :focus { outline: 0; } :link, :visited { text-decoration: none; } a { text-decoration: none; } a img { border: 0; } article, aside, figcaption, figure, footer, header, hgroup, nav, section, time { display: block; } address, dl, ol, ul, p, pre { margin: 0; } sub, sup { display: inline-block; }
+      |  @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext');
+      |  body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font: 16px/1.5 'Roboto', Arial, sans-serif; color: #181818; background-color: #ffffff;} a, button { transition: color .3s linear, border-color .3s linear, background-color .3s linear, box-shadow .3s linear; }
+      |  .contentWrapper {margin-bottom: 50px; background-color: #ffffff;}
+      |  .content {max-width: 840px; min-width: 320px; margin: 0 auto; padding: 0 20px;}
+      |  .banner {margin: 15px auto 30px; padding: 48px 20px 37px 85px; background: #641752 url(static/images/gi3/lp/art/top_banner.png) no-repeat right bottom; background-size: contain;} .banner__title {max-width: 340px; font: 900 38px/1 Roboto, Arial, sans-serif; text-align: center; color: #ffffff;} .banner__icon {margin-top: 29px; }
+      |  .opportunities {margin-bottom: 45px;} .opportunities__title {margin-bottom: 15px; padding: 0 10px; font: 700 31px/1.13 Roboto, Arial, sans-serif; text-align: center; color: #000;} .opportunities__text {margin: 0 auto; padding: 0 20px; font: 14px/1.36 Roboto, Arial, sans-serif; text-align: center; color: #000;} .opportunities__cols {display: flex; flex-wrap: wrap; margin-top: 42px;} .opportunities__col {flex-basis: 50%; display: flex; align-items: center; border-color: #e4eded; border-style: solid;} .opportunities__colIn {flex-basis: 100%; padding: 0 20px; text-align: center;} .opportunities__icon {display: inline-block!important; margin: 0 auto 21px;}
+      |  .opportunities__col--img {min-height: 400px; background-repeat: no-repeat; background-position: center center; background-size: cover;} .opportunities__col--img1 {background-image: url(static/images/gi3/lp/art/slide_1.jpg)} .opportunities__col--img2 {background-image: url(static/images/gi3/lp/art/slide_2.jpg)} .opportunities__col--img3 {background-image: url(static/images/gi3/lp/art/slide_3.jpg)} .opportunities__col--img4 {background-image: url(static/images/gi3/lp/art/slide_4.jpg)}
+      |  .video {} .video iframe {width: 100%!important;}
+      |  @media (max-width: 767px) {.banner {padding-left: 20px; background-image: none;} .banner__title {margin: 0 auto; font-size: 27px;} .banner__icon {margin-top: 20px; width: 200px!important;} .opportunities {margin-bottom: 0;} .opportunities__col {flex-basis: 100%; margin-bottom: 50px; border: none;} .opportunities__col--img {display: none;} .opportunities__colIn {padding: 0;} .opportunities__title {max-width: 320px; margin: 0 auto 15px; font-size: 24px;} .opportunities__icon {margin-bottom: 15px;} .video iframe {height: 160px!important;}}
+  body
+    .contentWrapper
+      .contentWrapper__content.content
+        style
+          |  .bannerOffice {max-width: 560px; padding: 25px 20px 30px; background: #641752 url(static/images/gi3/lp/art/top_banner.png) no-repeat 128% bottom; background-size: 325px;}
+          |  .bannerOffice__in {max-width: 320px; padding-left: 10px; text-align: center;}
+          |  .bannerOffice__icon {display: block; margin: 0 auto 13px;}
+          |  .bannerOffice__title {margin-bottom: 23px; font: 900 30px/1.07 Roboto, Arial, sans-serif; color: #ffffff;}
+          |  .bannerOffice__link {display: inline-block; min-width: 175px; padding: 18px 15px; background: #ff336d; font: 700 14px/1.21 Roboto, Arial, sans-serif; Roboto, Arial, sans-serif; text-transform: uppercase; text-align: center; color: #ffffff; transition: background-color 0.3s linear;}
+          |  .bannerOffice__link:hover {background: #E22A68;}
+          |  @media (max-width: 767px) {.bannerOffice {background-image: none;} .bannerOffice__in {margin: 0 auto; padding: 0;} .bannerOffice__title {font-size: 27px;}}
+        .bannerOffice
+          .bannerOffice__in
+            img.bannerOffice__icon width="160" src="static/images/gi3/lp/art/top_banner_icon.png"
+            p.bannerOffice__title
+              | Новые возможности для&nbsp;набора Представителей
+            a.bannerOffice__link href="#" подробнее
+
+    .contentWrapper
+      .contentWrapper__content.content
+        .content__banner.banner
+          h1.banner__title
+            | Уже скоро!
+            br/
+            | Новое мобильное
+            br/
+            | приложение
+            img.banner__icon width="240" src="static/images/gi3/lp/art/top_banner_icon.png"
+
+        .content__opportunities.opportunities
+          h2.opportunities__title Новые возможности
+          p.opportunities__text для набора Представителей
+
+          .opportunities__cols
+            .opportunities__col.opportunities__col--img.opportunities__col--img1
+            .opportunities__col style="border-width: 1px 1px 0 0;"
+              .opportunities__colIn
+                img.opportunities__icon width="56" src="static/images/gi3/lp/art/slide_icon_1.png"
+                h3.opportunities__title
+                  | Все данные в&nbsp;одном приложении
+                p.opportunities__text style="max-width: 370px;"
+                  | Забудьте про&nbsp;бумажные формы на&nbsp;проспектинге! Вносите и&nbsp;сохраняйте контактные данные сразу в&nbsp;мобильном приложении!
+
+            .opportunities__col style="border-width: 0 0 0 1px;"
+              .opportunities__colIn
+                img.opportunities__icon width="62" src="static/images/gi3/lp/art/slide_icon_2.png"
+                h3.opportunities__title Обновленный процесс назначения
+                p.opportunities__text style="max-width: 380px;"
+                  | Представитель принимает условия сотрудничества и&nbsp;верифицирует контактные данные ДО&nbsp;создания R&nbsp;номера, это поможет избежать прохождение дополнительной регистрации и&nbsp;принятие условий на&nbsp;сайте
+            .opportunities__col.opportunities__col--img.opportunities__col--img2
+
+            .opportunities__col.opportunities__col--img.opportunities__col--img3
+            .opportunities__col style="border-width: 0 1px 0 0;"
+              .opportunities__colIn
+                img.opportunities__icon width="80" style="margin-left: 30px;" src="static/images/gi3/lp/art/slide_icon_3.png"
+                h3.opportunities__title
+                  | Упрощенная <br/>система паролей
+                p.opportunities__text style="max-width: 290px;"
+                  | Новичку приходит R-номер вместе с&nbsp;упрощенным паролем.
+                  br/
+                  | Первый вход можно осуществить c&nbsp;любого сайта или приложения Avon
+
+            .opportunities__col style="border-width: 0 0 1px 1px;"
+              .opportunities__colIn
+                img.opportunities__icon width="59" src="static/images/gi3/lp/art/slide_icon_4.png"
+                h3.opportunities__title
+                  | Персональная ссылка для рекрутинга в&nbsp;социальных сетях
+                p.opportunities__text style="max-width: 330px;"
+                  | Регулярно делитесь своей ссылкой регистрации Представителей и&nbsp;получайте новые Назначения
+            .opportunities__col.opportunities__col--img.opportunities__col--img4
+
+        .content__video.video
+          iframe[width="560" height="450" src="https://www.youtube.com/embed/iCwa2XF5Bnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen]

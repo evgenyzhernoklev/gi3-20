@@ -1,0 +1,141 @@
+.participation {
+  padding: 61px 60px 45px;
+  background-color: $white;
+
+  &__title {
+    margin-bottom: 46px;
+    font: 900 36px/1.2 $roboto;
+    text-align: center;
+    color: $gray;
+  }
+
+  &__subtitle {
+    margin: 0 auto 59px;
+    max-width: 660px;
+    font: 700 24px/1.25 $roboto;
+    text-align: center;
+    color: $gray;
+  }
+
+  &__cols {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    flex-basis: 62%;
+
+    &--goods {
+      position: relative;
+      display: flex;
+      flex-basis: 31.5%;
+      align-items: center;
+      text-align: center;
+      background-color: #f6f9f9;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -30px;
+        border: 30px solid transparent;
+        border-left: 22px solid #f6f9f9;
+      }
+    }
+  }
+
+  &__colIn {
+    flex-basis: 100%;
+  }
+
+  &__imgWrapper {
+
+  }
+
+  &__img {
+    max-width: 80%;
+    max-height: 220px;
+  }
+
+  &__goods {
+    margin-top: 34px;
+    line-height: 1.25;
+  }
+
+  &__info {
+    padding: 58px 0 56px;
+    border-top: 1px solid $white-light;
+
+    &:last-child {
+      border-bottom: 1px solid $white-light;
+    }
+  }
+
+  &__text {
+    font: 20px/1.2 $roboto;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    strong, b {
+      font-weight: 700;
+    }
+  }
+}
+
+@media ($tablet) {
+  .participation {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media ($mobile) {
+  .participation {
+    padding: 30px 20px 20px;
+
+    &__cols {
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      flex-basis: 100%;
+
+      &--goods {
+        background: none;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    &__subtitle {
+      margin-bottom: 30px;
+      font-size: 21px;
+    }
+
+    &__info {
+      padding: 30px 0;
+
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

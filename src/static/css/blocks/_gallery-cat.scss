@@ -1,0 +1,246 @@
+.galleryCat {
+  margin-top: 27px;
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    text-align: center;
+    overflow: hidden;
+
+    &--common {
+      .galleryCat__label {
+        margin-bottom: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .galleryCat__info {
+        margin: 0 20px;
+        font-size: 16px;
+      }
+
+      .galleryCat__title {
+        margin: 0 20px 16px;
+        padding-bottom: 17px;
+        border-bottom: solid 2px $white-light;
+      }
+
+      .galleryCat__priceInfo {
+        margin-top: 14px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__itemImg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+  }
+
+  &__in {
+    position: relative;
+    flex-basis: 46%;
+    margin: 20px;
+    padding: 23px 10px 30px;
+    background-color: $white;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 22px;
+    padding: 5px 25px;
+    min-width: 120px;
+    font: 12px/1.2 $roboto;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    background-color: #ff9170;
+    border-radius: 12px;
+  }
+
+  &__imgWrapper {
+    font: 900 24px/1.46 $roboto;
+  }
+
+  &__img {
+    margin: 0 auto 25px;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+    font: 900 32px/1 $roboto;
+
+    i {
+      display: inline-block;
+      margin-top: 7px;
+      font: 700 24px/1 $roboto;
+    }
+  }
+
+  &__info {
+    margin-bottom: 15px;
+    font: 17px/1.18 $roboto;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &__price {
+    margin-bottom: 10px;
+    font: 700 26px/35px $roboto;
+    color: $pink;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  &__priceInfo {
+    margin-bottom: 15px;
+  }
+
+  &__priceInfoOld {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    font: 18px/20px $roboto;
+    text-decoration: line-through;
+    color: $gray-light;
+  }
+
+  &__priceInfoNew {
+    display: inline-block;
+    vertical-align: middle;
+    font: 700 35px/28px $roboto;
+    color: $black;
+  }
+
+  &__discountList {
+    margin-bottom: 15px;
+  }
+
+  &__discountListItem {
+    font: 12px/16px $roboto;
+    color: $gray;
+
+    &:not(:last-child) {
+      margin-bottom: 1px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__attention {
+    margin-bottom: 5px;
+    font: 700 20px/26px $roboto;
+    color: #e27b5d;
+
+    &:last-of-type {
+      margin-bottom: 19px;
+    }
+
+    span {
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 20px;
+  }
+
+  &__good {
+    position: absolute;
+    bottom: -27px;
+    right: 79.5%;
+  }
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.slick-dots {
+  margin: 30px 0 0;
+  font: 0/0 $roboto;
+  text-align: center;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &.slick-active {
+      button {
+        background-color: #a2acae;
+        cursor: default;
+      }
+    }
+  }
+
+  button {
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+    border: solid 1px #a2acae;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color $transition-normal;
+  }
+}
+
+@media ($mobile) {
+  .galleryCat {
+    &__item {
+      padding: 20px;
+    }
+
+    &__in {
+      flex-basis: 100%;
+      margin: 0;
+      padding: 20px!important;
+      background-color: $white!important;
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16)!important;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+
+      i {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+
+    &__info {
+      font-size: 16px;
+    }
+
+    &__priceInfoOld {
+      font-size: 16px;
+    }
+
+    &__priceInfoNew {
+      font-size: 27px;
+    }
+  }
+
+  .galleryCat .galleryCat__itemImg {
+    display: none;
+  }
+}

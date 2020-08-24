@@ -1,0 +1,67 @@
+.video {
+  margin-bottom: 50px;
+
+  &__frame {
+    display: block;
+    margin: 100px auto 0;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    background: $white;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -60px;
+      margin-left: -60px;
+      background-color: rgba(255, 48, 111, 0.7);
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -14px;
+      margin-left: -9px;
+      border: 14px solid transparent;
+      border-left: 22px solid $white;
+    }
+  }
+
+  &__poster {
+    width: 100%;
+  }
+}
+
+@media ($tablet) {
+  .video {
+    &__frame {
+      margin-top: 80px;
+      width: 640px!important;
+      height: 360px!important;
+    }
+  }
+}
+
+@media ($mobile) {
+  .video {
+    margin-bottom: 20px;
+
+    &__frame {
+      margin-top: 40px;
+      width: 280px!important;
+      height: 160px!important;
+    }
+  }
+}

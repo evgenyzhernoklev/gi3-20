@@ -1,0 +1,577 @@
+.content {
+  position: relative;
+  margin: 0 auto 200px;
+  color: $black;
+
+  &--marginSm {
+    margin-bottom: 50px;
+  }
+
+  &--marginMd {
+    margin-bottom: 80px;
+  }
+
+  &--noMargin {
+    margin-bottom: 0;
+  }
+
+  &--paddingBottom {
+    padding-bottom: 200px;
+  }
+
+  &__in {
+    padding: 47px 60px 52px;
+    background: $white;
+    border: 1px solid $white-light;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &--center {
+    	text-align: center;
+    }
+
+    &--small {
+      padding: 23px 30px 30px;
+
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+
+    &--noPB {
+      padding-bottom: 0;
+    }
+
+    &--links {
+      padding: 25px 10%;
+
+      .colsFlex--3 {
+        justify-content: space-between;
+
+        .colsFlex__col {
+          flex-basis: 31%;
+          margin-right: 0;
+        }
+      }
+    }
+
+    & + .content__nameIn {
+      margin-top: -30px;
+      border-top: 0;
+      border-bottom: 1px solid $white-light;
+    }
+  }
+
+  &__colIn {
+    padding: 0 10px;
+  }
+
+  &__nameIn {
+    margin-bottom: 0;
+    padding: 23px 60px 21px;
+    font: 300 24px/1.2 $roboto;
+    letter-spacing: 0.8px;
+    color: #344447;
+    border: solid 1px $white-light;
+    border-bottom: 0;
+    background-color: $white;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--textNormal {
+      font-weight: 400;
+    }
+  }
+
+  &__title {
+    margin: 42px 0 28px;
+    font-size: 42px;
+    font-weight: 100;
+    text-align: center;
+
+    &--big {
+      margin: 0 0 41px;
+      font: 700 68px/1 $roboto;
+      color: $gray;
+    }
+
+    &--med {
+      margin-bottom: 9px;
+      font: 700 48px/1.38 $roboto;
+      color: $gray;
+    }
+
+    &--small {
+    	font-size: 24px;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+
+    &--smallMarginBottom {
+      margin-bottom: 8px;
+    }
+
+    &--bounty {
+      margin-bottom: -80px;
+    }
+
+    .content__in > &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+    font: 400 24px/1.5 $roboto;
+    letter-spacing: 0.75px;
+    color: #344447;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--normal {
+      margin-bottom: 9px;
+      line-height: 1.2;
+    }
+
+    &--med {
+      font-size: 28px;
+    }
+
+    &--middle {
+      margin: 79px 0 23px;
+      font: 700 28px/1.2 $roboto;
+      color: $gray;
+    }
+
+    &--bold {
+      margin-bottom: 12px;
+      font: 700 54px/1.2 $roboto;
+      color: $gray;
+    }
+
+    &--marginTop {
+      margin-top: 70px;
+    }
+
+    &--marginBottom {
+      margin-bottom: 24px;
+    }
+
+    &--noSpacing {
+      letter-spacing: 0;
+    }
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &--gray {
+      color: $gray;
+    }
+
+    &--big {
+      font: 300 20px/1.5 $roboto;
+    }
+
+    &--small {
+      font: 700 14px/1.2 $roboto;
+      letter-spacing: 0.1px;
+    }
+
+    &--contentBig {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    strong, b {
+      font-weight: 700;
+    }
+
+    a {
+      font-weight: 700;
+      color: $pink;
+
+      &:hover {
+        color: $pink-hover;
+      }
+    }
+
+    li {
+      margin-bottom: 24px;
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    max-width: 100%;
+  }
+
+  &__cols {
+
+  }
+
+  &__banners {
+    margin-bottom: 18px;
+  }
+
+  &__noteWrapper {
+    margin: 50px 0;
+  }
+
+  &__note {
+    font: italic 15px/1.2 $roboto;
+    color: #a2acae;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    &--small {
+      font: italic 14px/24px $roboto;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &--big {
+      line-height: 30px;
+    }
+
+    a {
+      color: $pink;
+
+      &:hover {
+         color: $pink-hover;
+      }
+    }
+  }
+
+  &__attention {
+    padding: 16px 20px;
+    font: 14px/1.2 $roboto;
+    text-align: center;
+    color: $white;
+    background-color: #ff9170;
+  }
+
+  &__noteNumber {
+    font-size: 10px;
+  }
+
+  &__buttons {
+    margin: 50px 0;
+
+    &--center {
+      text-align: center;
+
+      .content__button {
+        max-width: 312px;
+
+        &--usual {
+          max-width: none;
+        }
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    &--small {
+      min-width: 200px;
+      width: auto;
+    }
+
+    &--middle {
+    	width: auto;
+      min-width: 253px;
+    }
+
+    &--usual {
+      width: auto;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+
+    &--mb {
+      margin-bottom: 15px;
+    }
+
+    &--pd {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+
+  &__period {
+    font: 300 22px/1.45 $roboto;
+    text-align: center;
+    color: $gray;
+
+    &--textLeft {
+      text-align: left;
+    }
+
+    &--med {
+      margin-left: 12%;
+      margin-right: 12%;
+    }
+
+    &--borderBottom {
+      padding-bottom: 55px;
+      border-bottom: 1px solid $white-light;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+
+    a {
+      color: $pink;
+      border-bottom: 1px solid $pink;
+
+      &:hover {
+        color: $pink-hover;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  &__download {
+    text-align: center;
+  }
+
+  &__downloadLink {
+    font: 18px/1.22 $roboto;
+    color: #a2acae;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: #a2acae;
+      border-color: #a2acae;
+    }
+  }
+
+  &__social {
+    margin-bottom: 73px;
+    padding: 10px 0 10px;
+    text-align: center;
+  }
+
+  &__socialLink {
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+
+    .icon {
+      max-width: 24px;
+      max-height: 24px;
+    }
+  }
+
+  &__apps {
+    margin: 35px auto 49px;
+    text-align: center;
+  }
+
+  &__appsLink {
+    &:not(:last-child) {
+      margin-right: 43px;
+    }
+
+    .icon {
+      width: 290px;
+    }
+  }
+
+  &__sep {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    height: 1px;
+    background-color: $white-light;
+  }
+}
+
+ul.content__text {
+  li {
+    &:before {
+      content: '';
+      display: inline-block;
+      margin-right: 6px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $black;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media ($tablet) {
+  .content {
+    &__in {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &__nameIn {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .content {
+    margin-bottom: 50px;
+
+    &--paddingBottom {
+      padding-bottom: 50px;
+    }
+
+    &__in {
+      padding: 18px 20px 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &--small {
+        padding: 18px 20px 25px;
+      }
+
+      & + .content__nameIn {
+        margin-top: -20px;
+        border-top: 0;
+        border-bottom: 1px solid $white-light;
+      }
+    }
+
+    &__nameIn {
+      padding: 18px 20px 16px;
+      font-size: 21px;
+    }
+
+    &__title {
+      font-size: 27px;
+      line-height: 1.2;
+
+      &--big {
+        margin-bottom: 20px;
+        font-size: 36px;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 15px;
+      font-size: 21px;
+      line-height: 1.2;
+
+      &--middle,
+      &--marginTop {
+        margin-top: 40px;
+      }
+    }
+
+    &__subtitle {
+      &--bold {
+        font-size: 36px;
+      }
+    }
+
+    &__text {
+      &--big {
+        font-size: 18px;
+      }
+
+      &--contentBig {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &__period {
+      font-size: 20px;
+
+      &--med {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .content__in & {
+        font-size: 18px;
+      }
+    }
+
+    &__social {
+      margin-bottom: 40px;
+      padding: 0;
+    }
+
+    &__buttons {
+      &--center {
+        .content__button {
+          max-width: none;
+
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    &__button {
+      &--usual {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    &__apps {
+      margin: 30px auto 35px;
+    }
+
+    &__appsLink {
+      display: block;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .icon {
+        width: 70%;
+        max-width: 240px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.values {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__col {
+    flex-basis: 50%;
+
+    &--border {
+      border: solid 1px #e4eded;
+      background-color: $white;
+
+      &:first-child {
+        border-right: 0;
+      }
+
+      &:last-child {
+        border-left: 0;
+      }
+    }
+
+    &--trust {
+      background: url('../images/gi3/values/trust.jpg') no-repeat center center/cover;
+    }
+
+    &--faith {
+      background: url('../images/gi3/values/faith.jpg') no-repeat center center/cover;
+    }
+
+    &--respect {
+      background: url('../images/gi3/values/respect.jpg') no-repeat center center/cover;
+    }
+
+    &--modesty {
+      background: url('../images/gi3/values/modesty.jpg') no-repeat center center/cover;
+    }
+
+    &--decency {
+      background: url('../images/gi3/values/decency.jpg') no-repeat center center/cover;
+    }
+  }
+
+  &__in {
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    min-height: 260px;
+  }
+
+  &__content {
+    flex-basis: 100%;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font: 300 24px/1.5 $roboto;
+    letter-spacing: 0.8px;
+    color: #344447;
+  }
+
+  &__info {
+
+  }
+}
+
+@media ($tablet) {
+  .values {
+    &__in {
+      padding: 30px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .values {
+    flex-wrap: wrap;
+
+    &--backward {
+      flex-direction: column-reverse;
+    }
+
+    &__col {
+      flex-basis: 100%;
+      min-height: 200px;
+      height: 200px;
+
+      &--border {
+        min-height: 0;
+        height: auto;
+      }
+    }
+
+    &__in {
+      padding: 20px;
+      min-height: 0;
+    }
+  }
+}

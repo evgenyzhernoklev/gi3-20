@@ -1,0 +1,132 @@
+.offerProduct {
+  display: block;
+  position: relative;
+  padding: 30px 30px 20px;
+  min-height: 240px;
+  color: $white;
+
+  &--textBlack {
+    color: $black;
+
+    .offerProduct__title,
+    .offerProduct__info {
+      color: $black;
+    }
+
+    .offerProduct__link {
+      color: $pink;
+      border-bottom: 1px solid transparent;
+      transition: color $transition-normal, border-color $transition-normal;
+
+      &:hover {
+        color: $pink-hover;
+        border-color: $pink-hover;
+      }
+    }
+  }
+
+  &--in {
+    padding: 15px 20px 20px;
+    min-height: 200px;
+
+    .offerProduct__title {
+      margin-top: 2px;
+    }
+
+    .offerProduct__info {
+      font: 13px/1.38 $roboto;
+    }
+
+    .offerProduct__link {
+      left: 20px;
+      bottom: 25px;
+      font: 700 12px/1 $roboto;
+    }
+  }
+
+  &--perfume {
+    background: #ff9170 url('../images/gi3/banners/perfume.png') no-repeat 90% center;
+    background-size: 208px;
+  }
+
+  &--jewelry {
+    background: #ff9170 url('../images/gi3/banners/jewelry.jpg') no-repeat 95% center;
+    background-size: 230px;
+  }
+
+  &--surprise {
+    background: #ff9170 url('../images/gi3/banners/offer-surprise.png') no-repeat 97% center;
+    background-size: 198px;
+  }
+
+  &--drop {
+    background: #f9f3e5 url('../images/gi3/banners/program_drop.png') no-repeat 97% center;
+    background-size: 160px;
+
+    img {
+      max-width: 140px;
+    }
+  }
+
+  &--bestPrices {
+    background: #f9f3e5 url('../images/gi3/banners/program_bestPrices.png') no-repeat 90% center;
+    background-size: 189px;
+  }
+
+  &--premiumClothes {
+    background: #f9f3e5 url('../images/gi3/banners/program_premiumClothes.png') no-repeat 90% center;
+    background-size: 150px;
+  }
+
+  &__logoWrapper {
+    height: 60px;
+    line-height: 60px;
+
+    .icon {
+      max-height: 60px;
+      vertical-align: middle;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 12px;
+    max-width: 200px;
+    font: 21px/1 $roboto;
+  }
+
+  &__info {
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    font: 500 13px/1 $roboto;
+    text-transform: uppercase;
+    color: $white;
+    border-bottom: 1px solid $white;
+
+    &:hover {
+      color: $white-light;
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+@media ($mobile) {
+  .offerProduct {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($black, 0.5);
+    }
+  }
+}

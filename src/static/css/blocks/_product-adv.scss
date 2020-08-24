@@ -1,0 +1,235 @@
+.productAdv {
+  overflow: hidden;
+
+  &__in {
+    background: $white;
+  }
+
+  &__content {
+    padding: 90px 0 34px;
+
+    &--marker {
+      background: url('../images/gi3/marker_eyebrow_girl.png') no-repeat right bottom;
+      background-size: 59% auto;
+    }
+
+    &--toiletWater {
+      padding-bottom: 55px;
+      background: url('../images/gi3/products/toilet_water.png') no-repeat right bottom;
+      background-size: 59% auto;
+
+      .productAdv__info {
+        margin-bottom: 70px;
+      }
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    padding: 8px 48px 6px;
+    font: 700 18px/1.67 $roboto;
+    text-transform: uppercase;
+    color: $white;
+    background-color: #59c3b2;
+    border-radius: 24px;
+
+    &--orange {
+      background-color: #ff9170;
+    }
+  }
+
+  &__title {
+    margin: 43px 0 20px;
+    max-width: 420px;
+    font: 900 68px/1.03 $roboto;
+  }
+
+  &__info {
+    margin-bottom: 32px;
+    max-width: 420px;
+    font: 300 22px/1.36 $roboto;
+  }
+
+  &__example {
+    max-width: 250px;
+  }
+
+  &__product {
+    position: absolute;
+    top: 50%;
+    left: 370px;
+    transform: translateY(-50%);
+
+    &--marker {
+      max-width: 280px;
+      max-height: 700px;
+    }
+
+    &--toiletWater {
+      max-width: 315px;
+      max-height: 700px;
+      top: auto;
+      bottom: 0;
+      left: 465px;
+      transform: none;
+    }
+  }
+
+  &__tone {
+    margin-top: 14px;
+    font: 22px/1.36 $roboto;
+  }
+
+  &__code {
+    margin-bottom: 20px;
+    font: 700 22px/1.36 $roboto;
+
+    span {
+      color: $pink;
+    }
+  }
+
+  &__price {
+    margin-bottom: 30px;
+  }
+
+  &__priceOld {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font: 18px/30px $roboto;
+    text-decoration: line-through;
+    color: #a2acae;
+  }
+
+  &__priceNew {
+    display: inline-block;
+    vertical-align: middle;
+    font: 700 35px/30px $roboto;
+    line-height: 0.8;
+  }
+
+  &__priceCurrency {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  &__note {
+    margin-top: 42px;
+    font: italic 15px/1.5 $roboto;
+    color: #a2acae;
+  }
+
+  &__buttons {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  &__button {
+    width: 312px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__amount {
+    position: absolute;
+    bottom: 50px;
+    left: 740px;
+    display: inline-block;
+    width: 97px;
+    height: 97px;
+    font: 700 18px/97px $roboto;
+    text-align: center;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+@media ($tablet) {
+  .productAdv {
+    &__content {
+      &--toiletWater {
+        background-size: contain;
+      }
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__amount {
+      left: 570px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .productAdv {
+    &__content {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+      background: none;
+
+      &--toiletWater {
+        .productAdv__info {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__label {
+      padding: 8px 28px 6px;
+      font-size: 16px;
+    }
+
+    &__title {
+      margin: 30px auto 20px;
+      font-size: 36px;
+    }
+
+    &__info {
+      margin: 0 auto 30px;
+    }
+
+    &__product {
+      position: static;
+      max-height: 200px;
+      transform: none;
+
+      &--marker {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__example {
+      display: none;
+    }
+
+    &__amount {
+      position: static;
+      display: block;
+      margin: -55px auto 0;
+      transform: scale(0.5);
+    }
+
+    &__tone {
+      margin: 0;
+    }
+
+    &__button {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}

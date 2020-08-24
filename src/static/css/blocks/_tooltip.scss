@@ -1,0 +1,11 @@
+.tooltip {
+  position: relative;
+
+  &__link {
+    cursor: pointer;
+  }
+
+  &__content {
+    position: absolute;
+  }
+}

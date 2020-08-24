@@ -1,0 +1,96 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - friends
+  body
+    include header
+
+    .contentWrapper.contentWrapper--full.contentWrapper--bgWhite.contentWrapper--paddingTop
+      .contentWrapper__content.content.content--noMargin
+        h1.content__subtitle.content__subtitle--bold.content__subtitle--center
+          | Приглашай друзей – получай призы!
+        p.content__period Участвуй в программе!
+
+    .contentWrapper.contentWrapper--full.contentWrapper--bgWhite
+      .contentWrapper__friends.friends
+        img.friends__bg src="static/images/gi3-20/friends_bg.jpg"
+        img.friends__icon src="static/images/gi3-20/heart.png"
+        .friends__content.content
+          .friends__cols
+            .friends__col
+              .friends__question У тебя много знакомых, которые часто заказывают, но живут далеко?
+            .friends__col
+              .friends__question Подружки любят получать подарки?
+            .friends__col
+              .friends__question Твои друзья часто спрашивают, как получить скидку?
+
+    .contentWrapper.contentWrapper--full.contentWrapper--bgWhite
+      .contentWrapper__content.content.content--paddingBottom
+        p.content__period
+          | Вы можете стать участником Программы «Avon для Друзей!»
+          |  и рекомендовать нового Представителя ТОЛЬКО если Вы разместили
+          |  заказ хотя бы в одной из 3-х предыдущих кампаний
+        .content__steps.steps
+          ul.steps__list.steps__list--cols
+            li.steps__listItem.steps__listItem--4
+              p.steps__listInfo
+                | Расскажи друзьям <br/>о возможности получить
+                br/
+                strong  СКИДКУ 30% на&nbsp;1-ый заказ и&nbsp;ПРИЗ* со&nbsp;своим 2-ым заказом
+            li.steps__listItem.steps__listItem--4
+              p.steps__listInfo
+                | Расскажи друзьям о возможности получить ссылку
+              a.steps__button.linkButton.linkButton--redTransparent href="#" Получить ссылку
+            li.steps__listItem.steps__listItem--4
+              p.steps__listInfo
+                | Поделись этой ссылкой на&nbsp;форму быстрой регистрации
+                |  с&nbsp;друзьями. Помоги друзьям разместить и&nbsp;оплатить
+                strong  ПЕРВЫЙ ЗАКАЗ
+            li.steps__listItem.steps__listItem--4
+              p.steps__listInfo
+                | Получи
+                strong  СМС С КОДОМ ПРИЗА
+                |  и&nbsp;закажи** роскошный аромат за&nbsp;каждого рекомендованного
+                |  тобой Представителя!
+
+        .content__companyPrizes.companyPrizes
+          .companyPrizes__cols
+            .companyPrizes__col
+              .companyPrizes__colImgWrapper
+                img.companyPrizes__colImg src="static/images/gi3-20/prizes/prizes_16.png"
+              p.companyPrizes__colTitle Приз кампании 7
+            .companyPrizes__col
+              .companyPrizes__colImgWrapper
+                img.companyPrizes__colImg src="static/images/gi3-20/prizes/prizes_17.png"
+              p.companyPrizes__colTitle Приз кампании 8
+          p.companyPrizes__info
+            | Новый приз в каждой кампании ***
+          p.companyPrizes__info
+            a.companyPrizes__link href="" ПРАВИЛА ПРОГРАММЫ AVON ДЛЯ ДРУЗЕЙ
+
+        .content__copy.copy
+          .copy__title Ваша ссылка:
+          .copy__linkWrapper
+            input.copy__link id="user-link" value="http://avonfriends.ru/?ref=NDM5NQ=="
+          button.copy__button.linkButton.linkButton--redTransparent.js-copy-link data-clipboard-target="#user-link" Скопировать ссылку
+
+        p.content__period Поделиться в социальных сетях:
+        .content__social
+          a.content__socialLink href="#"
+            include icons/facebook
+          a.content__socialLink href="#"
+            include icons/vk
+          a.content__socialLink href="#"
+            include icons/odnoklassniki
+
+        p.content__note.content__note--center.content__note--big
+          | * Приз – призовой товар стоимостью 49a**. В течение трех кампаний
+          |  после получения СМС. *** Информацию о призовых продуктах на две
+          |  ближайшие кампании смотрите на этой странице. Организатором программы
+          |  является ООО «Эйвон Бьюти Продактс Компани», ОРГН 1037708067320,
+          |  119048, г. Москва, ул. Усачева, д. 2, стр.1. Источником информации
+          |  о программе является сайт avon.ru
+
+    include scripts
+    include footer

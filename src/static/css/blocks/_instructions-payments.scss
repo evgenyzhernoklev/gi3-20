@@ -1,0 +1,72 @@
+.instructionsPayments {
+  position: relative;
+  margin: 0 120px;
+  padding: 7px 0 62px 70px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    @include background-image(information, 50px, 50px);
+    background-size: cover;
+  }
+
+  &--small {
+    margin: 55px 0 32px;
+    padding: 0;
+
+    &:before {
+      top: -5px;
+      left: -40px;
+      @include background-image(information, 26px, 26px);
+    }
+  }
+
+  &__item {
+    list-style: inside decimal;
+    line-height: 1.38;
+  }
+
+  &__itemInfo {
+    line-height: 1.38;
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    strong, b {
+      font-weight: 700;
+    }
+  }
+}
+
+@media ($tablet) {
+  .instructionsPayments {
+    margin: 0 20px;
+
+    &.form__instructionsPayments {
+      margin: 0 0 30px 40px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .instructionsPayments {
+    padding: 0px 0 50px 40px;
+
+    &.form__instructionsPayments {
+      padding: 0;
+    }
+
+    &:before {
+      top: 0;
+      @include background-image(information, 26px, 26px);
+      background-size: cover;
+    }
+
+    &__item {
+      font-size: 14px;
+    }
+  }
+}

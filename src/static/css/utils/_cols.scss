@@ -1,0 +1,27 @@
+.cols {
+  @include clearfix();
+}
+
+.col--2 {
+  float: left;
+  width: 50%;
+}
+
+.col--3 {
+  float: left;
+  width: 33.33%;
+}
+
+.col--4 {
+  float: left;
+  width: 25%;
+}
+
+
+
+@media ($mobile) {
+  .col--3,
+  .col--4 {
+    width: 100%;
+  }
+}

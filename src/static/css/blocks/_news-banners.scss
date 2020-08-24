@@ -1,0 +1,55 @@
+.newsBanners {
+  &:last-child {
+    .newsBanners__col {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cols {
+
+  }
+
+  &__col {
+    position: relative;
+  }
+
+  &__in {
+    padding: 20px 30px 50px;
+  }
+
+  &__header {
+    margin-bottom: 12px;
+  }
+
+  &__logo {
+    margin-right: 11px;
+    height: 38px;
+    vertical-align: middle;
+  }
+
+  &__name {
+    display: inline-block;
+    vertical-align: middle;
+    font: 22px/38px $roboto;
+  }
+
+  &__info {
+    margin-bottom: 15px;
+    font: 13px/1.38 $roboto;
+  }
+
+  &__link {
+    position: absolute;
+    left: 30px;
+    bottom: 29px;
+    font: 700 12px/1 $roboto;
+    text-transform: uppercase;
+    color: $pink;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: $pink-hover;
+      border-bottom-color: $pink-hover;
+    }
+  }
+}

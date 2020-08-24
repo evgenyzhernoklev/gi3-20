@@ -1,0 +1,289 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - product samples
+  body
+    include header
+
+    .contentWrapper
+      .contentWrapper__content.content
+
+        h1.content__subtitle.content__subtitle--bold.content__subtitle--center
+          | Пробные образцы
+        p.content__period Это отличный способ для привлечения клиентов
+        include banners/product_samples
+
+        .content__samples.samples.js-samples
+          .samples__sorting.sorting
+            .sorting__cols.colsFlex.colsFlex--5
+              .sorting__item.colsFlex__col.js-dropdown.js-samples-search data-category="1"
+                span.sorting__itemTitle.js-dropdown-link УХОД ЗА ЛИЦОМ
+                .sorting__itemHidden.js-dropdown-content
+                  .sorting__itemSearch
+                    input.sorting__autocomplete.js-samples-search-field placeholder="Поиск"
+                  ul.sorting__itemList
+                    li.sorting__itemListCat.js-samples-search-cat data-subcategory="1"
+                      | Уход за кожей Anew
+                    li.sorting__itemListCat.js-samples-search-cat data-subcategory="2"
+                      | Мини-версии Anew
+                    li.sorting__itemListCat.js-samples-search-cat data-subcategory="3"
+                      | Средства по уходу за кожей Nutraeffects
+              .sorting__item.colsFlex__col.js-dropdown.js-samples-search data-category="2"
+                span.sorting__itemTitle.js-dropdown-link БУТИК АРОМАТОВ
+                .sorting__itemHidden.js-dropdown-content
+                  .sorting__itemSearch
+                    input.sorting__autocomplete.js-samples-search-field placeholder="Поиск"
+                  ul.sorting__itemList
+                    li.sorting__itemListCat.js-samples-search-cat data-subcategory="1"
+                      | Уход за кожей Anew
+              .sorting__item.colsFlex__col.js-dropdown.js-samples-search data-category="3"
+                span.sorting__itemTitle.js-dropdown-link СРЕДСТВА ДЛЯ МАКИЯЖА
+                .sorting__itemHidden.js-dropdown-content
+                  .sorting__itemSearch
+                    input.sorting__autocomplete.js-samples-search-field placeholder="Поиск"
+                  ul.sorting__itemList
+                    li.sorting__itemListCat.js-samples-search-cat data-subcategory="1"
+                      | Уход за кожей Anew
+              .sorting__item.colsFlex__col.js-dropdown.js-samples-search data-category="4"
+                span.sorting__itemTitle.js-dropdown-link НОВОМУ ПРЕДСТАВИТЕЛЮ
+                .sorting__itemHidden.js-dropdown-content
+                  .sorting__itemSearch
+                    input.sorting__autocomplete.js-samples-search-field placeholder="Поиск"
+                  ul.sorting__itemList
+                    li.sorting__itemListCat.js-samples-search-cat data-subcategory="1"
+                      | Уход за кожей Anew
+              .sorting__item.colsFlex__col.js-dropdown.js-samples-search data-category="5"
+                span.sorting__itemTitle.js-dropdown-link пятый пункт
+                .sorting__itemHidden.js-dropdown-content
+                  .sorting__itemSearch
+                    input.sorting__autocomplete.js-samples-search-field placeholder="Поиск"
+                  ul.sorting__itemList
+                    li.sorting__itemListCat.js-samples-search-cat data-subcategory="1"
+                      | Уход за кожей Anew
+
+          .samples__content.productGuides.productGuides--samples
+            h2.productGuides__title.js-samples-title Средства по уходу за кожей Anew со скидкой:
+
+            .productGuides__cols.colsFlex.colsFlex--wrap.js-samples-items
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_4.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Ночной крем для глубокого действия «Защита и&nbsp;Восстановление»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 60₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="2"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_5.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Подтягивающий крем для лица «Лифтинг и&nbsp;укрепление»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 70₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="3"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_6.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Крем для лица <br/>«Омоложение. Превосходство»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 80₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="2"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_4.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Ночной крем для лица «Омоложение. Мульти-уход»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 90₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="2" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_5.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Дневной крем для лица «Омоложение. Мульти-уход» <br/>SPF 25
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 100₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="3" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_6.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Корректирующий крем для лица «Ровной тон и укрепление» <br/>SPF 35
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 110₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="4" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_4.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Ночной крем для глубокого действия «Защита и&nbsp;Восстановление»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 120₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="5" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_5.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Подтягивающий крем для лица «Лифтинг и&nbsp;укрепление»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 130₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="3"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_6.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Крем для лица <br/>«Омоложение. Превосходство»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 140₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_4.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Ночной крем для лица «Омоложение. Мульти-уход»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 150₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_5.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Дневной крем для лица «Омоложение. Мульти-уход» <br/>SPF 25
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 160₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="4" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_6.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Корректирующий крем для лица «Ровной тон и укрепление» <br/>SPF 35
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 170₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_4.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Ночной крем для глубокого действия «Защита и&nbsp;Восстановление»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 180₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="2"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_5.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Подтягивающий крем для лица «Лифтинг и&nbsp;укрепление»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 190₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="2"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_6.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Крем для лица <br/>«Омоложение. Превосходство»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 200₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="3"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_4.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Ночной крем для лица «Омоложение. Мульти-уход»
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 210₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="1" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_5.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Дневной крем для лица «Омоложение. Мульти-уход» <br/>SPF 25
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 220₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+              .productGuides__item.colsFlex__col.colsFlex__col--3.js-samples-item data-category="3" data-subcategory="1"
+                .productGuides__in.productGuides__in--big
+                  .productGuides__imgWrapper
+                    img.productGuides__img src="static/images/gi3/goods/good_6.png"
+                  p.productGuides__description.js-samples-item-name
+                    | Корректирующий крем для лица «Ровной тон и укрепление» <br/>SPF 35
+                  p.productGuides__code Код: <strong>27387</strong>
+                  p.productGuides__price
+                    span.productGuides__priceOld 230₽
+                    |  50
+                    span.productGuides__currency ₽
+                  a.productGuides__button.linkButton.linkButton--redTransparent href="#" Заказать
+
+            .productGuides__paginator.paginator.js-samples-paginator
+
+    include scripts
+    include footer

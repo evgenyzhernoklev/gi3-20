@@ -1,0 +1,67 @@
+.placeOrder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 18px 30px;
+  border: 1px solid $white-light;
+  background-color: $white;
+
+  &__title {
+    padding-right: 15px;
+    font: 24px/1.2 $roboto;
+    color: #344447;
+  }
+
+  &__in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 360px;
+    flex-shrink: 0;
+  }
+
+  &__instruction {
+    font: 700 13px/1.2 $roboto;
+    text-transform: uppercase;
+    color: $gray-light;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+
+  &__button {
+    flex-basis: 192px;
+    flex-shrink: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media ($mobile) {
+  .placeOrder {
+    flex-wrap: wrap;
+    padding: 18px 20px;
+
+    &__title {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+      padding-right: 0;
+      font-size: 21px;
+      text-align: center;
+    }
+
+    &__in {
+      flex-basis: 100%;
+      display: block;
+      text-align: center;
+    }
+
+    &__button {
+      display: block;
+      width: 192px;
+      margin: 7px auto 0;
+    }
+  }
+}

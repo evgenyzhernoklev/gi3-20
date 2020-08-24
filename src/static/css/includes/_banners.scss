@@ -1,0 +1,375 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 25px 20px;
+  min-height: 270px;
+  text-align: center;
+  color: $white;
+
+  &--left {
+    padding-left: 30%;
+  }
+
+  &--textGray {
+    color: $gray;
+  }
+
+  &--textBlack {
+    color: $black;
+  }
+
+  &--textLeft {
+    padding-left: 35%;
+    text-align: left;
+  }
+
+  &--about {
+    background: #3065b1 url('../images/gi3/banners/about.png') no-repeat 5% bottom/contain;
+  }
+
+  &--conditions {
+    background: #2a397a url('../images/gi3/banners/conditions.png') no-repeat 5% bottom/contain;
+  }
+
+  &--confidential {
+    background: url('../images/gi3/banners/confidential.jpg') no-repeat center center/cover;
+  }
+
+  &--share {
+    background: #7ebbbf url('../images/gi3/banners/downloads.png') no-repeat 5% bottom/contain;
+  }
+
+  &--principles {
+    background: #bdbdbf url('../images/gi3/banners/principles.png') no-repeat 5% bottom/contain;
+  }
+
+  &--program {
+    background: #a9c0da url('../images/gi3/banners/program.png') no-repeat 10% bottom/contain;
+  }
+
+  &--programSmall {
+    background: #f49c8a url('../images/gi3/banners/program_small.png') no-repeat 0 bottom/contain;
+  }
+
+  &--programAnew {
+    background: #ff9170 url('../images/gi3/banners/program_anew.png') no-repeat 10% bottom;
+    background-size: 360px;
+  }
+
+  &--programPrize1 {
+    background: #f8eaab url('../images/gi3/banners/program_prize1.png') no-repeat 15% bottom;
+    background-size: 220px;
+  }
+
+  &--programPrize2 {
+    background: #cbe9eb url('../images/gi3/banners/program_prize2.png') no-repeat 9.5% bottom;
+    background-size: 245px;
+  }
+
+  &--programPrize3 {
+    background: #cbe3c3 url('../images/gi3/banners/program_prize3.png') no-repeat 9.5% bottom;
+    background-size: 247px;
+  }
+
+  &--coordinator {
+    background: #fabc6e url('../images/gi3/banners/coordinator.png') no-repeat 10% bottom/contain;
+  }
+
+  &--manager {
+    background: #ff7e68 url('../images/gi3/banners/manager.png') no-repeat 0 bottom/contain;
+  }
+
+  &--samples {
+    background: #dfebf2 url('../images/gi3/banners/samples.png') no-repeat 5% bottom;
+    background-size: 290px;
+  }
+
+  &--skillCup {
+    padding: 0;
+  }
+
+  &--interactiveCatalogs {
+    padding-bottom: 52px;
+    padding-left: 35%;
+    background: url('../images/gi3/banners/interactive_catalogs.png') no-repeat 4% bottom,
+      linear-gradient(to top, #c5d3e0 19%, #9ba9b6 19%, #a7b5c2 20%);
+
+    .banner__title {
+      margin-bottom: 13px;
+    }
+  }
+
+  &--programStart {
+    background: #7db8c1 url('../images/gi3/banners/program_start.png') no-repeat 4.5% bottom;
+    background-size: 260px;
+
+    .banner__logo {
+      margin-bottom: 10px;
+      max-width: 160px;
+    }
+  }
+
+  &--programStart2 {
+    background: #5ec4b6 url('../images/gi3/banners/program_start_2.png') no-repeat 7% center;
+    background-size: 230px;
+
+    .banner__title {
+      margin-bottom: 15px;
+    }
+  }
+
+  &--programSpring {
+    background: #fcd7de url('../images/gi3/banners/program_spring_mood.png') no-repeat 10% bottom;
+    background-size: 275px;
+
+    .banner__logo {
+      width: 80px;
+    }
+
+    .banner__title {
+      margin-bottom: 0;
+      font-size: 0;
+
+      img {
+        max-width: 480px;
+      }
+    }
+  }
+
+  &--samplesSet {
+    background: #f0eee2 url('../images/gi3/banners/samples_set.png') no-repeat 7% center;
+    background-size: 280px;
+
+    .banner__img {
+      max-width: 300px;
+    }
+
+    .banner__title {
+      color: $black;
+    }
+  }
+
+  &--aromas {
+    margin: 120px auto 100px;
+    background: #f0dcab;
+
+    .banner__img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      max-width: 700px;
+      width: 65%;
+      transform: translate(-50%, -50%);
+    }
+
+    .banner__label {
+      position: absolute;
+      top: 27px;
+      right: 43px;
+    }
+  }
+
+  &__in {
+    flex-basis: 100%;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font: 700 36px/1.1 $roboto;
+    letter-spacing: 0.29px;
+
+    &--small {
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+
+    img {
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    margin: 0 auto;
+    max-width: 480px;
+    font-size: 18px;
+    line-height: 24px;
+
+    &--small {
+      max-width: 380px;
+    }
+
+    &--big {
+      max-width: 550px;
+    }
+
+    &--full {
+      max-width: none;
+    }
+
+    a {
+      color: $pink;
+
+      &:hover {
+        color: $pink-hover;
+      }
+    }
+  }
+
+  &__list {
+
+  }
+
+  &__listItem {
+    position: relative;
+    padding-left: 30px;
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background-color: #546264;
+      border-radius: 50%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__apps {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  &__app {
+    width: 110px;
+
+    &--apple {
+
+    }
+
+    &--google {
+
+    }
+
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+
+    .icon {
+      width: 100%;
+      max-height: 30px;
+    }
+  }
+}
+
+@media ($tablet) {
+  .banner {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($black, 0.5);
+    }
+
+    &--textGray {
+      color: $white;
+    }
+
+    &--textBlack {
+      color: $white;
+    }
+
+    &--aromas {
+      margin: 80px 0 70px;
+
+      .banner__label {
+        width: 80px;
+      }
+    }
+
+    &--skillCup {
+      min-height: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .banner__in {
+      position: relative;
+    }
+
+    &__listItem {
+      &:before {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+  .banner {
+    margin-bottom: 20px;
+
+    &--left,
+    &--interactiveCatalogs {
+      padding-left: 20px;
+    }
+
+    &--aromas {
+      &:before {
+        display: none;
+      }
+
+      .banner__in {
+        position: static;
+      }
+
+      .banner__img {
+        width: 85%;
+      }
+
+      .banner__label {
+        top: 20px;
+        right: 20px;
+      }
+    }
+
+    &--confidential {
+      .banner__title {
+        font-size: 24px;
+      }
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .banner {
+    &--aromas {
+      margin: 0 0 20px;
+    }
+  }
+}

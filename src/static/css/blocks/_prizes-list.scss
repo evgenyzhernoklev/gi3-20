@@ -1,0 +1,45 @@
+.prizesList {
+  border: solid 1px $white-light;
+  background-color: $white;
+
+  &:not(:last-child) {
+    margin-bottom: 57px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    &:not(:last-child) {
+      border-bottom: solid 1px $white-light;
+    }
+  }
+
+  &__info {
+    flex-basis: calc(100% - 200px);
+    font: 700 16px/21px $roboto;
+    letter-spacing: 0.05px;
+  }
+
+  &__sum {
+    font-size: 20px;
+    letter-spacing: 0.06px;
+  }
+
+  &__prizes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 200px;
+    flex-shrink: 0;
+    font: 700 16px/21px $roboto;
+  }
+
+  &__img {
+    margin-bottom: 15px;
+    max-width: 76px;
+    max-height: 90px;
+  }
+}

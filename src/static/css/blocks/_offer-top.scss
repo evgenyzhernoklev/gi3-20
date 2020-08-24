@@ -1,0 +1,69 @@
+.offerTop {
+  display: flex;
+  margin: 26px 0 0;
+  border: solid 1px #e4eded;
+
+  &__bg {
+    flex-basis: 50%;
+    background: url('../images/gi3/perfume_set.png') no-repeat 40% center / contain;
+  }
+
+  &__about {
+    flex-basis: 50%;
+    padding: 31px 0 40px;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 32px;
+    padding: 5px 24px 4px;
+    font: 12px/1.2 $roboto;
+    text-transform: uppercase;
+    color: $white;
+    background-color: #ff9170;
+    border-radius: 12px;
+  }
+
+  .icon {
+    margin: -17px 0 12px;
+    width: 210px;
+    height: 88px;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+    font: 900 36px/1.11 $roboto;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 276px;
+  }
+}
+
+@media ($mobile) {
+  .offerTop {
+    flex-wrap: wrap;
+
+    &__bg {
+      flex-basis: 100%;
+      height: 200px;
+      background-position: center center;
+    }
+
+    &__about {
+      flex-basis: 100%;
+      padding-bottom: 20px;
+      text-align: center;
+
+      .offerTop__in {
+        padding: 0 20px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+}
