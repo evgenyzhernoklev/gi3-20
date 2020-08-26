@@ -1,10 +1,9 @@
-$white:         #ffffff;
-$white-light:   #E4EDED;
-$pink:          #FF336D;
-$pink-hover:    #E22A68;
-$gray:          #546264;
-$gray-light:    #a2acae;
-$black:         #181818;
+// colors
+$white:             #ffffff;
+$white-light:       #E4EDED;
+$purple:            #7f28c4;
+$gray:              #546264;
+$black:             #181818;
 
 
 
@@ -15,10 +14,12 @@ $transition-fast:   .1s linear;
 
 
 // fonts
-$roboto: 'Roboto', Arial, sans-serif;
+$font-montserrat:   'Montserrat', sans-serif;
+$font-averta-black: 'Averta-black', sans-serif;
+
 
 
 // screen resolutions
-$desktop: 'max-width: 1204px';
-$tablet:  'max-width: 992px';
-$mobile:  'max-width: 767px';
+$desktop:           'max-width: 1280px';
+$tablet:            'max-width: 992px';
+$mobile:            'max-width: 767px';

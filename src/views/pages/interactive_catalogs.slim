@@ -1,0 +1,94 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - интерактивные каталоги
+  body
+    .contentWrapper
+      .contentWrapper__content.content
+
+        include banners/interactive_catalogs
+
+        .content__in
+          h2.content__title
+            | Каталоги
+          p.content__subtitle
+            | Интерактивные каталоги доступны на любых устройствах
+
+          .content__catalogs.catalogs
+            .catalogs__item
+              .catalogs__in
+                img.catalogs__img[src="https://www.avon.ru/REPSuite/static/catalogue-page/2020-11/i/core-rep.jpg"]
+                a.catalogs__button.linkButton.linkButton--purpleTransparent[href="https://my.avon.ru/onlinecatalog/202011/core-rep/" target="_blank"]
+                  | Смотреть Каталог
+                button.catalogs__button.catalogs__button--copy.linkButton.linkButton--purple.js-copy-link[data-clipboard-text="https://my.avon.ru/onlinecatalog/202011/core-rep/"]
+                  | Копировать ссылку
+            .catalogs__item
+              .catalogs__in
+                img.catalogs__img[src="https://www.avon.ru/REPSuite/static/catalogue-page/2020-11/i/school-rep.jpg"]
+                a.catalogs__button.linkButton.linkButton--purpleTransparent[href="https://my.avon.ru/onlinecatalog/202011/school-rep/" target="_blank"]
+                  | Смотреть Каталог
+                button.catalogs__button.catalogs__button--copy.linkButton.linkButton--purple.js-copy-link[data-clipboard-text="https://my.avon.ru/onlinecatalog/202011/school-rep/"]
+                  | Копировать ссылку
+            .catalogs__item
+              .catalogs__in
+                img.catalogs__img[src="https://www.avon.ru/REPSuite/static/catalogue-page/2020-11/i/jelly-rep.jpg"]
+                a.catalogs__button.linkButton.linkButton--purpleTransparent[href="https://my.avon.ru/onlinecatalog/202011/jelly-rep/" target="_blank"]
+                  | Смотреть Каталог
+                button.catalogs__button.catalogs__button--copy.linkButton.linkButton--purple.js-copy-link[data-clipboard-text="https://my.avon.ru/onlinecatalog/202011/jelly-rep/"]
+                  | Копировать ссылку
+            .catalogs__item
+              .catalogs__in
+                img.catalogs__img[src="https://www.avon.ru/REPSuite/static/catalogue-page/2020-11/i/men-rep.jpg"]
+                a.catalogs__button.linkButton.linkButton--purpleTransparent[href="https://my.avon.ru/onlinecatalog/202011/men-rep/" target="_blank"]
+                  | Смотреть Каталог
+                button.catalogs__button.catalogs__button--copy.linkButton.linkButton--purple.js-copy-link[data-clipboard-text="https://my.avon.ru/onlinecatalog/202011/men-rep/"]
+                  | Копировать ссылку
+            .catalogs__item
+              .catalogs__in
+                img.catalogs__img[src="https://www.avon.ru/REPSuite/static/catalogue-page/2020-11/i/kbeauty-rep.jpg"]
+                a.catalogs__button.linkButton.linkButton--purpleTransparent[href="https://my.avon.ru/onlinecatalog/202011/kbeauty-rep/" target="_blank"]
+                  | Смотреть Каталог
+                button.catalogs__button.catalogs__button--copy.linkButton.linkButton--purple.js-copy-link[data-clipboard-text="https://my.avon.ru/onlinecatalog/202011/kbeauty-rep/"]
+                  | Копировать ссылку
+
+          .content__howTo.howTo
+            h3.content__title.howTo__title
+              | Инструкция для Представителя
+            p.content__subtitle.howTo__subtitle
+              | Выполните несколько простых шагов
+            ul.howTo__list
+              li.howTo__listItem
+                .howTo__listIcon
+                  include icons/cursor
+                p.howTo__listTitle
+                  | Скопируйте ссылку
+              li.howTo__listItem
+                .howTo__listIcon
+                  include icons/send-mail
+                p.howTo__listTitle
+                  | Отправьте ее своим клиентам через мессенджер, электронную почту или социальную сеть
+              li.howTo__listItem
+                .howTo__listIcon
+                  include icons/check
+                p.howTo__listTitle
+                  | Получите от клиента сообщение-заказ. Проверьте выполнение условийдействующих специальных предложений. Если нужно, пересчитайте сумму заказа.
+              li.howTo__listItem
+                .howTo__listIcon
+                  include icons/wallet
+                p.howTo__listTitle
+                  | Свяжитесь с клиентом. Предложите дополнительные продукты, расскажите о действующих акциях каталога. Сообщите клиенту окончательную стоимость заказа
+              li.howTo__listItem
+                .howTo__listIcon
+                  include icons/shopping-cart
+                p.howTo__listTitle
+                  | Разместите заказ на сайте Представителя
+              li.howTo__listItem
+                .howTo__listIcon
+                  include icons/box
+                p.howTo__listTitle
+                  | Получите заказ и доставьте его клиенту
+
+          include banners/avon_on
+
+    include scripts

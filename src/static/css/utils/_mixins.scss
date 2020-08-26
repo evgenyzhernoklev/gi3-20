@@ -13,13 +13,13 @@
   }
 }
 
-@mixin background-image($name, $width, $height) {
+@mixin icon-svg($name, $width, $height) {
   display: inline-block;
   width: $width;
   height: $height;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('../images/gi3/svg/#{$name}.svg');
+  background-image: url('../images/gi3-20/svg/#{$name}.svg');
   background-size: $width $height;
 }
 

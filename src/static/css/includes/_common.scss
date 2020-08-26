@@ -2,34 +2,18 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: 16px/1.5 $roboto;
+  font: 16px/1.5 $font-montserrat;
   color: $black;
-  background-color: #F6F9F9;
+  background-color: #f6f9f9;;
 }
 
 a, button {
   transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal, box-shadow $transition-normal;
 }
 
-.textPink {
-  color: $pink;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
 .icon {
   display: inline-block;
   vertical-align: middle;
-}
-
-.is-hidden {
-  display: none!important;
-}
-
-.is-active {
-  display: block!important;
 }
 
 .currency {

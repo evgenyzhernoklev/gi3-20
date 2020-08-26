@@ -73,6 +73,11 @@ const argv = yargs.argv,
 			dist: "./dist/static/images/gi3-20/sprites/",
 			watch: "./src/static/images/gi3-20/svg/*.svg"
 		},
+		fonts: {
+			src: "./src/static/fonts/**/*.{woff,woff2}",
+			dist: "./dist/static/fonts/",
+			watch: "./src/static/fonts/**/*.{woff,woff2}"
+		},
 		favicons: {
 			src: "./src/static/images/gi3-20/favicon.{jpg,jpeg,png,gif}",
 			dist: "./dist/static/images/gi3-20/favicons/",
@@ -99,6 +104,7 @@ export const watchCode = () => {
 	gulp.watch(paths.scripts.watch, scripts);
 	gulp.watch(paths.images.watch, images);
 	gulp.watch(paths.webp.watch, webpimages);
+	gulp.watch(paths.fonts.watch, fonts);
 	// gulp.watch(paths.sprites.watch, sprites);
 };
 
@@ -285,6 +291,12 @@ export const webpimages = () => gulp.src(paths.webp.src)
 		"title": "WebP images"
 	}));
 
+export const fonts = () => gulp.src(paths.fonts.src)
+	.pipe(gulp.dest(paths.fonts.dist))
+	.pipe(debug({
+		"title": "Fonts"
+	}));
+
 export const sprites = () => gulp.src(paths.sprites.src)
 	.pipe(svgSprite({
 		mode: {
@@ -319,9 +331,9 @@ export const favs = () => gulp.src(paths.favicons.src)
 	}));
 
 export const development = gulp.series(cleanFiles, smartGrid,
-	gulp.parallel(views, styles, scripts, images, webpimages, favs),
+	gulp.parallel(views, styles, scripts, images, webpimages, favs, fonts),
 	gulp.parallel(watchCode, server));
 
-export const prod = gulp.series(cleanFiles, smartGrid, serverConfig, views, styles, scripts, images, webpimages, favs);
+export const prod = gulp.series(cleanFiles, smartGrid, serverConfig, views, styles, scripts, images, webpimages, favs, fonts);
 
 export default development;

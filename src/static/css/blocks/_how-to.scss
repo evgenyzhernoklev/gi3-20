@@ -1,29 +1,17 @@
 .howTo {
-  &__title {
-    margin-bottom: 14px;
-    font: 300 28px/1 $roboto;
-    text-align: center;
-    color: $gray;
-  }
-
-  &__info {
-    font: 18px/1.22 $roboto;
-    text-align: center;
-    color: $gray;
-  }
-
-  &__list {
-    padding: 23px 45px 38px;
-  }
+  margin: 0 0 40px;
+  padding: 40px 70px 46px;
+  border: solid 2px $white-light;
+  background-color: #f6f9f9;
 
   &__listItem {
     position: relative;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-left: 68px;
-    font: 14px/1.43 $roboto;
+    max-width: 850px;
 
     &:not(:last-child) {
-      padding-bottom: 50px;
+      padding-bottom: 38px;
     }
 
     &:before {
@@ -42,7 +30,7 @@
     left: 0;
     width: 50px;
     height: 50px;
-    background-color: $pink;
+    background-color: $purple;
     border-radius: 50%;
 
     .icon {
@@ -62,25 +50,7 @@
   }
 
   &__listTitle {
-    font-weight: 500;
-  }
-
-  &__listInfo {
-
-  }
-}
-
-@media ($mobile) {
-  .howTo {
-    &__list {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &__listItem {
-      &:not(:last-child) {
-        padding-bottom: 40px;
-      }
-    }
+    min-height: 48px;
+    color: $gray;
   }
 }
