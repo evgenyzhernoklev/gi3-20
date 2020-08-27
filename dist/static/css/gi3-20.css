@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&subset=cyrillic,cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,700&subset=cyrillic,cyrillic-ext,latin-ext");
 
 * {
   vertical-align: baseline;
@@ -103,8 +103,8 @@ sup {
 }
 
 .linkButton--whiteTransparent:hover {
-  color: #7f28c4;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .linkButton--purple {
@@ -125,8 +125,8 @@ sup {
 
 .linkButton--purpleTransparent:hover {
   color: #6a17ad;
-  border-color: rgba(127, 40, 196, 0.05);
   background-color: rgba(127, 40, 196, 0.05);
+  border-color: rgba(127, 40, 196, 0.05);
 }
 
 .linkDownload {
@@ -167,11 +167,30 @@ sup {
 /* .bounty */
 
 .bounty {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .bounty:first-child {
-  margin-top: 0;
+  margin-top: 10px;
+}
+
+.content__in .bounty {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.bounty--charity .bountyGood__imgWrapper:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/gi3-20/png/label-charity.png");
+  background-size: 56px 56px;
 }
 
 .bounty__header {
@@ -287,7 +306,7 @@ sup {
 }
 
 .bounty__itemLineRow:not(:first-child) {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .bounty__itemLineRow:not(:last-of-type):after {
@@ -298,16 +317,22 @@ sup {
   padding-bottom: 50px;
 }
 
+.content__in .bounty__itemLineRow:last-child {
+  padding-bottom: 0;
+}
+
 .bounty__itemLineTitle {
-  padding: 16px 20px;
-  font: 700 14px/1.2 "Montserrat", Arial, sans-serif;
+  margin: 20px 40px 0;
+  padding: 15px 20px;
+  font: 500 14px/20px "Montserrat", Arial, sans-serif;
   text-align: center;
   color: #ffffff;
-  background-color: #ff9170;
+  background-color: #f09f87;
 }
 
 .bounty__itemLineCondition {
   margin: 20px 0;
+  padding: 0 9.5%;
   font: italic 15px/1.2 "Montserrat", Arial, sans-serif;
   text-align: left;
   color: #a2acae;
@@ -335,8 +360,8 @@ sup {
 
 .bountyGood__imgWrapper {
   margin: 0 auto 65px;
-  padding: 20px 0 0;
-  height: 320px;
+  padding: 30px 0 0;
+  height: 330px;
   line-height: 300px;
   font-size: 0;
 }
@@ -371,27 +396,13 @@ sup {
 }
 
 .bountyGood__description {
-  --max-lines: 3;
-  position: relative;
   max-height: 72px;
-  overflow: hidden;
   font: 16px/1.5 'Montserrat', Arial, sans-serif;
-}
-
-.bountyGood__description:before {
-  position: absolute;
-  content: "...";
-  bottom: 0;
-  right: 10px;
-}
-
-.bountyGood__description::after {
-  content: "";
-  position: absolute;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .bountyGood__dropdown {
@@ -712,6 +723,10 @@ button {
   background: url("../images/gi3-20/banners/interactive-catalogs.jpg") no-repeat center center/cover;
 }
 
+.banner--charity {
+  background: url("../images/gi3-20/banners/charity.jpg") no-repeat center center/cover;
+}
+
 .banner--avonOn {
   display: block;
   padding: 32px 320px 30px 240px;
@@ -772,6 +787,10 @@ button {
   font: 700 20px/1.4 "Montserrat", sans-serif;
 }
 
+.banner__info--big {
+  max-width: 624px;
+}
+
 .catalogs {
   display: flex;
   flex-wrap: wrap;
@@ -829,12 +848,7 @@ button {
 
 .content__in {
   background: #ffffff;
-  padding: 60px 40px 80px;
-}
-
-.content__in--small {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding: 60px 40px 40px;
 }
 
 .content__title {
@@ -853,6 +867,42 @@ button {
 
 .content__img {
   width: 100%;
+}
+
+.content__note {
+  position: relative;
+  margin: 20px 0;
+  padding: 0 20px 0 30px;
+  font: italic 14px/1.43 "Montserrat", sans-serif;
+  color: #a2acae;
+}
+
+.content__note:before {
+  content: '!';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+}
+
+.content__buttons {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #E4EDED;
+}
+
+.content__button {
+  min-width: 320px;
+  margin-right: 20px;
+}
+
+.content__button:last-child {
+  margin-right: 0;
+}
+
+.downloads {
+  padding: 0 80px 40px;
 }
 
 .js-dropdown-content {

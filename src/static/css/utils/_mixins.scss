@@ -23,6 +23,16 @@
   background-size: $width $height;
 }
 
+@mixin icon-png($name, $width, $height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../images/gi3-20/png/#{$name}.png');
+  background-size: $width $height;
+}
+
 @mixin linear-gradient($angle, $from, $to) {
   background: $from;
   background: linear-gradient($angle, $from 0%, $to 100%);

@@ -2,10 +2,23 @@
 
 /* .bounty */
 .bounty {
-	margin-top: 60px;
+	margin-top: 40px;
 }
 	.bounty:first-child {
-		margin-top: 0;
+		margin-top: 10px;
+	}
+	.content__in .bounty {
+		margin-left: -40px;
+		margin-right: -40px;
+	}
+	.bounty--charity {
+		.bountyGood__imgWrapper:before {
+			content: '';
+			position: absolute;
+			top: 30px;
+			right: 0;
+			@include icon-png(label-charity, 56px, 56px);
+		}
 	}
 
 .bounty__header {
@@ -132,7 +145,7 @@
 	// 	background-color: #e4eded;
 	// }
 	.bounty__itemLineRow:not(:first-child) {
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 	.bounty__itemLineRow:not(:last-of-type):after {
 		display: block;
@@ -140,17 +153,22 @@
 	.bounty__itemLineRow:last-child {
 		padding-bottom: 50px;
 	}
+	.content__in .bounty__itemLineRow:last-child {
+		padding-bottom: 0;
+	}
 
 .bounty__itemLineTitle {
-	padding: 16px 20px;
-  font: 700 14px/1.2 "Montserrat", Arial, sans-serif;
+	margin: 20px 40px 0;
+	padding: 15px 20px;
+  font: 500 14px/20px "Montserrat", Arial, sans-serif;
   text-align: center;
   color: #ffffff;
-  background-color: #ff9170;
+  background-color: #f09f87;
 }
 
 .bounty__itemLineCondition {
 	margin: 20px 0;
+	padding: 0 9.5%;
 	font: italic 15px/1.2 "Montserrat", Arial, sans-serif;
 	text-align: left;
   color: #a2acae;
@@ -214,8 +232,8 @@
 
 .bountyGood__imgWrapper {
 	margin: 0 auto 65px;
-  padding: 20px 0 0;
-  height: 320px;
+  padding: 30px 0 0;
+  height: 330px;
   line-height: 300px;
   font-size: 0;
 }
@@ -250,26 +268,14 @@
 }
 
 .bountyGood__description {
-	--max-lines: 3;
-	position: relative;
 	max-height: 72px;
-	overflow: hidden;
   font: 16px/1.5 'Montserrat', Arial, sans-serif;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
-	.bountyGood__description:before {
-		position: absolute;
-		content: "...";
-		bottom: 0;
-		right: 10px;
-	}
-	.bountyGood__description::after {
-		content: "";
-		position: absolute;
-		right: 10px;
-		width: 20px;
-		height: 20px;
-		background: #fff;
-	}
 
 .bountyGood__dropdown {
 	position: absolute;
