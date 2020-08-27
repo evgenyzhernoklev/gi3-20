@@ -22,6 +22,11 @@
     color: $white;
     background-color: $purple;
     border: 2px solid $purple;
+
+    &:hover {
+      background-color: #6a17ad;
+      border-color: #6a17ad;
+    }
   }
 
   &--purpleTransparent {
@@ -29,8 +34,9 @@
     border: 2px solid $purple;
 
     &:hover {
-      color: $white;
-      background-color: $purple;
+      color: #6a17ad;
+      border-color: rgba(127, 40, 196, 0.05);
+      background-color: rgba(127, 40, 196, 0.05);
     }
   }
 }

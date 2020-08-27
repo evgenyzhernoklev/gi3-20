@@ -113,14 +113,20 @@ sup {
   border: 2px solid #7f28c4;
 }
 
+.linkButton--purple:hover {
+  background-color: #6a17ad;
+  border-color: #6a17ad;
+}
+
 .linkButton--purpleTransparent {
   color: #7f28c4;
   border: 2px solid #7f28c4;
 }
 
 .linkButton--purpleTransparent:hover {
-  color: #ffffff;
-  background-color: #7f28c4;
+  color: #6a17ad;
+  border-color: rgba(127, 40, 196, 0.05);
+  background-color: rgba(127, 40, 196, 0.05);
 }
 
 .linkDownload {
@@ -156,6 +162,513 @@ sup {
   font-size: 10px;
   letter-spacing: 0.01px;
   color: #707677;
+}
+
+/* .bounty */
+
+.bounty {
+  margin-top: 60px;
+}
+
+.bounty:first-child {
+  margin-top: 0;
+}
+
+.bounty__header {
+  text-align: center;
+}
+
+.bounty__title {
+  margin-bottom: 20px;
+  font: 300 42px/1.29 "Montserrat", Arial, sans-serif;
+  color: #546264;
+}
+
+.bounty__subtitle {
+  margin-bottom: 29px;
+  font: 700 20px/1.4 "Montserrat", Arial, sans-serif;
+  color: #181818;
+}
+
+.bounty__navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+}
+
+.bounty__navigationLink {
+  position: relative;
+  padding: 19px 10px;
+  font: 700 18px/0.94 'Montserrat', Arial, sans-serif;
+  letter-spacing: 0.36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #546264;
+  border: 1px solid #e4eded;
+  border-left: 0;
+  cursor: pointer;
+  -webkit-transition: color 0.1s linear, border-color 0.1s linear;
+  transition: color 0.1s linear, border-color 0.1s linear;
+}
+
+.bounty__navigationLink:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 5px;
+  background: #ff336d;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+.bounty__navigationLink:first-child {
+  border-left: 1px solid #e4eded;
+}
+
+.bounty__navigationLink:hover {
+  color: #ff336d;
+  text-decoration: underline;
+}
+
+.bounty__navigationLink.is-active {
+  color: #181818;
+  cursor: default;
+  text-decoration: none;
+}
+
+.bounty__navigationLink.is-active:before {
+  opacity: 1;
+}
+
+.bounty__item {
+  display: none;
+}
+
+.bounty__item.is-active {
+  display: block;
+}
+
+.bounty__itemCondition {
+  margin: 20px 0;
+  padding-bottom: 10px;
+}
+
+.bounty__itemConditionTitle {
+  font: italic 500 15px/1.2 "Montserrat", Arial, sans-serif;
+  color: #a2acae;
+}
+
+.bounty__itemConditionInfo {
+  font: italic 15px/1.2 "Montserrat", Arial, sans-serif;
+  color: #a2acae;
+}
+
+.bounty__itemLine {
+  margin-bottom: 20px;
+}
+
+.bounty__itemLineRow {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 9.5%;
+  background-color: #ffffff;
+}
+
+.bounty__itemLineRow:not(:first-child) {
+  padding-top: 20px;
+}
+
+.bounty__itemLineRow:not(:last-of-type):after {
+  display: block;
+}
+
+.bounty__itemLineRow:last-child {
+  padding-bottom: 50px;
+}
+
+.bounty__itemLineTitle {
+  padding: 16px 20px;
+  font: 700 14px/1.2 "Montserrat", Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff9170;
+}
+
+.bounty__itemLineCondition {
+  margin: 20px 0;
+  font: italic 15px/1.2 "Montserrat", Arial, sans-serif;
+  text-align: left;
+  color: #a2acae;
+}
+
+/* .bountyGood */
+
+.bountyGood {
+  position: relative;
+  -webkit-flex-basis: 33.33%;
+  -ms-flex-basis: 33.33%;
+  flex-basis: 25%;
+  margin-right: 12.5%;
+  padding: 0 0 211px;
+  text-align: center;
+}
+
+.bountyGood:nth-child(3n) {
+  margin-right: 0;
+}
+
+.js-bounty-row-has-dropdown .bountyGood {
+  padding-bottom: 270px;
+}
+
+.bountyGood__imgWrapper {
+  margin: 0 auto 65px;
+  padding: 20px 0 0;
+  height: 320px;
+  line-height: 300px;
+  font-size: 0;
+}
+
+.bountyGood__img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 300px;
+  vertical-align: middle;
+}
+
+.bountyGood__title {
+  font: 700 16px/1.5 'Montserrat', Arial, sans-serif;
+  color: #546264;
+}
+
+.bountyGood__label {
+  display: inline-block;
+  min-width: 90px;
+  padding: 6px 15px 5px;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  font: 400 10px/1.2 "Montserrat", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #59c3b2;
+  border-radius: 12px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.bountyGood__description {
+  --max-lines: 3;
+  position: relative;
+  max-height: 72px;
+  overflow: hidden;
+  font: 16px/1.5 'Montserrat', Arial, sans-serif;
+}
+
+.bountyGood__description:before {
+  position: absolute;
+  content: "...";
+  bottom: 0;
+  right: 10px;
+}
+
+.bountyGood__description::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+}
+
+.bountyGood__dropdown {
+  position: absolute;
+  bottom: 212px;
+  left: 0;
+  right: 0;
+}
+
+.bountyGood__dropdownTitle {
+  position: relative;
+  margin: 0;
+  padding: 17px 40px 17px 12px;
+  font: 500 14px/12px "Montserrat", Arial, sans-serif;
+  letter-spacing: 0.28px;
+  text-align: left;
+  color: #7f28c4;
+  border: solid 1px #e4eded;
+  border-radius: 2px;
+  background-color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s linear;
+  transition: border-color 0.3s linear;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bountyGood__dropdownTitle:after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/gi3-20/svg/arrow-down.svg");
+  background-size: 16px 16px;
+  -webkit-transition: transform 0.3s linear;
+  transition: transform 0.3s linear;
+}
+
+.bountyGood__dropdownTitle.is-chosen {
+  font-size: 16px;
+  text-transform: none;
+  color: #546264;
+}
+
+.bountyGood__dropdownTitle.is-active {
+  border-radius: 4px 4px 0 0;
+}
+
+.bountyGood__dropdownTitle.is-active:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.bountyGood__dropdownContent {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border: solid 1px #e4eded;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.bountyGood__dropdownList {
+  margin: 0;
+  padding: 10px 15px;
+  max-height: 265px;
+  overflow: auto;
+}
+
+.bountyGood__dropdownList.has-set .bountyGood__dropdownListItem {
+  font-size: 14px;
+  line-height: 20px;
+  background-color: transparent;
+  cursor: default;
+}
+
+.bountyGood__dropdownList.has-colors,
+.bountyGood__dropdownList.has-letters {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 12px 0 4px 15%;
+}
+
+.bountyGood__dropdownList.has-colors .bountyGood__dropdownListItem,
+.bountyGood__dropdownList.has-letters .bountyGood__dropdownListItem {
+  margin: 0 8px 8px 0;
+  padding: 7px;
+  width: 56px;
+  height: 56px;
+  border: solid 1px #e4eded;
+  border-radius: 3px;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.bountyGood__dropdownList.has-letters .bountyGood__dropdownListItem {
+  font: 700 30px/42px 'Montserrat', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #546264;
+}
+
+.bountyGood__dropdownList.has-colors .bountyGood__dropdownListItem:before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  right: 0;
+  bottom: 5px;
+  background-color: #ffffff;
+}
+
+.bountyGood__dropdownList.has-colors .bountyGood__dropdownListItem:after,
+.bountyGood__dropdownList.has-letters .bountyGood__dropdownListItem:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 2px #7f28c4;
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+.bountyGood__dropdownList.has-colors .bountyGood__dropdownListItem:hover:after,
+.bountyGood__dropdownList.has-letters .bountyGood__dropdownListItem:hover:after {
+  opacity: 1;
+}
+
+.bountyGood__dropdownList.has-colors .bountyGood__dropdownListItem img {
+  display: block;
+  height: 100%;
+}
+
+.bountyGood__dropdownListItem {
+  position: relative;
+  padding: 8px 5px;
+  font: 14px/1.2 'Montserrat', Arial, sans-serif;
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.bountyGood__dropdownListItem:hover {
+  background-color: #f6f9f9;
+}
+
+.bountyGood__dropdownListItem.is-active {
+  cursor: default;
+}
+
+.bountyGood__dropdownChoice {
+  display: none;
+  padding: 12px 16px;
+  font: 700 14px/1.29 "Montserrat", Arial, sans-serif;
+  text-align: left;
+  color: #546264;
+  border-top: solid 1px #e4eded;
+  transition: opacity 0.1s linear, visibility 0.1s linear;
+}
+
+.bountyGood__dropdownChoice.is-active {
+  display: block;
+}
+
+.bountyGood__dropdownChoiceTitle {
+  display: inline-block;
+  display: none;
+  margin-right: 4px;
+}
+
+.bountyGood__code {
+  position: absolute;
+  bottom: 170px;
+  left: 20px;
+  right: 20px;
+  font: 12px/20px "Montserrat", Arial, sans-serif;
+  color: #546264;
+}
+
+.bountyGood__codeNumber {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7f28c4;
+}
+
+.bountyGood__price {
+  position: absolute;
+  bottom: 117px;
+  left: 20px;
+  right: 20px;
+  font: 700 30px/19px "Montserrat", Arial, sans-serif;
+}
+
+.bountyGood__price > .bountyGood__priceCurrency {
+  margin-left: 2px;
+  font-size: 22px;
+}
+
+.bountyGood__priceOld {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  font: 500 20px/19px "Montserrat", Arial, sans-serif;
+  color: #707677;
+}
+
+.bountyGood__priceOld:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  bottom: 10px;
+  left: -1px;
+  right: -1px;
+  background-color: #707677;
+}
+
+.bountyGood__priceOld .bountyGood__priceCurrency {
+  padding-left: 2px;
+  font-size: 12px;
+}
+
+.bountyGood__button {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+  padding: 16px 10px 14px;
+  font: 700 16px/1.5 "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7f28c4;
+  border: 2px solid #7f28c4;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
+  transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
+}
+
+.bountyGood__button:hover {
+  color: #6a17ad;
+  border-color: rgba(127, 40, 196, 0.05);
+  background-color: rgba(127, 40, 196, 0.05);
+}
+
+.bountyGood__note {
+  display: none;
+  position: absolute;
+  top: 98%;
+  left: 30px;
+  right: 30px;
+  font: 14px/1.2 'Montserrat', Arial, sans-serif;
 }
 
 body {
@@ -339,7 +852,7 @@ button {
 }
 
 .content__img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .js-dropdown-content {
@@ -462,5 +975,104 @@ button {
 .howTo__listTitle {
   min-height: 48px;
   color: #546264;
+}
+
+@media (max-width: 767px) {
+  .bounty__title {
+    font-size: 36px;
+  }
+
+  .bounty__subtitle {
+    font-size: 20px;
+  }
+
+  .bounty__navigation {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .bounty__navigationLink {
+    width: 100% !important;
+  }
+
+  .bounty__itemLineRow {
+    padding: 0 20px;
+  }
+
+  .bounty__itemLineRow:after {
+    display: none;
+  }
+
+  .bounty__itemLineRow:not(:first-child) {
+    padding-top: 0;
+  }
+
+  .bounty__itemLineGood {
+    border-bottom: 1px solid #e4eded;
+  }
+
+  .bounty__itemLineRow:last-child .bounty__itemLineGood:last-child {
+    border-bottom: 0;
+  }
+
+  .bountyGood {
+    -webkit-flex-basis: 100%;
+    -ms-flex-basis: 100%;
+    flex-basis: 100%;
+    padding-bottom: 190px;
+  }
+
+  .js-bounty-row-has-dropdown .bountyGood {
+    padding-bottom: 190px;
+  }
+
+  .js-bounty-row-has-dropdown .bountyGood.bountyGood--dropdown {
+    padding-bottom: 270px;
+  }
+
+  .bountyGood__imgWrapper {
+    margin-bottom: 20px;
+    height: auto;
+    line-height: inherit;
+  }
+
+  .bountyGood__label {
+    position: static;
+    margin-bottom: 20px;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .bountyGood__note {
+    -webkit-flex-basis: 100%;
+    -ms-flex-basis: 100%;
+    flex-basis: 100%;
+  }
+
+  .bountyGood__code,
+  .js-bounty-row-has-dropdown .bountyGood__code {
+    bottom: 150px;
+  }
+
+  .bountyGood--dropdown .bountyGood__code {
+    bottom: 230px;
+  }
+
+  .bountyGood__dropdown {
+    bottom: 155px;
+    left: 0;
+    right: 0;
+  }
+
+  .bountyGood__price {
+    bottom: 100px;
+  }
+
+  .bountyGood__button {
+    left: 0;
+    right: 0;
+    bottom: 30px;
+  }
 }
 /*# sourceMappingURL=maps/gi3-20.css.map */
