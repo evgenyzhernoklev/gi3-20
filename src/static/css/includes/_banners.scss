@@ -19,6 +19,10 @@
     background: url('../images/gi3-20/banners/charity.jpg') no-repeat center center/cover;
   }
 
+  &--easyStart {
+    background: url('../images/gi3-20/banners/easy-start.jpg') no-repeat center center/cover;
+  }
+
   &--avonOn {
     display: block;
     padding: 32px 320px 30px 240px;
@@ -75,7 +79,7 @@
   }
 
   &__info {
-    max-width: 435px;
+    max-width: 440px;
     font: 700 20px/1.4 $font-montserrat;
 
     &--big {

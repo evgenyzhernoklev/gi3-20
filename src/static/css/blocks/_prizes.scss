@@ -1,0 +1,73 @@
+.prizes {
+  &--small {
+
+  }
+
+  &__title {
+    @extend .content__title;
+  }
+
+  &__subtitle {
+    @extend .content__subtitle;
+  }
+
+  &__cols {
+
+  }
+
+  &__item {
+
+  }
+
+  &__itemImgWrapper {
+
+  }
+
+  &__itemImg {
+
+  }
+
+  &__itemTitle {
+    font: 700 16px/1.5 $font-montserrat;
+    text-align: center;
+    color: $gray;
+  }
+
+  &__itemCode {
+
+  }
+
+  &__itemList {
+
+  }
+
+  &__itemListTitle {
+
+  }
+
+  &__itemListHidden {
+
+  }
+
+  &__itemListItem {
+
+  }
+
+  &__itemCode {
+    font: 12px/20px $font-montserrat;
+    text-align: center;
+    color: $gray;
+  }
+
+  &__itemCodeNumber {
+    font-weight: 500;
+    font-size: 14px;
+    color: $purple;
+  }
+
+  &__itemPrice {
+    font: 700 30px/19px $font-montserrat;
+    text-align: center;
+    color: $black;
+  }
+}

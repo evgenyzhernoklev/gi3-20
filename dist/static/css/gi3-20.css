@@ -727,6 +727,10 @@ button {
   background: url("../images/gi3-20/banners/charity.jpg") no-repeat center center/cover;
 }
 
+.banner--easyStart {
+  background: url("../images/gi3-20/banners/easy-start.jpg") no-repeat center center/cover;
+}
+
 .banner--avonOn {
   display: block;
   padding: 32px 320px 30px 240px;
@@ -783,7 +787,7 @@ button {
 }
 
 .banner__info {
-  max-width: 435px;
+  max-width: 440px;
   font: 700 20px/1.4 "Montserrat", sans-serif;
 }
 
@@ -851,18 +855,34 @@ button {
   padding: 60px 40px 40px;
 }
 
-.content__title {
+.content__in--small {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.content__title,
+.prizes__title {
   margin: 0 0 10px;
   font: 300 42px/1.29 "Montserrat", sans-serif;
   text-align: center;
   color: #546264;
 }
 
-.content__subtitle {
+.content__title--small {
+  font-size: 32px;
+  line-height: 1.31;
+}
+
+.content__subtitle,
+.prizes__subtitle {
   margin: 0 auto 40px;
   font: 700 20px/1.4 "Montserrat", sans-serif;
   text-align: center;
   color: #181818;
+}
+
+.content__subtitle--mb10 {
+  margin-bottom: 10px;
 }
 
 .content__img {
@@ -902,7 +922,7 @@ button {
 }
 
 .downloads {
-  padding: 0 80px 40px;
+  padding: 0 0 40px;
 }
 
 .js-dropdown-content {
@@ -1025,6 +1045,46 @@ button {
 .howTo__listTitle {
   min-height: 48px;
   color: #546264;
+}
+
+.prizes__itemTitle {
+  font: 700 16px/1.5 "Montserrat", sans-serif;
+  text-align: center;
+  color: #546264;
+}
+
+.prizes__itemCode {
+  font: 12px/20px "Montserrat", sans-serif;
+  text-align: center;
+  color: #546264;
+}
+
+.prizes__itemCodeNumber {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7f28c4;
+}
+
+.prizes__itemPrice {
+  font: 700 30px/19px "Montserrat", sans-serif;
+  text-align: center;
+  color: #181818;
+}
+
+.rules {
+  margin: 20px 6.9% 50px;
+  padding: 10px 0 20px;
+  border: solid 2px #E4EDED;
+  background-color: #f6f9f9;
+}
+
+.rules__cols {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rules__col {
+  flex-basis: 50%;
 }
 
 @media (max-width: 767px) {

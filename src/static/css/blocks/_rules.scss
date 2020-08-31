@@ -1,0 +1,31 @@
+.rules {
+  margin: 20px 6.9% 50px;
+  padding: 10px 0 20px;
+  border: solid 2px $white-light;
+  background-color: #f6f9f9;
+
+  &__cols {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    flex-basis: 50%;
+  }
+
+  &__colIn {
+
+  }
+
+  &__step {
+
+  }
+
+  &__stepTitle {
+
+  }
+
+  &__stepInfo {
+
+  }
+}

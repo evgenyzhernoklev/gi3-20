@@ -6,6 +6,11 @@
   &__in {
     background: $white;
     padding: 60px 40px 40px;
+
+    &--small {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
   }
 
   &__title {
@@ -13,6 +18,11 @@
     font: 300 42px/1.29 $font-montserrat;
     text-align: center;
     color: $gray;
+
+    &--small {
+      font-size: 32px;
+      line-height: 1.31;
+    }
   }
 
   &__subtitle {
@@ -20,6 +30,14 @@
     font: 700 20px/1.4 $font-montserrat;
     text-align: center;
     color: $black;
+
+    &--mb10 {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__article {
+
   }
 
   &__img {

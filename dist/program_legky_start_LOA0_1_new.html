@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+    <link href="static/css/gi3-20.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>AVON - легкий старт</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function() {
+        $('.js-prize-dropdown-link').on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('is-active')
+              .closest('.js-prize-dropdown').find('.js-prize-dropdown-content')
+            .stop().slideToggle(700);
+        });
+      });
+    </script>
+    <div class="contentWrapper">
+      <div class="contentWrapper__content content">
+        <div class="content__banner banner banner--easyStart">
+          <div class="banner__in">
+            <h1 class="banner__title">
+              Легкий<br/><span class="banner__titleTransparent">Старт</span>
+            </h1>
+            <p class="banner__info">
+              Программа для новых Представителей. Размещай заказы — выбирай призы!
+            </p>
+          </div>
+        </div>
+        <div class="content__in content__in--small">
+          <h2 class="content__title">
+            Правила программы
+          </h2>
+          <div class="content__rules rules">
+            <div class="rules__cols">
+              <div class="rules__col">
+                <div class="rules__colIn">
+                  <span class="rules__step"></span>
+                  <p class="rules__stepTitle">
+                    5 заказов по 5 каталогам:
+                  </p>
+                  <p class="rules__stepInfo">
+                    Не пропускай каталоги.<br /> Заказы не суммируются, собирай все<br /> в один заказ.
+                  </p>
+                </div>
+              </div>
+              <div class="rules__col">
+                <div class="rules__colIn">
+                  <span class="rules__step"></span>
+                  <p class="rules__stepTitle">
+                    Минимальная сумма заказа:
+                  </p>
+                  <p class="rules__stepInfo">
+                    Заказ по 1-му каталогу минимум на 999₽.<br />2-4 заказы  - 1600 ₽ и выше.5 заказ – любая сумма (делай не менее 1000 ₽,стоимость доставки будет ниже).Ориентируйся на сумма до учета скидки.
+                  </p>
+                </div>
+              </div>
+              <div class="rules__col">
+                <div class="rules__colIn">
+                  <span class="rules__step"></span>
+                  <p class="rules__stepTitle">
+                    Когда получать приз:
+                  </p>
+                  <p class="rules__stepInfo">
+                    Приз можно заказать только по следующему каталогу. Делай заказ на 1600 ₽, выполняй условия дальше и забирай заработанные призы.
+                  </p>
+                </div>
+              </div>
+              <div class="rules__col">
+                <div class="rules__colIn">
+                  <span class="rules__step"></span>
+                  <p class="rules__stepTitle">
+                    БОНУС ЗА ДОСТАВКУ:
+                  </p>
+                  <p class="rules__stepInfo">
+                    Доставку компенсируют, если прошел все уровни с БОЛЬШИМИ заказами и все ОПЛАТИЛ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="content__subtitle content__subtitle--mb10">
+            В этом Каталоге сделай заказ на сумму 999₽ и более
+          </h3>
+          <h3 class="content__title content__title--small">
+            Ты сможешь выбрать один из этих призов<br />в следующем Каталоге
+          </h3>
+          <div class="content__prizes prizes prizes--small">
+            <div class="prizes__cols">
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="http://static.avon.ru/REPSuite/static/sim/2020/11/0_1.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Аромат Cherish the Moment<br />для нее 50 мл
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="http://static.avon.ru/REPSuite/static/sim/2020/11/0_2.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Аромат Elite Gentleman Weekend<br />для него 75 мл
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__in content__in--small">
+          <h2 class="content__titleProgram" id="banner-title" style="margin-top: 0;">
+            Твой следующий приз будет ждать тебя с 22 сентября по 19 октября<br />Быстрее делай заказ!
+          </h2>
+          <img class="content__img content__img--noMargin" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/banner.jpg" />
+          <div class="content__prizes prizes">
+            <p class="prizes__title">
+              Призы 14 Каталога
+            </p>
+            <p class="prizes__subtitle">
+              МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №12  – Выбирай приз в период Каталога №14 (20 октября - 9 ноября)
+            </p>
+            <div class="prizes__cols">
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/41045.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Набор «Планета Спа»
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      SPA Cпрей для тела "Арома-спа. Сладкие сны" 100 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      SPA Ночная маска для лица "Арома-спа. Сладкие сны" 50 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      SPA Крем для рук "Арома-спа. Сладкие сны" 30 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">41045</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/41189.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Набор «Драгоценные масла»
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Шампунь для всех типов волос "Драгоценные масла" 250 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Бальзам-ополаскиватель для всех типов волос "Драгоценные масла" 250 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Двухфазная сыворотка - спрей для всех типов волос 100 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">41189</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+            </div>
+            <p class="prizes__subtitle">
+              Большой заказ (от 4000₽) по Каталогу №12  –<br />Выбирай приз в период Каталога №14 (20 октября - 9 ноября)
+            </p>
+            <div class="prizes__cols">
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/41184.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Набор «Планета Спа»
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      SPA Крем для тела "Арома-спа. Сладкие сны" 200 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      SPA Cпрей для тела "Арома-спа. Сладкие сны" 100 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      SPA Ночная маска для лица "Арома-спа. Сладкие сны" 50 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      SPA Крем для рук "Арома-спа. Сладкие сны" 30 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">41184</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/42235.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Набор «Драгоценные масла»
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Шампунь для всех типов волос "Драгоценные масла" 250 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Бальзам-ополаскиватель для всех типов волос "Драгоценные масла" 250 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Двухфазная сыворотка - спрей для всех типов волос 100 мл;
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Питательная сыворотка для волос "Всесторонний уход" 30 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">42235</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+            </div>
+            <p class="prizes__title">
+              Призы 14 Каталога
+            </p>
+            <p class="prizes__subtitle">
+              МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №13  –выбирай приз в период Каталога №14 (20 октября - 9 ноября)
+            </p>
+            <div class="prizes__cols">
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/42439.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Avon True
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Тушь для ресниц "СуперОбъем" (ультрачерная)
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Помада "Матовое превосходство. Невесомость" (туманный мокко)
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Матирующий тональный крем "Спокойное сияние" 30 мл (светло-бежевый)
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">42439</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/43011.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Anew
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Дневной крем для лица "Заряд энергии.Совершенство" SPF 25, 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Система 2 в 1 от темных кругов под глазами: крем-корректор и гель "Ровный тон и укрепление" 20 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Маска для лица "Сплеш-уход. Заряд энергии" 125 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">43011</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+            </div>
+            <p class="prizes__subtitle">
+              БОЛЬШОЙ заказ (от 4000₽) по Каталогу №13  –выбирай приз в период Каталога №15 (10 ноября - 30 ноября)
+            </p>
+            <div class="prizes__cols">
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/42991.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Avon True
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Тушь для ресниц "СуперОбъем" (ультрачерная)
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Румяна-шарики (нейтральные)
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Помада "Матовое превосходство. Невесомость" (туманный мокко)
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Матирующий тональный крем "Спокойное сияние" 30 мл (светло-бежевый)
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">42991</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/43025.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Anew
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Дневной крем для лица "Заряд энергии.Совершенство" SPF 25, 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Антиоксидантная очищающая маска для лица с глиной "Заряд сияния" 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Маска-пленка для лица "Пилинг и сияние" 75 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Система 2 в 1 от темных кругов под глазами: крем-корректор и гель "Ровный тон и укрепление" 20 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Маска для лица "Сплеш-уход. Заряд энергии" 125 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">43025</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+            </div>
+            <p class="prizes__title">
+              Призы 15 Каталога
+            </p>
+            <p class="prizes__subtitle">
+              МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №14  –выбирай приз в период Каталога №15 (10 - 30 ноября)
+            </p>
+            <div class="prizes__cols">
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/43474.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Tomorrow
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Парфюмерная вода Tomorrow для нее 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Туалетная вода Tomorrow для него 75 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">43474</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/product_5.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Avon Eve
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Парфюмерная вода Avon Eve Truth для нее 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Парфюмерная вода Avon Eve Confidence для нее 50 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">45176</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+            </div>
+            <p class="prizes__subtitle">
+              БОЛЬШОЙ заказ (от 5000₽) по Каталогу №14  –выбирай приз в период Каталога №15 (10 - 30 ноября)
+            </p>
+            <div class="prizes__cols">
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/44311.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Today+Tomorrow
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Парфюмерная вода Today для нее 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Парфюмерная вода Tomorrow для нее 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Туалетная вода Tomorrow для него 75 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: 44311 <span class="prizes__itemCodeNumber"></span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+              <div class="prizes__item">
+                <div class="prizes__itemImgWrapper">
+                  <img class="prizes__itemImg" src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/47836.jpg" />
+                </div>
+                <p class="prizes__itemTitle">
+                  Avon Eve
+                </p>
+                <div class="prizes__itemList js-dropdown">
+                  <div class="prizes__itemListTitle js-dropdown-link">
+                    Что входит в набор
+                  </div>
+                  <ul class="prizes__itemListHidden js-dropdown-content">
+                    <li class="prizes__itemListItem">
+                      Парфюмерная вода Avon Eve Truth для нее 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Парфюмерная вода Avon Eve Duet для нее 50 мл
+                    </li>
+                    <li class="prizes__itemListItem">
+                      Парфюмерная вода Avon Eve Confidence для нее 50 мл
+                    </li>
+                  </ul>
+                </div>
+                <p class="prizes__itemCode">
+                  Код для заказа: <span class="prizes__itemCodeNumber">47836</span>
+                </p>
+                <p class="prizes__itemPrice">
+                  55<span class="currency">₽</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="content__text">
+          <a class="linkDownload" download="download" href="https://www.avon.ru/REPSuite/static/sim/2020/11/0.pdf" target="_blank"><span class="linkDownload__title">Скачать полные правила программы</span><span class="linkDownload__info">PDF 136 KB</span></a>
+        </p>
+        <p class="content__note">
+          Приз – призовой товар со скидкой к цене, определенной в каталоге, стоимостью 55 руб. Организатором акции является ООО «Эйвон Бьюти Продактс Компани», место нахождения: 119048, г. Москва, ул. Усачева, д. 2, стр. 1, ОГРН 1037708067320. Источником информации о подробных условиях и критериях участия в акции является сайт avon.ru. Организатор акции оставляет за собой право заменить призы, представленные в настоящей листовке, на равноценные призы по своему усмотрению. Количество призов ограничено. Представитель может заказать и получить только один приз в течении кампании.
+        </p>
+      </div>
+    </div>
+    <script src="static/js/gi3-20.js"></script>
+  </body>
+</html>
