@@ -95,6 +95,7 @@ sup {
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
+  transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
 }
 
 .linkButton--whiteTransparent {
@@ -795,47 +796,6 @@ button {
   max-width: 624px;
 }
 
-.catalogs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-
-.catalogs__item {
-  display: flex;
-  flex-basis: 22.375%;
-  align-items: stretch;
-  margin: 0 3.5% 80px 0;
-  margin-right: 3.5%;
-}
-
-.catalogs__item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.catalogs__in {
-  flex-basis: 100%;
-  position: relative;
-  padding: 0 0 141px;
-  text-align: center;
-}
-
-.catalogs__img {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.catalogs__button {
-  position: absolute;
-  left: 0;
-  bottom: 73px;
-  width: 100%;
-}
-
-.catalogs__button--copy {
-  bottom: 0;
-}
-
 .contentWrapper {
   position: relative;
   margin: 0 auto;
@@ -889,6 +849,10 @@ button {
   width: 100%;
 }
 
+.content__text {
+  margin: 20px auto;
+}
+
 .content__note {
   position: relative;
   margin: 20px 0;
@@ -898,11 +862,19 @@ button {
 }
 
 .content__note:before {
-  content: '!';
+  content: '*';
   position: absolute;
   top: 0;
   left: 0;
   font-weight: 700;
+}
+
+.content__note--attention:before {
+  content: '!';
+}
+
+.content__text + .content__note {
+  margin-top: 30px;
 }
 
 .content__buttons {
@@ -921,8 +893,101 @@ button {
   margin-right: 0;
 }
 
+.catalogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.catalogs__item {
+  display: flex;
+  flex-basis: 22.375%;
+  align-items: stretch;
+  margin: 0 3.5% 80px 0;
+  margin-right: 3.5%;
+}
+
+.catalogs__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalogs__in {
+  flex-basis: 100%;
+  position: relative;
+  padding: 0 0 141px;
+  text-align: center;
+}
+
+.catalogs__img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.catalogs__button {
+  position: absolute;
+  left: 0;
+  bottom: 73px;
+  width: 100%;
+}
+
+.catalogs__button--copy {
+  bottom: 0;
+}
+
 .downloads {
   padding: 0 0 40px;
+}
+
+.dropdownContent {
+  margin: 20px auto 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.dropdownContent__title {
+  margin-bottom: 20px;
+  font: 500 24px/1.33 "Montserrat", sans-serif;
+  text-align: center;
+  color: #546264;
+}
+
+.dropdownContent__img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.dropdownContent__link {
+  width: 100%;
+}
+
+.dropdownContent__link:after {
+  content: '';
+  margin-left: 10px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/gi3-20/svg/arrow-down-purple.svg");
+  background-size: 24px 24px;
+  vertical-align: bottom;
+  transition: transform 0.3s linear;
+}
+
+.dropdownContent__link.is-active:after {
+  transform: rotate(180deg);
+}
+
+.dropdownContent__link--prizes:before {
+  content: 'Развернуть список призов';
+}
+
+.dropdownContent__link--prizes.is-active:before {
+  content: 'Свернуть список призов';
+}
+
+.dropdownContent__hidden {
+  display: none;
 }
 
 .js-dropdown-content {
@@ -1047,15 +1112,51 @@ button {
   color: #546264;
 }
 
-.prizes__itemTitle {
-  font: 700 16px/1.5 "Montserrat", sans-serif;
+.prizes--small .prizes__item {
+  flex-basis: 320px;
+}
+
+.prizes--small .prizes__item:nth-child(2n+1) {
+  margin-right: 20px;
+}
+
+.prizes--small .prizes__itemImgWrapper {
+  height: 220px;
+}
+
+.prizes--small .prizes__itemImg {
+  max-width: 100%;
+  max-height: 220px;
+}
+
+.prizes--small .prizes__itemTitle {
+  margin-bottom: 20px;
+}
+
+.prizes__cols {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 20px auto 0;
+}
+
+.prizes__item {
+  padding-bottom: 20px;
   text-align: center;
+}
+
+.prizes__itemImgWrapper {
+  margin-bottom: 20px;
+}
+
+.prizes__itemTitle {
+  margin-bottom: 30px;
+  font: 700 16px/1.5 "Montserrat", sans-serif;
   color: #546264;
 }
 
 .prizes__itemCode {
   font: 12px/20px "Montserrat", sans-serif;
-  text-align: center;
   color: #546264;
 }
 
@@ -1067,24 +1168,56 @@ button {
 
 .prizes__itemPrice {
   font: 700 30px/19px "Montserrat", sans-serif;
-  text-align: center;
   color: #181818;
 }
 
+.prizes__itemPrice .currency {
+  display: inline-block;
+  margin-left: 2px;
+}
+
 .rules {
-  margin: 20px 6.9% 50px;
-  padding: 10px 0 20px;
+  margin: 20px 0 50px;
+  padding: 0 40px 10px;
   border: solid 2px #E4EDED;
   background-color: #f6f9f9;
+  counter-reset: steps;
+}
+
+.rules__row {
+  padding: 25px 0 30px;
+}
+
+.rules__row:not(:last-child) {
+  border-bottom: solid 1px #E4EDED;
 }
 
 .rules__cols {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.rules__col {
-  flex-basis: 50%;
+.rules__step {
+  flex-basis: 48%;
+}
+
+.rules__stepTitle {
+  margin-bottom: 10px;
+  font: 700 20px/28px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #7f28c4;
+}
+
+.rules__stepTitle:before {
+  counter-increment: steps;
+  content: counter(steps) " ";
+  font: 700 50px/28px "Montserrat", sans-serif;
+}
+
+.rules__stepInfo {
+  font: 500 14px/1.43 "Montserrat", sans-serif;
+  color: #546264;
 }
 
 @media (max-width: 767px) {

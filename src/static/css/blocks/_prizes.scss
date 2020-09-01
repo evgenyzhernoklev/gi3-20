@@ -1,6 +1,25 @@
 .prizes {
   &--small {
+    .prizes__item {
+      flex-basis: 320px;
 
+      &:nth-child(2n+1) {
+        margin-right: 20px;
+      }
+    }
+
+    .prizes__itemImgWrapper {
+      height: 220px;
+    }
+
+    .prizes__itemImg {
+      max-width: 100%;
+      max-height: 220px;
+    }
+
+    .prizes__itemTitle {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -12,15 +31,19 @@
   }
 
   &__cols {
-
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 20px auto 0;
   }
 
   &__item {
-
+    padding-bottom: 20px;
+    text-align: center;
   }
 
   &__itemImgWrapper {
-
+    margin-bottom: 20px;
   }
 
   &__itemImg {
@@ -28,8 +51,8 @@
   }
 
   &__itemTitle {
+    margin-bottom: 30px;
     font: 700 16px/1.5 $font-montserrat;
-    text-align: center;
     color: $gray;
   }
 
@@ -55,7 +78,6 @@
 
   &__itemCode {
     font: 12px/20px $font-montserrat;
-    text-align: center;
     color: $gray;
   }
 
@@ -67,7 +89,11 @@
 
   &__itemPrice {
     font: 700 30px/19px $font-montserrat;
-    text-align: center;
     color: $black;
+
+    .currency {
+      display: inline-block;
+      margin-left: 2px;
+    }
   }
 }

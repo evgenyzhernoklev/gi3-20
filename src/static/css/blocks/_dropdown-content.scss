@@ -1,0 +1,51 @@
+.dropdownContent {
+  margin: 20px auto 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 20px;
+    font: 500 24px/1.33 $font-montserrat;
+    text-align: center;
+    color: $gray;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  &__link {
+    width: 100%;
+
+    &:after {
+      content: '';
+      margin-left: 10px;
+      @include icon-svg(arrow-down-purple, 24px, 24px);
+      vertical-align: bottom;
+      transition: transform $transition-normal;
+    }
+
+    &.is-active {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--prizes {
+      &:before {
+        content: 'Развернуть список призов';
+      }
+
+      &.is-active {
+        &:before {
+          content: 'Свернуть список призов';
+        }
+      }
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+}

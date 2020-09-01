@@ -1,31 +1,47 @@
 .rules {
-  margin: 20px 6.9% 50px;
-  padding: 10px 0 20px;
+  margin: 20px 0 50px;
+  padding: 0 40px 10px;
   border: solid 2px $white-light;
   background-color: #f6f9f9;
+  counter-reset: steps;
+
+  &__row {
+    padding: 25px 0 30px;
+
+    &:not(:last-child) {
+      border-bottom: solid 1px $white-light;
+    }
+  }
 
   &__cols {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  &__col {
-    flex-basis: 50%;
-  }
-
-  &__colIn {
-
+    justify-content: space-between;
   }
 
   &__step {
+    flex-basis: 48%;
+  }
+
+  &__stepIn {
 
   }
 
   &__stepTitle {
+    margin-bottom: 10px;
+    font: 700 20px/28px $font-montserrat;
+    text-transform: uppercase;
+    color: $purple;
 
+    &:before {
+      counter-increment: steps;
+      content: counter(steps)" ";
+      font: 700 50px/28px $font-montserrat;
+    }
   }
 
   &__stepInfo {
-
+    font: 500 14px/1.43 $font-montserrat;
+    color: $gray;
   }
 }
