@@ -1,6 +1,7 @@
 "use strict";
 
 import Dropdowns  from "../js/dropdown";
+import Expand     from "../js/expand";
 import Tabs       from "../js/tabs";
 import Copy       from "../js/copy";
 
@@ -9,6 +10,7 @@ import Copy       from "../js/copy";
 
 $(document).ready(function() {
   new Dropdowns();
+  new Expand();
   $('.js-tabs').each(function() {
     new Tabs(this);
   });

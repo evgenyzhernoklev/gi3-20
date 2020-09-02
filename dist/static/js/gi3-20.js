@@ -1342,10 +1342,93 @@ function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "funct
     var _default = Dropdowns;
     exports["default"] = _default;
   }, {}],
+  "/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/expand.js": [function (require, module, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports["default"] = void 0;
+
+    function _classCallCheck(instance, Constructor) {
+      if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+      }
+    }
+
+    function _defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    function _createClass(Constructor, protoProps, staticProps) {
+      if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) _defineProperties(Constructor, staticProps);
+      return Constructor;
+    }
+
+    var Expand = /*#__PURE__*/function () {
+      function Expand() {
+        _classCallCheck(this, Expand);
+
+        this.DURATION = 400;
+        this.body = $('body');
+        this.init();
+      }
+
+      _createClass(Expand, [{
+        key: "init",
+        value: function init() {
+          this.listenEvents();
+        }
+      }, {
+        key: "listenEvents",
+        value: function listenEvents() {
+          this.body.on('click', '.js-expand-link', this._checkExpand.bind(this));
+        }
+      }, {
+        key: "_checkExpand",
+        value: function _checkExpand(e) {
+          var $target = $(e.target).closest('.js-expand-link');
+          $target.hasClass('is-active') ? this._expandUp($target) : this._expandDown($target);
+        }
+      }, {
+        key: "_expandUp",
+        value: function _expandUp($link) {
+          var $container = $link.closest('.js-expand'),
+              $content = $container.find('.js-expand-content');
+          $link.removeClass('is-active');
+          $container.removeClass('is-active');
+          $content.stop().slideUp(this.DURATION);
+        }
+      }, {
+        key: "_expandDown",
+        value: function _expandDown($link) {
+          var $container = $link.closest('.js-expand'),
+              $content = $container.find('.js-expand-content');
+          $link.addClass('is-active');
+          $container.addClass('is-active');
+          $content.stop().slideDown(this.DURATION);
+        }
+      }]);
+
+      return Expand;
+    }();
+
+    var _default = Expand;
+    exports["default"] = _default;
+  }, {}],
   "/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/gi3-20.js": [function (require, module, exports) {
     "use strict";
 
     var _dropdown = _interopRequireDefault(require("../js/dropdown"));
+
+    var _expand = _interopRequireDefault(require("../js/expand"));
 
     var _tabs = _interopRequireDefault(require("../js/tabs"));
 
@@ -1361,6 +1444,7 @@ function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "funct
 
     $(document).ready(function () {
       new _dropdown["default"]();
+      new _expand["default"]();
       $('.js-tabs').each(function () {
         new _tabs["default"](this);
       });
@@ -1384,6 +1468,7 @@ function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "funct
   }, {
     "../js/copy": "/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/copy.js",
     "../js/dropdown": "/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/dropdown.js",
+    "../js/expand": "/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/expand.js",
     "../js/tabs": "/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/tabs.js"
   }],
   "/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/tabs.js": [function (require, module, exports) {

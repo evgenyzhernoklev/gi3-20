@@ -938,58 +938,6 @@ button {
   padding: 0 0 40px;
 }
 
-.dropdownContent {
-  margin: 20px auto 0;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-
-.dropdownContent__title {
-  margin-bottom: 20px;
-  font: 500 24px/1.33 "Montserrat", sans-serif;
-  text-align: center;
-  color: #546264;
-}
-
-.dropdownContent__img {
-  margin-bottom: 40px;
-  width: 100%;
-}
-
-.dropdownContent__link {
-  width: 100%;
-}
-
-.dropdownContent__link:after {
-  content: '';
-  margin-left: 10px;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../images/gi3-20/svg/arrow-down-purple.svg");
-  background-size: 24px 24px;
-  vertical-align: bottom;
-  transition: transform 0.3s linear;
-}
-
-.dropdownContent__link.is-active:after {
-  transform: rotate(180deg);
-}
-
-.dropdownContent__link--prizes:before {
-  content: 'Развернуть список призов';
-}
-
-.dropdownContent__link--prizes.is-active:before {
-  content: 'Свернуть список призов';
-}
-
-.dropdownContent__hidden {
-  display: none;
-}
-
 .js-dropdown-content {
   display: none;
 }
@@ -1053,6 +1001,58 @@ button {
 
 .dropdown__info:not(:last-child) {
   margin-bottom: 18px;
+}
+
+.expandContent {
+  margin: 20px auto 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.expandContent__title {
+  margin-bottom: 20px;
+  font: 500 24px/1.33 "Montserrat", sans-serif;
+  text-align: center;
+  color: #546264;
+}
+
+.expandContent__img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.expandContent__link {
+  width: 100%;
+}
+
+.expandContent__link:after {
+  content: '';
+  margin-left: 10px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/gi3-20/svg/arrow-down-purple.svg");
+  background-size: 24px 24px;
+  vertical-align: bottom;
+  transition: transform 0.3s linear;
+}
+
+.expandContent__link.is-active:after {
+  transform: rotate(180deg);
+}
+
+.expandContent__link--prizes:before {
+  content: 'Развернуть список призов';
+}
+
+.expandContent__link--prizes.is-active:before {
+  content: 'Свернуть список призов';
+}
+
+.expandContent__hidden {
+  display: none;
 }
 
 .howTo {
