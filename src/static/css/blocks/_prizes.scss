@@ -1,7 +1,13 @@
 .prizes {
   &--small {
+    .prizes__cols {
+      justify-content: center;
+      border-bottom: 0;
+    }
+
     .prizes__item {
       flex-basis: 320px;
+      margin-bottom: 0;
 
       &:nth-child(2n+1) {
         margin-right: 20px;
@@ -13,7 +19,6 @@
     }
 
     .prizes__itemImg {
-      max-width: 100%;
       max-height: 220px;
     }
 
@@ -33,21 +38,34 @@
   &__cols {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     margin: 20px auto 0;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      border-bottom: solid 1px $white-light;
+    }
   }
 
   &__item {
+    flex-basis: 48%;
+    margin-bottom: 50px;
     padding-bottom: 20px;
     text-align: center;
+
+    &--mb0 {
+      margin-bottom: 0;
+    }
   }
 
   &__itemImgWrapper {
     margin-bottom: 20px;
+    height: 400px;
   }
 
   &__itemImg {
-
+    max-width: 100%;
+    max-height: 400px;
   }
 
   &__itemTitle {
@@ -57,7 +75,7 @@
   }
 
   &__itemCode {
-
+    margin-bottom: 20px;
   }
 
   &__itemList {

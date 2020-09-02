@@ -5,16 +5,6 @@ html lang="ru"
     title AVON - легкий старт
   body
 
-    javascript:
-      $(document).ready(function() {
-      	$('.js-prize-dropdown-link').on('click', function(e) {
-      		e.preventDefault();
-      		$(this).toggleClass('is-active')
-      		  .closest('.js-prize-dropdown').find('.js-prize-dropdown-content')
-            .stop().slideToggle(700);
-      	});
-      });
-
     .contentWrapper
       .contentWrapper__content.content
 
@@ -108,7 +98,8 @@ html lang="ru"
               p.prizes__title
                 | Призы 14 Каталога
               p.prizes__subtitle
-                | МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №12  –
+                | МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №12 –
+                br/
                 |  Выбирай приз в период Каталога №14 (20 октября - 9 ноября)
               .prizes__cols
                 .prizes__item
@@ -153,7 +144,7 @@ html lang="ru"
                     span.currency ₽
 
               p.prizes__subtitle
-                | Большой заказ (от 4000₽) по Каталогу №12  –
+                | Большой заказ (от 4000₽) по Каталогу №12 –
                 br/
                 | Выбирай приз в период Каталога №14 (20 октября - 9 ноября)
               .prizes__cols
@@ -205,7 +196,8 @@ html lang="ru"
               p.prizes__title
                 | Призы 14 Каталога
               p.prizes__subtitle
-                | МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №13  –
+                | МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №13 –
+                br/
                 | выбирай приз в период Каталога №14 (20 октября - 9 ноября)
               .prizes__cols
                 .prizes__item
@@ -250,7 +242,8 @@ html lang="ru"
                     span.currency ₽
 
               p.prizes__subtitle
-                | БОЛЬШОЙ заказ (от 4000₽) по Каталогу №13  –
+                | БОЛЬШОЙ заказ (от 4000₽) по Каталогу №13 –
+                br/
                 | выбирай приз в период Каталога №15 (10 ноября - 30 ноября)
               .prizes__cols
                 .prizes__item
@@ -303,7 +296,8 @@ html lang="ru"
               p.prizes__title
                 | Призы 15 Каталога
               p.prizes__subtitle
-                | МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №14  –
+                | МАЛЕНЬКИЙ заказ (от 1600₽) по Каталогу №14 –
+                br/
                 | выбирай приз в период Каталога №15 (10 - 30 ноября)
               .prizes__cols
                 .prizes__item
@@ -344,10 +338,11 @@ html lang="ru"
                     span.currency ₽
 
               p.prizes__subtitle
-                | БОЛЬШОЙ заказ (от 5000₽) по Каталогу №14  –
+                | БОЛЬШОЙ заказ (от 5000₽) по Каталогу №14 –
+                br/
                 | выбирай приз в период Каталога №15 (10 - 30 ноября)
               .prizes__cols
-                .prizes__item
+                .prizes__item.prizes__item--mb0
                   .prizes__itemImgWrapper
                     img.prizes__itemImg src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/44311.jpg"
                   p.prizes__itemTitle Today+Tomorrow
@@ -362,12 +357,12 @@ html lang="ru"
                       li.prizes__itemListItem
                         | Туалетная вода Tomorrow для него 75 мл
                   p.prizes__itemCode
-                    | Код для заказа: 44311
-                    span.prizes__itemCodeNumber<
+                    | Код для заказа:
+                    span.prizes__itemCodeNumber< 44311
                   p.prizes__itemPrice
                     | 55
                     span.currency ₽
-                .prizes__item
+                .prizes__item.prizes__item--mb0
                   .prizes__itemImgWrapper
                     img.prizes__itemImg src="https://www.avon.ru/REPSuite/static/images/gi3/legky_start/2020-05/47836.jpg"
                   p.prizes__itemTitle Avon Eve
