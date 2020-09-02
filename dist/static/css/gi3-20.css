@@ -1053,7 +1053,7 @@ button {
 
 .expandContent__hidden {
   display: none;
-  padding: 60px 0 0;
+  padding: 59px 0 0;
 }
 
 .howTo {
@@ -1113,6 +1113,14 @@ button {
   color: #546264;
 }
 
+.prizes--small.prizes--withButton .prizes__item {
+  padding-bottom: 130px;
+}
+
+.prizes--small.prizes--withButton .prizes__itemPrice {
+  bottom: 95px;
+}
+
 .prizes--small .prizes__cols {
   justify-content: center;
   border-bottom: 0;
@@ -1120,7 +1128,8 @@ button {
 
 .prizes--small .prizes__item {
   flex-basis: 320px;
-  margin-bottom: 0;
+  margin-bottom: 28px;
+  padding-bottom: 35px;
 }
 
 .prizes--small .prizes__item:nth-child(2n+1) {
@@ -1152,9 +1161,10 @@ button {
 }
 
 .prizes__item {
+  position: relative;
   flex-basis: 48%;
-  margin-bottom: 50px;
-  padding-bottom: 20px;
+  margin-bottom: 53px;
+  padding-bottom: 177px;
   text-align: center;
 }
 
@@ -1173,18 +1183,17 @@ button {
 }
 
 .prizes__itemTitle {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font: 700 16px/1.5 "Montserrat", sans-serif;
   color: #546264;
 }
 
-.prizes__itemCode {
-  margin-bottom: 20px;
-}
-
 .prizes__itemList {
-  position: relative;
-  margin-bottom: 30px;
+  position: absolute;
+  z-index: 1;
+  bottom: 99px;
+  left: 0;
+  right: 0;
   text-align: left;
 }
 
@@ -1260,6 +1269,10 @@ button {
 }
 
 .prizes__itemCode {
+  position: absolute;
+  bottom: 49px;
+  left: 0;
+  right: 0;
   font: 12px/20px "Montserrat", sans-serif;
   color: #546264;
 }
@@ -1271,6 +1284,10 @@ button {
 }
 
 .prizes__itemPrice {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   font: 700 30px/19px "Montserrat", sans-serif;
   color: #181818;
 }
@@ -1278,6 +1295,13 @@ button {
 .prizes__itemPrice .currency {
   display: inline-block;
   margin-left: 2px;
+}
+
+.prizes__itemButton {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
 }
 
 .rules {
