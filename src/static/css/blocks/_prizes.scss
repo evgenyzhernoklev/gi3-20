@@ -79,19 +79,74 @@
   }
 
   &__itemList {
-
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
   }
 
   &__itemListTitle {
+    position: relative;
+    padding: 16px 230px 16px 40px;
+    font: 700 16px/1.5 $font-montserrat;
+    color: $black;
+    border-radius: 4px;
+    border: solid 1px $white-light;
+    background-color: #f6f9f9;
+    cursor: pointer;
 
+    &:before {
+      content: 'Раскрыть список';
+      display: inline-block;
+      position: absolute;
+      top: 16px;
+      right: 51px;
+      font: 500 14px/24px $font-montserrat;
+      color: $purple;
+    }
+
+    &:after {
+      content: '';
+      @include icon-svg(arrow-down, 16px, 16px);
+      position: absolute;
+      top: 21px;
+      right: 26px;
+      transition: transform $transition-normal;
+    }
+
+    &.is-active {
+      border-radius: 4px 4px 0 0;
+
+      &:before {
+        content: 'Скрыть список';
+      }
+
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   &__itemListHidden {
-
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px $white-light;
+    border-top: 0;
+    background-color: $white;
+    max-height: 215px;
+    overflow: scroll;
   }
 
   &__itemListItem {
+    font: 14px/1.29 $font-montserrat;
+    color: $gray;
 
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   &__itemCode {
