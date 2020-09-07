@@ -12,8 +12,7 @@
   outline: 0;
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -83,13 +82,8 @@ sup {
 }
 
 .colsFlex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .linkButton {
@@ -99,11 +93,8 @@ sup {
   font: 700 16px/1.5 "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
-  -o-transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
   transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
 }
 
@@ -159,8 +150,7 @@ sup {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../images/gi3-20/svg/download-document.svg");
-  -webkit-background-size: 19px 25px;
-          background-size: 19px 25px;
+  background-size: 19px 25px;
 }
 
 .linkDownload:hover .linkDownload__title {
@@ -201,8 +191,7 @@ sup {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../images/gi3-20/png/label-charity.png");
-  -webkit-background-size: 56px 56px;
-          background-size: 56px 56px;
+  background-size: 56px 56px;
 }
 
 .bounty__header {
@@ -241,7 +230,6 @@ sup {
   border-left: 0;
   cursor: pointer;
   -webkit-transition: color 0.1s linear, border-color 0.1s linear;
-  -o-transition: color 0.1s linear, border-color 0.1s linear;
   transition: color 0.1s linear, border-color 0.1s linear;
 }
 
@@ -256,7 +244,6 @@ sup {
   background: #ff336d;
   opacity: 0;
   -webkit-transition: opacity 0.1s linear;
-  -o-transition: opacity 0.1s linear;
   transition: opacity 0.1s linear;
 }
 
@@ -358,8 +345,7 @@ sup {
   position: relative;
   -webkit-flex-basis: 33.33%;
   -ms-flex-basis: 33.33%;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  flex-basis: 25%;
   margin-right: 12.5%;
   padding: 0 0 211px;
   text-align: center;
@@ -405,19 +391,16 @@ sup {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #59c3b2;
-  -webkit-border-radius: 12px;
-          border-radius: 12px;
+  border-radius: 12px;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .bountyGood__description {
   max-height: 72px;
   font: 16px/1.5 'Montserrat', Arial, sans-serif;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -439,17 +422,14 @@ sup {
   text-align: left;
   color: #7f28c4;
   border: solid 1px #e4eded;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
+  border-radius: 2px;
   background-color: #ffffff;
   cursor: pointer;
   -webkit-transition: border-color 0.3s linear;
-  -o-transition: border-color 0.3s linear;
   transition: border-color 0.3s linear;
   white-space: nowrap;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .bountyGood__dropdownTitle:after {
@@ -463,14 +443,9 @@ sup {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../images/gi3-20/svg/arrow-down.svg");
-  -webkit-background-size: 16px 16px;
-          background-size: 16px 16px;
+  background-size: 16px 16px;
   -webkit-transition: transform 0.3s linear;
-  -webkit-transition: -webkit-transform 0.3s linear;
-  transition: -webkit-transform 0.3s linear;
-  -o-transition: transform 0.3s linear;
   transition: transform 0.3s linear;
-  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 .bountyGood__dropdownTitle.is-chosen {
@@ -480,14 +455,12 @@ sup {
 }
 
 .bountyGood__dropdownTitle.is-active {
-  -webkit-border-radius: 4px 4px 0 0;
-          border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 .bountyGood__dropdownTitle.is-active:after {
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .bountyGood__dropdownContent {
@@ -500,10 +473,8 @@ sup {
   background-color: #ffffff;
   border: solid 1px #e4eded;
   border-top: 0;
-  -webkit-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
-  -webkit-box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .bountyGood__dropdownList {
@@ -539,8 +510,7 @@ sup {
   width: 56px;
   height: 56px;
   border: solid 1px #e4eded;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   background-color: #ffffff;
   overflow: hidden;
   font-size: 0;
@@ -574,11 +544,9 @@ sup {
   bottom: 0;
   left: 0;
   border: solid 2px #7f28c4;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
 }
 
@@ -599,7 +567,6 @@ sup {
   text-align: left;
   cursor: pointer;
   -webkit-transition: background-color 0.3s linear;
-  -o-transition: background-color 0.3s linear;
   transition: background-color 0.3s linear;
 }
 
@@ -618,8 +585,6 @@ sup {
   text-align: left;
   color: #546264;
   border-top: solid 1px #e4eded;
-  -webkit-transition: opacity 0.1s linear, visibility 0.1s linear;
-  -o-transition: opacity 0.1s linear, visibility 0.1s linear;
   transition: opacity 0.1s linear, visibility 0.1s linear;
 }
 
@@ -697,11 +662,9 @@ sup {
   text-align: center;
   color: #7f28c4;
   border: 2px solid #7f28c4;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   cursor: pointer;
   -webkit-transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
-  -o-transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
   transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
 }
 
@@ -731,11 +694,7 @@ body {
 
 a,
 button {
-  -webkit-transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear, -webkit-box-shadow 0.3s linear;
-  transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear, -webkit-box-shadow 0.3s linear;
-  -o-transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear, box-shadow 0.3s linear;
   transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear, box-shadow 0.3s linear;
-  transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear, box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
 }
 
 .icon {
@@ -749,18 +708,9 @@ button {
 
 .banner {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 67px 120px 40px;
   min-height: 380px;
   color: #ffffff;
@@ -817,9 +767,7 @@ button {
 }
 
 .banner__in {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .banner__title {
@@ -930,14 +878,8 @@ button {
 }
 
 .content__buttons {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 40px;
   background-color: #E4EDED;
 }
@@ -952,31 +894,15 @@ button {
 }
 
 .catalogs {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .catalogs__item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-basis: 22.375%;
-      -ms-flex-preferred-size: 22.375%;
-          flex-basis: 22.375%;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-basis: 22.375%;
+  align-items: stretch;
   margin: 0 3.5% 80px 0;
   margin-right: 3.5%;
 }
@@ -986,9 +912,7 @@ button {
 }
 
 .catalogs__in {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+  flex-basis: 100%;
   position: relative;
   padding: 0 0 141px;
   text-align: center;
@@ -1019,8 +943,7 @@ button {
 }
 
 .dropdown {
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   border: solid 1px #E4EDED;
   background-color: #ffffff;
 }
@@ -1045,8 +968,6 @@ button {
   right: 60px;
   font: 500 14px/1.7 "Montserrat", sans-serif;
   color: #7f28c4;
-  -webkit-transition: color 0.3s linear;
-  -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
@@ -1056,19 +977,14 @@ button {
   top: 50%;
   right: 40px;
   margin-top: -8px;
-  -webkit-transition: -webkit-transform 0.3s linear;
-  transition: -webkit-transform 0.3s linear;
-  -o-transition: transform 0.3s linear;
   transition: transform 0.3s linear;
-  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
   display: inline-block;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../images/gi3-20/svg/arrow-down.svg");
-  -webkit-background-size: 16px 16px;
-          background-size: 16px 16px;
+  background-size: 16px 16px;
 }
 
 .dropdown__title.is-active:before {
@@ -1076,9 +992,7 @@ button {
 }
 
 .dropdown__title.is-active:after {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .dropdown__content {
@@ -1120,20 +1034,13 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../images/gi3-20/svg/arrow-down-purple.svg");
-  -webkit-background-size: 24px 24px;
-          background-size: 24px 24px;
+  background-size: 24px 24px;
   vertical-align: bottom;
-  -webkit-transition: -webkit-transform 0.3s linear;
-  transition: -webkit-transform 0.3s linear;
-  -o-transition: transform 0.3s linear;
   transition: transform 0.3s linear;
-  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 .expandContent__link.is-active:after {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .expandContent__link--prizes:before {
@@ -1183,17 +1090,14 @@ button {
   width: 50px;
   height: 50px;
   background-color: #7f28c4;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 
 .howTo__listIcon .icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   fill: #ffffff;
   max-width: 30px;
   max-height: 28px;
@@ -1210,25 +1114,24 @@ button {
 }
 
 .prizes--small.prizes--withButton .prizes__item {
-  padding-bottom: 130px;
+  padding-bottom: 163px;
+}
+
+.prizes--small.prizes--withButton .prizes__itemCode {
+  bottom: 124px;
 }
 
 .prizes--small.prizes--withButton .prizes__itemPrice {
-  bottom: 95px;
+  bottom: 77px;
 }
 
 .prizes--small .prizes__cols {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-bottom: 0;
 }
 
 .prizes--small .prizes__item {
-  -webkit-flex-basis: 320px;
-      -ms-flex-preferred-size: 320px;
-          flex-basis: 320px;
+  flex-basis: 320px;
   margin-bottom: 28px;
   padding-bottom: 35px;
 }
@@ -1250,17 +1153,9 @@ button {
 }
 
 .prizes__cols {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin: 20px auto 0;
 }
 
@@ -1271,9 +1166,7 @@ button {
 
 .prizes__item {
   position: relative;
-  -webkit-flex-basis: 48%;
-      -ms-flex-preferred-size: 48%;
-          flex-basis: 48%;
+  flex-basis: 48%;
   margin-bottom: 53px;
   padding-bottom: 177px;
   text-align: center;
@@ -1313,8 +1206,7 @@ button {
   padding: 16px 230px 16px 40px;
   font: 700 16px/1.5 "Montserrat", sans-serif;
   color: #181818;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   border: solid 1px #E4EDED;
   background-color: #f6f9f9;
   cursor: pointer;
@@ -1338,21 +1230,15 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../images/gi3-20/svg/arrow-down.svg");
-  -webkit-background-size: 16px 16px;
-          background-size: 16px 16px;
+  background-size: 16px 16px;
   position: absolute;
   top: 21px;
   right: 26px;
-  -webkit-transition: -webkit-transform 0.3s linear;
-  transition: -webkit-transform 0.3s linear;
-  -o-transition: transform 0.3s linear;
   transition: transform 0.3s linear;
-  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 .prizes__itemListTitle.is-active {
-  -webkit-border-radius: 4px 4px 0 0;
-          border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 .prizes__itemListTitle.is-active:before {
@@ -1360,9 +1246,7 @@ button {
 }
 
 .prizes__itemListTitle.is-active:after {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .prizes__itemListHidden {
@@ -1371,8 +1255,7 @@ button {
   left: 0;
   right: 0;
   padding: 20px 40px;
-  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
   border: solid 1px #E4EDED;
   border-top: 0;
   background-color: #ffffff;
@@ -1421,8 +1304,8 @@ button {
 .prizes__itemButton {
   position: absolute;
   bottom: 0;
-  left: 10%;
-  right: 10%;
+  left: 0;
+  right: 0;
 }
 
 .rules {
@@ -1442,23 +1325,13 @@ button {
 }
 
 .rules__cols {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .rules__step {
-  -webkit-flex-basis: 48%;
-      -ms-flex-preferred-size: 48%;
-          flex-basis: 48%;
+  flex-basis: 48%;
 }
 
 .rules__stepTitle {
@@ -1521,8 +1394,7 @@ button {
   .bountyGood {
     -webkit-flex-basis: 100%;
     -ms-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
     padding-bottom: 190px;
   }
 
@@ -1544,15 +1416,13 @@ button {
     position: static;
     margin-bottom: 20px;
     -webkit-transform: none;
-    -ms-transform: none;
-        transform: none;
+    transform: none;
   }
 
   .bountyGood__note {
     -webkit-flex-basis: 100%;
     -ms-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
   }
 
   .bountyGood__code,
@@ -1580,3 +1450,4 @@ button {
     bottom: 30px;
   }
 }
+/*# sourceMappingURL=maps/gi3-20.css.map */

@@ -2,11 +2,15 @@
   &--small {
     &.prizes--withButton {
       .prizes__item {
-        padding-bottom: 130px;
+        padding-bottom: 163px;
+      }
+
+      .prizes__itemCode {
+        bottom: 124px;
       }
 
       .prizes__itemPrice {
-        bottom: 95px;
+        bottom: 77px;
       }
     }
 
@@ -192,7 +196,7 @@
   &__itemButton {
     position: absolute;
     bottom: 0;
-    left: 10%;
-    right: 10%;
+    left: 0;
+    right: 0;
   }
 }
