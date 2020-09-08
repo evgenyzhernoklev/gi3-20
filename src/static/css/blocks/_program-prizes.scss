@@ -1,0 +1,122 @@
+.programPrizes {
+  margin: 15px auto 0;
+  border: solid 1px $white-light;
+
+  &__header {
+    display: flex;
+    border-bottom: solid 1px $white-light;
+    background-color: #f6f9f9;
+  }
+
+  &__headerItem {
+    flex-basis: 50%;
+    font: 700 18px/1.56 $font-montserrat;
+    text-transform: uppercase;
+    color: $gray;
+
+    &:nth-child(2n+1) {
+      .programPrizes__headerItemIn {
+        border-right: solid 1px $white-light;
+      }
+    }
+  }
+
+  &__headerItemIn {
+    padding: 17px 40px 15px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contentItem {
+    flex-basis: 50%;
+
+    &:nth-child(2n+1) {
+      .programPrizes__contentItemIn {
+        border-right: solid 1px $white-light;
+
+        &:not(:last-child) {
+          border-bottom: solid 1px $white-light;
+        }
+      }
+    }
+
+    .icon {
+      display: block;
+      margin: 0 auto 22px;
+    }
+  }
+
+  &__contentItemIn {
+    padding: 20px;
+    min-height: 165px;
+
+    &--digit {
+      display: flex;
+      align-items: center;
+      padding-left: 112px;
+    }
+  }
+
+  &__contentItemInCol {
+    flex-basis: 100%;
+  }
+
+  &__contentItemTitle {
+    position: relative;
+    -webkit-text-stroke: 2px $purple;
+    font: 900 43px/1.42 $font-averta-black;
+    letter-spacing: 0.86px;
+    text-transform: uppercase;
+    color: transparent;
+
+    .ie & {
+      color: $purple;
+    }
+  }
+
+  &__contentItemText {
+    font: 700 20px/38px $font-montserrat;
+    color: $black;
+
+    &--center {
+      text-align: center;
+    }
+
+    .currency {
+      padding-left: 3px;
+    }
+  }
+
+  &__contentItemTextAmount {
+    font: 700 30px/28px $font-montserrat;
+    color: $purple;
+  }
+
+  &__contentItemTextLink {
+    text-transform: none;
+  }
+
+  &__contentItemScore {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: -73px;
+    -webkit-text-stroke: 2px $white;
+    font: 900 43px/56px $font-averta-black;
+    letter-spacing: 0.86px;
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+    border-radius: 20px 0 20px 0;
+    background-image: linear-gradient(99deg, #7f28c4 -6%, #e2197c 62%, #e5231b 100%);
+
+    .ie & {
+      color: $white;
+    }
+  }
+}

@@ -23,6 +23,10 @@
     background: url('../images/gi3-20/banners/easy-start.jpg') no-repeat center center/cover;
   }
 
+  &--fragranceClub {
+    background: url('../images/gi3-20/banners/fragrance-club.jpg') no-repeat center center/cover;
+  }
+
   &--avonOn {
     display: block;
     padding: 32px 320px 30px 240px;
@@ -70,7 +74,7 @@
   }
 
   &__titleTransparent {
-    -webkit-text-stroke: 2px #ffffff;
+    -webkit-text-stroke: 2px $white;
     color: transparent;
 
     .ie & {

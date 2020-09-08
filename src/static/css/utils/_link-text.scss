@@ -1,0 +1,47 @@
+.linkText {
+  font-weight: 700;
+  font-family: $font-montserrat;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color $transition-normal;
+
+  &.is-disabled {
+    color: rgba(#a2acae, 0.7);
+
+    &:hover {
+      color: rgba(#a2acae, 0.7);
+    }
+  }
+
+  &--purple {
+    color: $purple;
+
+    &:hover {
+      color: #6a17ad;
+    }
+  }
+
+  &--black {
+    color: $black;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+
+  &--grey {
+    color: #a2acae;
+
+    &:hover {
+      color: #707677;
+    }
+  }
+
+  &--white {
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

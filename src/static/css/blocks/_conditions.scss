@@ -1,0 +1,44 @@
+.conditions {
+  margin: 0 auto 58px;
+  counter-reset: condition;
+
+  &__list {
+
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 0 14% 0 80px;
+    font: 18px/1.44 $font-montserrat;
+    color: $gray;
+
+    &:before {
+      display: inline-block;
+      counter-increment: condition;
+      content: counter(condition);
+      position: absolute;
+      top: -10px;
+      left: -7px;
+      font: 700 70px/1 $font-montserrat;
+      color: $purple;
+    }
+  }
+
+  &__itemTextB {
+    font-weight: 700;
+  }
+
+  &__itemLink {
+
+  }
+
+  &__note {
+    padding: 20px 12%;
+    font: 14px/1.43 $font-montserrat;
+    text-align: center;
+    color: #707677;
+    border: 1px solid $purple;
+    border-width: 2px 0;
+  }
+}

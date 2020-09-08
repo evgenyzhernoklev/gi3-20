@@ -1,7 +1,36 @@
 .downloads {
   padding: 0 0 40px;
+  background-color: $white;
+
+  &__in {
+    padding: 37px 18.5% 18px;
+  }
+
+  &__title {
+    @extend .content__title;
+    @extend .content__title--small;
+    margin-bottom: 45px;
+  }
 
   &__dropdown {
 
+  }
+
+  &__cols {
+    display: flex;
+  }
+
+  &__col {
+    flex-basis: 50%;
+  }
+
+  &__colIn {
+    padding: 0 30px 0 0;
+  }
+
+  &__linkDownload {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 }
