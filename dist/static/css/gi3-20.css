@@ -257,7 +257,7 @@ sup {
 /* .bounty */
 
 .bounty {
-  margin-top: 40px;
+  margin: 40px auto 20px;
 }
 
 .bounty:first-child {
@@ -357,6 +357,8 @@ sup {
 
 .bounty__item {
   display: none;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .bounty__item.is-active {
@@ -412,8 +414,8 @@ sup {
 }
 
 .bounty__itemLineTitle {
-  margin: 20px 40px 0;
-  padding: 15px 20px;
+  margin: 40px 40px 0;
+  padding: 14px 20px;
   font: 500 14px/20px "Montserrat", Arial, sans-serif;
   text-align: center;
   color: #ffffff;
@@ -471,18 +473,22 @@ sup {
 .bountyGood__label {
   display: inline-block;
   min-width: 90px;
-  padding: 6px 15px 5px;
+  padding: 5px 15px;
   position: absolute;
   top: 350px;
   left: 50%;
-  font: 400 10px/1.2 "Montserrat", Arial, sans-serif;
+  font: 400 12px/1.2 "Montserrat", Arial, sans-serif;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: #ffffff;
-  background-color: #59c3b2;
+  background-color: #f09f87;
   border-radius: 12px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+.bountyGood__label::first-letter {
+  text-transform: uppercase;
 }
 
 .bountyGood__description {

@@ -1,0 +1,138 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - fragrance_club_14__ts
+  body
+
+    / link href="https://www.avon.ru/REPSuite/static/killer-offers/common/ko_multiple.css" rel="stylesheet" /
+    script src="https://www.avon.ru/REPSuite/static/killer-offers/common/ko_multiple.js"
+
+    .contentWrapper
+      .contentWrapper__content.content
+
+        include banners/fragrance_club
+
+        .content__in.content__in--small
+          h2.content__title
+            | Условия программы
+          p.content__subtitle
+            | Программа на парфюмерию высшего уровня для представителей!
+            br/
+            | Новинки и лучшие премиальные ароматы на выгодных условиях.
+            br/
+            | Чтобы принять участие, следуйте 2 простым шагам:
+
+          .content__conditions.conditions
+            ul.conditions__list
+              li.conditions__item
+                span.conditions__itemTextB
+                  | Закажите 2&nbsp;любых продукта
+                |  из&nbsp;списка ниже в&nbsp;1&nbsp;заказе и&nbsp;получите
+                span.conditions__itemTextB<
+                  | 1&nbsp;балл
+                |  в&nbsp;рамках программы, а&nbsp;также гарантированный приз вместе
+                |  с&nbsp;заказом (пробный образец аромата Avon);
+              li.conditions__item
+                span.conditions__itemTextB>
+                  | Копите баллы и обменивайте их на АРОМА- и ДЕМО-призы
+                a.conditions__itemLink.linkText.linkText--purple.js-scroll-to href="#prizesList"
+                  | список призов
+                | .
+                br/
+                |  Набрав хотя бы 1 балл в&nbsp;рамках кампании,
+                |  вы автоматически становитесь участником клуба
+                |  и&nbsp;розыгрыша
+                span.conditions__itemTextB<
+                  | 25 денежных призов.
+            .conditions__note
+              | Баллы накапливаются в рамках одной кампании. С&nbsp;началом новой кампании счетчик обнуляется.
+              br/
+              | У&nbsp;участника клуба есть возможность реализовать накопленные в&nbsp;данной кампании баллы
+              |  в&nbsp;АРОМА-&nbsp;или&nbsp;ДЕМО-призы в&nbsp;текущей и&nbsp;следующей кампаниях.
+
+          h3.content__title.content__title--small
+            | Призы программы
+          .content__programPrizes.programPrizes
+            .programPrizes__header
+              .programPrizes__headerItem
+                .programPrizes__headerItemIn
+                  | Обменивайте баллы на призы
+              .programPrizes__headerItem
+                .programPrizes__headerItemIn
+                  | Выигрывайте денежные призы
+            .programPrizes__content
+              .programPrizes__contentItem
+                .programPrizes__contentItemIn.programPrizes__contentItemIn--digit
+                  .programPrizes__contentItemInCol
+                    p.programPrizes__contentItemTitle
+                      span.programPrizes__contentItemScore 2
+                      | Балла
+                    p.programPrizes__contentItemText
+                      | Арома-приз за <span class="programPrizes__contentItemTextAmount">275<i class="currency">₽</i></span>
+                .programPrizes__contentItemIn.programPrizes__contentItemIn--digit
+                  .programPrizes__contentItemInCol
+                    p.programPrizes__contentItemTitle
+                      span.programPrizes__contentItemScore 5
+                      | Баллов
+                    p.programPrizes__contentItemText
+                      | Арома-приз за <span class="programPrizes__contentItemTextAmount">1<i class="currency">₽</i></span> или
+                      br/
+                      | Демо-приз за <span class="programPrizes__contentItemTextAmount">99<i class="currency">₽</i></span>
+                .programPrizes__contentItemIn.programPrizes__contentItemIn--digit
+                  .programPrizes__contentItemInCol
+                    p.programPrizes__contentItemTitle
+                      span.programPrizes__contentItemScore 7
+                      | Баллов
+                    p.programPrizes__contentItemText
+                      | Демо-приз за <span class="programPrizes__contentItemTextAmount">1<i class="currency">₽</i></span>
+              .programPrizes__contentItem
+                .programPrizes__contentItemIn
+                  include icons/coupon
+                  p.programPrizes__contentItemText.programPrizes__contentItemText--center
+                    | 25 Денежных призов
+                    br/
+                    | По <span class="programPrizes__contentItemTextAmount">3 999<i class="currency">₽</i></span> на счет на
+                    a.programPrizes__contentItemTextLink.linkText.linkText--purple< href="https://my.avon.ru/" target="_blank"
+                      | avon.ru
+                    br/
+                    | каждую кампанию
+
+        .bounty.js-bounty id="prizesList" data-product-url="https://www.avon.ru/REPSuite/static/killer-offers/fragrance_club/2020-14/products.js"
+
+        .content__downloads.downloads
+          .downloads__in
+            h3.downloads__title
+              | Скачайте
+            .downloads__cols
+              .downloads__col
+                .downloads__colIn
+                  a.downloads__linkDownload.linkDownload[download="download" href="http://static.avon.ru/REPSuite/static/download/20200721_detailed_contest_rules.pdf" target="_blank"]
+                    span.linkDownload__title
+                      | Подробные правила конкурса
+                    span.linkDownload__info
+                      | PDF 136 КБ
+                  a.downloads__linkDownload.linkDownload[download="download" href="http://static.avon.ru/REPSuite/static/download/20200902_gid_vigoda_v_aromatax.pdf" target="_blank"]
+                    span.linkDownload__title
+                      | Гид по программе
+                    span.linkDownload__info
+                      | PDF 1 МБ
+              .downloads__col
+                .downloads__colIn
+                  a.downloads__linkDownload.linkDownload[download="download" href="http://static.avon.ru/REPSuite/static/download/2020_winners_c08.pdf" target="_blank"]
+                    span.linkDownload__title
+                      | Победители Кампании 08/2020
+                    span.linkDownload__info
+                      | PDF 1,2 МБ
+                  a.downloads__linkDownload.linkDownload[download="download" href="http://static.avon.ru/REPSuite/static/download/2020_winners_c09.pdf" target="_blank"]
+                    span.linkDownload__title
+                      | Победители Кампании 09/2020
+                    span.linkDownload__info
+                      | PDF 1,2 МБ
+                  a.downloads__linkDownload.linkDownload[download="download" href="http://static.avon.ru/REPSuite/static/download/2020_winners_c10.pdf" target="_blank"]
+                    span.linkDownload__title
+                      | Победители Кампании 10/2020
+                    span.linkDownload__info
+                      | PDF 71 КБ
+
+    include scripts
