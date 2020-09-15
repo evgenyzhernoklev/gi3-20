@@ -1,0 +1,67 @@
+.tabs {
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    flex-basis: 100%;
+    font: 300 32px/1.4 $font-montserrat;
+    text-align: center;
+    color: $black;
+    transition: box-shadow $transition-normal, z-index $transition-normal;
+    cursor: pointer;
+
+    &--2 {
+      flex-basis: 50%;
+    }
+
+    &:nth-child(2n+1) {
+      .tabs__linkIn {
+        border-right: 0;
+      }
+    }
+
+    &:hover {
+      z-index: 10;
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
+
+      .tabs__linkIn:after {
+        @include show();
+      }
+    }
+
+    &.is-active {
+      cursor: default;
+    }
+  }
+
+  &__linkIn {
+    position: relative;
+    display: block;
+    padding: 18px 20px 21px;
+    border: solid 1px $white-light;
+    background-color: $white;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      background-color: $purple;
+      @include hide();
+    }
+  }
+
+  &__linkPeriod {
+    display: block;
+    font: 700 20px/1.8 $font-montserrat;
+  }
+
+  &__content {
+
+  }
+}
