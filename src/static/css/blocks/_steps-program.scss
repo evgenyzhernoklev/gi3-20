@@ -1,0 +1,30 @@
+.stepsProgram {
+  margin: 30px auto 50px;
+
+  &__cols {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    flex-basis: 48.4%;
+  }
+
+  &__step {
+    border: solid 1px $white-light;
+    background-color: $white;
+    box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__stepIn {
+    padding: 30px 80px 28px 30px;
+    font: 20px/1.4 $font-montserrat;
+    color: $black;
+  }
+
+  &__stepTitle {
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+}

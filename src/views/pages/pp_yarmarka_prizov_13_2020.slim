@@ -1,0 +1,56 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - ярмарка призов 13
+  body
+    .contentWrapper
+      .contentWrapper__content.content
+
+        h1.content__title
+          | Программа «Ярмарка призов»
+        p.content__imgWrapper
+          img.content__img src="https://www.avon.ru/REPSuite/static/images/gi3-20/programs/pp_yarmarka_prizov_13_2020.jpg"
+
+        .content__stepsProgram.stepsProgram
+          .stepsProgram__cols
+            .stepsProgram__col.stepsProgram__step
+              .stepsProgram__stepIn
+                span.stepsProgram__stepTitle
+                  | РАЗМЕСТИ ЗАКАЗ
+                |  в&nbsp;Кампании 13/2020*
+                br/
+                |  с&nbsp;22 сентября по&nbsp;19 октября от&nbsp;2000<i class="currency">₽</i>**
+            .stepsProgram__col.stepsProgram__step
+              .stepsProgram__stepIn
+                span.stepsProgram__stepTitle
+                  | ЗАКАЖИ ПРИЗ
+                | *** всего за 50<i class="currency">₽</i>
+                br/
+                |  в&nbsp;Кампании 14/2020* с&nbsp;20 октября по&nbsp;9&nbsp;ноября
+                |  вместе с&nbsp;заказом от&nbsp;2000<i class="currency">₽</i>**
+
+        .content__in
+          h2.content__title.content__title--small
+            | Приз программы
+          h3.content__subtitle
+            | Вкладывается один из вариантов приза в зависимости от наличия на сборочной линии
+
+        p.content__text
+          a.linkDownload href="https://www.avon.ru/REPSuite/static/download/pp_yarmarka_prizov_13_2020.pdf" target="_blank"
+            span.linkDownload__title
+              | Скачать полные правила программы
+            span.linkDownload__info
+              | PDF 144 KB
+
+        p.content__note
+          span.content__noteHelper *
+          | Для Трендсеттерных территорий – в период действия каталогов 15/2020 и 16/2020
+        p.content__note
+          span.content__noteHelper *
+          | По базе для расчета скидки
+        p.content__note
+          span.content__noteHelper *
+          | Приз - Товар со скидкой к цене, определенной в каталоге, стоимостью 50 руб. Стоимость приза не входит в базу для расчета скидки
+
+    include scripts

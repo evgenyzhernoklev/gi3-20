@@ -40,6 +40,21 @@
 
   }
 
+  &__imgWrapper {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
+      border: solid 2px $white;
+      border-radius: 60px 0 60px 0;
+    }
+  }
+
   &__img {
     width: 100%;
   }
@@ -55,21 +70,16 @@
     font: italic 14px/1.43 $font-montserrat;
     color: #a2acae;
 
-    &:before {
-      content: '*';
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-weight: 700;
-    }
-
-    &--attention:before {
-      content: '!';
-    }
-
     .content__text + & {
       margin-top: 30px;
     }
+  }
+
+  &__noteHelper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
   }
 
   &__buttons {
@@ -78,6 +88,7 @@
     padding: 40px;
     background-color: $white-light;
   }
+
   &__button {
     min-width: 320px;
     margin-right: 20px;
