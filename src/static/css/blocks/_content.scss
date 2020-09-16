@@ -63,6 +63,15 @@
     margin: 20px auto;
   }
 
+  &__info {
+    margin-bottom: 32px;
+    padding: 15px 120px 17px;
+    font: 700 20px/1.4 $font-montserrat;
+    text-align: center;
+    color: $white;
+    background-color: $orange;
+  }
+
   &__note {
     position: relative;
     margin: 20px 0;

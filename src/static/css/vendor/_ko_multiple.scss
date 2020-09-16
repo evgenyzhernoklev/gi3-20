@@ -11,6 +11,9 @@
 		margin-left: -40px;
 		margin-right: -40px;
 	}
+	.bounty--mb0 {
+		margin-bottom: 0;
+	}
 	.bounty--charity {
 		.bountyGood__imgWrapper:before {
 			content: '';
@@ -148,6 +151,16 @@
 	.content__in .bounty__itemLineRow:last-child {
 		padding-bottom: 0;
 	}
+	.bounty__itemLineRow--small {
+		padding: 0 7.3%;
+	}
+		.bounty__itemLineRow--small .bountyGood {
+			position: relative;
+		  -webkit-flex-basis: 29.2%;
+		  -ms-flex-basis: 29.2%;
+		  flex-basis: 29.2%;
+			margin-right: 6.2%;
+		}
 
 .bounty__itemLineTitle {
 	margin: 40px 40px 0;
@@ -208,8 +221,8 @@
 /* .bountyGood */
 .bountyGood {
 	position: relative;
-  -webkit-flex-basis: 33.33%;
-  -ms-flex-basis: 33.33%;
+  -webkit-flex-basis: 25%;
+  -ms-flex-basis: 25%;
   flex-basis: 25%;
 	margin-right: 12.5%;
   padding: 0 0 211px;
@@ -220,6 +233,9 @@
 	}
 	.js-bounty-row-has-dropdown .bountyGood {
 		padding-bottom: 270px;
+	}
+	.bountyGood--onlyTitle {
+		padding-bottom: 0;
 	}
 
 .bountyGood__imgWrapper {

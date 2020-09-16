@@ -254,6 +254,49 @@ sup {
   color: #ffffff;
 }
 
+.triangleShadow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: auto;
+  bottom: -26px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.triangleShadow__helper {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.triangleShadow__helper:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  transform: rotate(45deg);
+  bottom: 16px;
+  left: -1px;
+  border: 1px solid #E4EDED;
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.07);
+}
+
+.triangleShadow--right {
+  margin-bottom: 2px;
+  bottom: 50%;
+  right: -22px;
+  transform: translateY(50%);
+}
+
+.triangleShadow__helper:after {
+  bottom: -1px;
+  left: -14px;
+}
+
 /* .bounty */
 
 .bounty {
@@ -267,6 +310,10 @@ sup {
 .content__in .bounty {
   margin-left: -40px;
   margin-right: -40px;
+}
+
+.bounty--mb0 {
+  margin-bottom: 0;
 }
 
 .bounty--charity .bountyGood__imgWrapper:before {
@@ -413,6 +460,18 @@ sup {
   padding-bottom: 0;
 }
 
+.bounty__itemLineRow--small {
+  padding: 0 7.3%;
+}
+
+.bounty__itemLineRow--small .bountyGood {
+  position: relative;
+  -webkit-flex-basis: 29.2%;
+  -ms-flex-basis: 29.2%;
+  flex-basis: 29.2%;
+  margin-right: 6.2%;
+}
+
 .bounty__itemLineTitle {
   margin: 40px 40px 0;
   padding: 14px 20px;
@@ -434,8 +493,8 @@ sup {
 
 .bountyGood {
   position: relative;
-  -webkit-flex-basis: 33.33%;
-  -ms-flex-basis: 33.33%;
+  -webkit-flex-basis: 25%;
+  -ms-flex-basis: 25%;
   flex-basis: 25%;
   margin-right: 12.5%;
   padding: 0 0 211px;
@@ -448,6 +507,10 @@ sup {
 
 .js-bounty-row-has-dropdown .bountyGood {
   padding-bottom: 270px;
+}
+
+.bountyGood--onlyTitle {
+  padding-bottom: 0;
 }
 
 .bountyGood__imgWrapper {
@@ -971,6 +1034,15 @@ button {
 
 .content__text {
   margin: 20px auto;
+}
+
+.content__info {
+  margin-bottom: 32px;
+  padding: 15px 120px 17px;
+  font: 700 20px/1.4 "Montserrat", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f09f87;
 }
 
 .content__note {
@@ -1662,6 +1734,7 @@ button {
 }
 
 .stepsProgram__step {
+  position: relative;
   border: solid 1px #E4EDED;
   background-color: #ffffff;
   box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.1);
