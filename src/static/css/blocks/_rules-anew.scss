@@ -1,0 +1,53 @@
+.rulesAnew {
+  margin: 60px auto;
+  padding: 27px 80px 20px;
+  border: solid 2px $gray-light;
+  background-color: $white-light;
+
+  &__title {
+    @extend .content__title;
+  }
+
+  &__cols {
+    display: flex;
+    justify-content: space-between;
+    margin: 37px auto 0;
+  }
+
+  &__col {
+    position: relative;
+    flex-basis: 48%;
+    margin-bottom: 38px;
+  }
+
+  &__colIn {
+    padding: 0 10px 0 68px;
+  }
+
+  &__colIconWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: $purple;
+    border-radius: 50%;
+  }
+
+  &__colIcon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__colText {
+    font: 16px/1.5 $font-montserrat;
+    color: $black;
+  }
+
+  &__colTextBold {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

@@ -431,7 +431,7 @@
   transition: background-color 0.3s linear;
 }
 	.bountyGood__dropdownListItem:hover {
-		background-color: #f6f9f9;
+		background-color: $white-light;
 	}
 	.bountyGood__dropdownListItem.is-active {
 		cursor: default;

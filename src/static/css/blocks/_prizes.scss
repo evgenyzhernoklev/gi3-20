@@ -58,7 +58,7 @@
 
     &:not(:last-child) {
       margin-bottom: 20px;
-      border-bottom: solid 1px $white-light;
+      border-bottom: solid 1px $gray-light;
     }
   }
 
@@ -105,8 +105,8 @@
     font: 700 16px/1.5 $font-montserrat;
     color: $black;
     border-radius: 4px;
-    border: solid 1px $white-light;
-    background-color: #f6f9f9;
+    border: solid 1px $gray-light;
+    background-color: $white-light;
     cursor: pointer;
 
     &:before {
@@ -148,7 +148,7 @@
     right: 0;
     padding: 20px 40px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
-    border: solid 1px $white-light;
+    border: solid 1px $gray-light;
     border-top: 0;
     background-color: $white;
     max-height: 215px;

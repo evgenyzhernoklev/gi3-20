@@ -1,11 +1,11 @@
 .programPrizes {
   margin: 15px auto 0;
-  border: solid 1px $white-light;
+  border: solid 1px $gray-light;
 
   &__header {
     display: flex;
-    border-bottom: solid 1px $white-light;
-    background-color: #f6f9f9;
+    border-bottom: solid 1px $gray-light;
+    background-color: $white-light;
   }
 
   &__headerItem {
@@ -16,7 +16,7 @@
 
     &:nth-child(2n+1) {
       .programPrizes__headerItemIn {
-        border-right: solid 1px $white-light;
+        border-right: solid 1px $gray-light;
       }
     }
   }
@@ -35,10 +35,10 @@
 
     &:nth-child(2n+1) {
       .programPrizes__contentItemIn {
-        border-right: solid 1px $white-light;
+        border-right: solid 1px $gray-light;
 
         &:not(:last-child) {
-          border-bottom: solid 1px $white-light;
+          border-bottom: solid 1px $gray-light;
         }
       }
     }

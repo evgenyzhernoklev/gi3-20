@@ -1,15 +1,15 @@
 .rules {
   margin: 20px 0 50px;
   padding: 0 40px 10px;
-  border: solid 2px $white-light;
-  background-color: #f6f9f9;
+  border: solid 2px $gray-light;
+  background-color: $white-light;
   counter-reset: steps;
 
   &__row {
     padding: 25px 0 30px;
 
     &:not(:last-child) {
-      border-bottom: solid 1px $white-light;
+      border-bottom: solid 1px $gray-light;
     }
   }
 

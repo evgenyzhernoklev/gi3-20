@@ -1,0 +1,35 @@
+.prizesList {
+  &__title {
+    @extend .content__title;
+    @extend .content__title--small;
+    margin-bottom: 15px;
+  }
+
+  &__note {
+    padding: 22px 30px;
+    font: 700 20px/1.4 $font-montserrat;
+    text-align: center;
+    color: $white;
+    background-color: $orange;
+  }
+
+  &__noteTitle {
+    text-transform: uppercase;
+  }
+
+  &__ {
+
+  }
+
+  &__ {
+
+  }
+
+  &__ {
+
+  }
+
+  &__ {
+
+  }
+}
