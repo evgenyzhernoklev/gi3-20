@@ -1381,9 +1381,12 @@ button {
   background-color: #f09f87;
 }
 
-.prizesList__note--green {
+.prizesList__note--small {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.prizesList__note--green {
   background-color: #1a8282;
 }
 

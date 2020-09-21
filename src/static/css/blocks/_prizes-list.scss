@@ -12,9 +12,12 @@
     color: $white;
     background-color: $orange;
 
-    &--green {
+    &--small {
       padding-top: 10px;
       padding-bottom: 10px;
+    }
+
+    &--green {
       background-color: #1a8282;
     }
   }
