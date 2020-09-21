@@ -7,6 +7,10 @@
     background: $white;
     padding: 60px 40px 40px;
 
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
     &--small {
       padding-left: 120px;
       padding-right: 120px;

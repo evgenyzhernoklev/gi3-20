@@ -11,25 +11,50 @@
     text-align: center;
     color: $white;
     background-color: $orange;
+
+    &--green {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #1a8282;
+    }
   }
 
   &__noteTitle {
     text-transform: uppercase;
   }
 
-  &__ {
+  &__bounty {
+    .bounty__itemLineRow {
+      justify-content: center;
 
+      .bountyGood {
+        flex-basis: 33.9%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .bountyGood__img {
+        max-width: 340px;
+      }
+
+      .bountyGood__button {
+        left: 13.3%;
+        right: 13.3%;
+      }
+    }
   }
 
-  &__ {
-
-  }
-
-  &__ {
-
-  }
-
-  &__ {
-
-  }
+  // &__ {
+  //
+  // }
+  //
+  // &__ {
+  //
+  // }
+  //
+  // &__ {
+  //
+  // }
 }

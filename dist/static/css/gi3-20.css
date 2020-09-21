@@ -522,7 +522,6 @@ sup {
 }
 
 .bountyGood__img {
-  width: 100%;
   max-width: 250px;
   max-height: 300px;
   vertical-align: middle;
@@ -981,6 +980,10 @@ button {
   padding: 60px 40px 40px;
 }
 
+.content__in:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .content__in--small {
   padding-left: 120px;
   padding-right: 120px;
@@ -1377,8 +1380,35 @@ button {
   background-color: #f09f87;
 }
 
+.prizesList__note--green {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1a8282;
+}
+
 .prizesList__noteTitle {
   text-transform: uppercase;
+}
+
+.prizesList__bounty .bounty__itemLineRow {
+  justify-content: center;
+}
+
+.prizesList__bounty .bounty__itemLineRow .bountyGood {
+  flex-basis: 33.9%;
+}
+
+.prizesList__bounty .bounty__itemLineRow .bountyGood:last-child {
+  margin-right: 0;
+}
+
+.prizesList__bounty .bounty__itemLineRow .bountyGood__img {
+  max-width: 340px;
+}
+
+.prizesList__bounty .bounty__itemLineRow .bountyGood__button {
+  left: 13.3%;
+  right: 13.3%;
 }
 
 .prizes--small.prizes--withButton .prizes__item {
@@ -1844,18 +1874,21 @@ button {
   border-right: 0;
 }
 
-.tabs__link:hover {
+.tabs__link:hover,
+.tabs__link.is-active {
   z-index: 10;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
 }
 
-.tabs__link:hover .tabs__linkIn:after {
+.tabs__link:hover .tabs__linkIn:after,
+.tabs__link.is-active .tabs__linkIn:after {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s linear, visibility 0.3s linear;
 }
 
 .tabs__link.is-active {
+  z-index: 1;
   cursor: default;
 }
 

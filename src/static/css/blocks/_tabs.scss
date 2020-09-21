@@ -23,7 +23,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &.is-active {
       z-index: 10;
       box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
 
@@ -33,6 +34,7 @@
     }
 
     &.is-active {
+      z-index: 1;
       cursor: default;
     }
   }
