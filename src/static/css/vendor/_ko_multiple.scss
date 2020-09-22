@@ -247,7 +247,6 @@
 }
 
 .bountyGood__img {
-	width: 100%;
 	max-width: 250px;
 	max-height: 300px;
   vertical-align: middle;
@@ -527,6 +526,12 @@
 		color: #6a17ad;
 		border-color: rgba(127, 40, 196, 0.05);
 		background-color: rgba(127, 40, 196, 0.05);
+	}
+	.bountyGood__button.is-disabled {
+		color: #a2acae;
+		border-color: #a2acae;
+		cursor: default;
+		background-color: transparent;
 	}
 
 .bountyGood__note {

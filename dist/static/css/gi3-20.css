@@ -522,7 +522,6 @@ sup {
 }
 
 .bountyGood__img {
-  width: 100%;
   max-width: 250px;
   max-height: 300px;
   vertical-align: middle;
@@ -830,6 +829,13 @@ sup {
   color: #6a17ad;
   border-color: rgba(127, 40, 196, 0.05);
   background-color: rgba(127, 40, 196, 0.05);
+}
+
+.bountyGood__button.is-disabled {
+  color: #a2acae;
+  border-color: #a2acae;
+  cursor: default;
+  background-color: transparent;
 }
 
 .bountyGood__note {
@@ -1402,21 +1408,58 @@ button {
   justify-content: center;
 }
 
-.prizesList__bounty .bounty__itemLineRow .bountyGood {
+.prizesList__bounty .bountyGood {
   flex-basis: 33.9%;
 }
 
-.prizesList__bounty .bounty__itemLineRow .bountyGood:last-child {
+.prizesList__bounty .bountyGood:last-child {
   margin-right: 0;
 }
 
-.prizesList__bounty .bounty__itemLineRow .bountyGood__img {
+.prizesList__bounty .bountyGood__img {
   max-width: 340px;
 }
 
-.prizesList__bounty .bounty__itemLineRow .bountyGood__button {
+.prizesList__bounty .bountyGood__button {
   left: 13.3%;
   right: 13.3%;
+}
+
+.prizesList__bounty--noCode .bounty__itemLine {
+  margin-bottom: 0;
+}
+
+.prizesList__bounty--noCode .bountyGood {
+  padding-bottom: 186px;
+}
+
+.prizesList__bounty--noCode .bountyGood__imgWrapper {
+  margin-bottom: 25px;
+}
+
+.prizesList__bounty--singleFullImg .bountyGood {
+  flex-basis: 100%;
+}
+
+.prizesList__bounty--singleFullImg .bountyGood__imgWrapper {
+  margin-bottom: 25px;
+}
+
+.prizesList__bounty--singleFullImg .bountyGood__img {
+  max-width: none;
+}
+
+.prizesList__bounty--singleFullImg .bountyGood__title {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prizesList__bounty--singleFullImg .bountyGood__button {
+  max-width: 250px;
+  left: 50%;
+  right: 0;
+  transform: translateX(-50%);
 }
 
 .prizesList__cols {

@@ -33,22 +33,63 @@
   &__bounty {
     .bounty__itemLineRow {
       justify-content: center;
+    }
+
+    .bountyGood {
+      flex-basis: 33.9%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .bountyGood__img {
+      max-width: 340px;
+    }
+
+    .bountyGood__button {
+      left: 13.3%;
+      right: 13.3%;
+    }
+
+    &--noCode {
+      .bounty__itemLine {
+        margin-bottom: 0;
+      }
 
       .bountyGood {
-        flex-basis: 33.9%;
+        padding-bottom: 186px;
+      }
 
-        &:last-child {
-          margin-right: 0;
-        }
+      .bountyGood__imgWrapper {
+        margin-bottom: 25px;
+      }
+    }
+
+    &--singleFullImg {
+      .bountyGood {
+        flex-basis: 100%;
+      }
+
+      .bountyGood__imgWrapper {
+        margin-bottom: 25px;
       }
 
       .bountyGood__img {
-        max-width: 340px;
+        max-width: none;
+      }
+
+      .bountyGood__title {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .bountyGood__button {
-        left: 13.3%;
-        right: 13.3%;
+        max-width: 250px;
+        left: 50%;
+        right: 0;
+        transform: translateX(-50%);
       }
     }
   }
