@@ -50,4 +50,10 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  &__colAttention {
+    margin: 9px auto 0;
+    font: 700 16px/1.75 $font-montserrat;
+    color: $purple;
+  }
 }

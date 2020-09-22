@@ -1,4 +1,8 @@
 .prizesList {
+  .content__note {
+    margin: 50px auto 87px;
+  }
+
   &__title {
     @extend .content__title;
     @extend .content__title--small;

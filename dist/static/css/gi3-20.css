@@ -1369,6 +1369,10 @@ button {
   color: #546264;
 }
 
+.prizesList .content__note {
+  margin: 50px auto 87px;
+}
+
 .prizesList__title {
   margin-bottom: 15px;
 }
@@ -1813,6 +1817,12 @@ button {
 .rulesAnew__colTextBold {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.rulesAnew__colAttention {
+  margin: 9px auto 0;
+  font: 700 16px/1.75 "Montserrat", sans-serif;
+  color: #7f28c4;
 }
 
 .rules {
