@@ -9,7 +9,7 @@
     flex-basis: 100%;
     font: 300 32px/1.4 $font-montserrat;
     text-align: center;
-    color: $black;
+    color: $black !important;
     transition: box-shadow $transition-normal, z-index $transition-normal;
     cursor: pointer;
 

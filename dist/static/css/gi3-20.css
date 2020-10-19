@@ -2038,6 +2038,15 @@ button {
           border-radius: 50%;
 }
 
+.rulesAnew__colIconWrapper .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .rulesAnew__colIcon {
   display: inline-block;
   vertical-align: middle;
@@ -2169,7 +2178,7 @@ button {
           flex-basis: 100%;
   font: 300 32px/1.4 "Montserrat", sans-serif;
   text-align: center;
-  color: #181818;
+  color: #181818 !important;
   -webkit-transition: z-index 0.3s linear, -webkit-box-shadow 0.3s linear;
   transition: z-index 0.3s linear, -webkit-box-shadow 0.3s linear;
   -o-transition: box-shadow 0.3s linear, z-index 0.3s linear;
