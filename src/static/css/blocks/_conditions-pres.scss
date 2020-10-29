@@ -1,0 +1,105 @@
+.conditionsPres {
+  margin: 50px 0 0;
+
+  &__cols {
+    margin: 23px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fff;
+  }
+
+  &__item {
+    flex-basis: 33%;
+    background-color: #ffffff;
+    border-right: solid 1px $gray-light;
+    border-bottom: solid 1px $gray-light;
+
+    &:nth-child(3n+1) {
+      border-left: solid 1px $gray-light;
+    }
+  }
+
+  &__itemHeader {
+    padding: 15px 20px;
+  	font: 700 18px/1.56 $font-montserrat;
+    text-transform: uppercase;
+    text-align: center;
+  	color: $gray;
+  	background-color: $gray-light;
+  }
+
+  &__itemContent {
+    padding: 41px 8% 46px;
+    text-align: center;
+
+    .icon {
+      margin-bottom: 10px;
+    }
+
+    .currency {
+      margin-left: 1px;
+    }
+  }
+
+  &__itemContentTitle {
+    margin-bottom: 7px;
+    font: 700 20px/1.4 $font-montserrat;
+    text-transform: uppercase;
+  	color: $purple;
+  }
+
+  &__itemContentConditions {
+    margin-bottom: 11px;
+    font: 400 16px/1.5 $font-montserrat;
+  	color: $gray;
+  }
+
+  &__itemContentSum {
+    position: relative;
+    margin-bottom: 28px;
+    padding-bottom: 43px;
+    font: 700 30px/20px $font-montserrat;
+  	color: $black;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background-color: $gray-light;
+    }
+
+    &:after {
+      content: '';
+  		display: inline-block;
+  		position: absolute;
+  		bottom: 0;
+  		left: 50%;
+  		margin-left: -22px;
+  		width: 44px;
+  		height: 25px;
+  		background: #fff url('https://www.avon.ru/REPSuite/static/images/gi3-20/svg/arrow-down-gray.svg') no-repeat center center;
+  		background-size: 20px 25px;
+    }
+  }
+
+  &__itemContentText {
+    font: 400 18px/1.44 $font-montserrat;
+  	color: $gray;
+
+    b {
+      font-weight: 700;
+      color: $black;
+    }
+
+    &--plus {
+      padding: 10px 0 10px;
+      font-size: 42px;
+      color: $black;
+      line-height: 0.72;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - program president club
+  body
+    .contentWrapper
+      .contentWrapper__content.content
+
+        include banners/president_club
+
+        .content__in
+          .content__tabs.tabs
+            .tabs__links
+              span.tabs__link.tabs__link--2.is-active
+                span.tabs__linkIn
+                  | Программа 3 Этапа
+                  i.tabs__linkPeriod
+                    | 07/2020 – 12/2020
+              / a.tabs__link.tabs__link--2 href="http://www.avon.ru/REPSuite/anew_club_C10.page"
+              span.tabs__link.tabs__link--2
+                span.tabs__linkIn
+                  | Программа Нового этапа
+                  i.tabs__linkPeriod
+                    | 13/2020 – 16/2020
+
+          .content__conditionsPres.conditionsPres
+            h2.content__title
+              | Условия и призы для 3-го этапа
+            .conditionsPres__cols
+              .conditionsPres__item
+                .conditionsPres__itemHeader
+                  | СЕРЕБРО
+                .conditionsPres__itemContent
+                  p.conditionsPres__itemContentTitle
+                    | УСЛОВИЯ
+                  p.conditionsPres__itemContentConditions
+                    | Выполни минимальный объём продаж за Кампании 07-12/2020
+                  p.conditionsPres__itemContentSum
+                    | 55 000<i class="currency">₽</i>
+                  include icons/gift-purple
+                  p.conditionsPres__itemContentTitle
+                    | ПРИЗЫ
+                  p.conditionsPres__itemContentText
+                    | Мы увеличим твой
+                    br/
+                    | <b>лимит на заказ до 40 000<i class="currency">₽</i></b>
+                    br/
+                    | В Кампаниях 13-17/2020
+                  p.conditionsPres__itemContentText.conditionsPres__itemContentText--plus
+                    | +
+                  p.conditionsPres__itemContentText
+                    | <b>1 ПРИЗ</b> на выбор
+                    br/
+                    | в Кампаниях 13-17/2020
+              .conditionsPres__item
+                .conditionsPres__itemHeader
+                  | Золото
+                .conditionsPres__itemContent
+                  p.conditionsPres__itemContentTitle
+                    | УСЛОВИЯ
+                  p.conditionsPres__itemContentConditions
+                    | Выполни минимальный объём продаж за Кампании 07-12/2020
+                  p.conditionsPres__itemContentSum
+                    | 110 000<i class="currency">₽</i>
+                  include icons/gift-purple
+                  p.conditionsPres__itemContentTitle
+                    | ПРИЗЫ
+                  p.conditionsPres__itemContentText
+                    | Мы увеличим твой
+                    br/
+                    | <b>лимит на заказ до 80 000<i class="currency">₽</i></b>
+                    br/
+                    | В Кампаниях 13-17/2020
+                  p.conditionsPres__itemContentText.conditionsPres__itemContentText--plus
+                    | +
+                  p.conditionsPres__itemContentText
+                    | <b>3 ПРИЗА</b> на выбор
+                    br/
+                    | в Кампаниях 13-17/2020
+              .conditionsPres__item
+                .conditionsPres__itemHeader
+                  | СЕРЕБРО
+                .conditionsPres__itemContent
+                  p.conditionsPres__itemContentTitle
+                    | УСЛОВИЯ
+                  p.conditionsPres__itemContentConditions
+                    | Выполни минимальный объём продаж за Кампании 07-12/2020
+                  p.conditionsPres__itemContentSum
+                    | 350 000<i class="currency">₽</i>
+                  include icons/gift-purple
+                  p.conditionsPres__itemContentTitle
+                    | ПРИЗЫ
+                  p.conditionsPres__itemContentText
+                    | Мы увеличим твой
+                    br/
+                    | <b>лимит на заказ до 120 000<i class="currency">₽</i></b>
+                    br/
+                    | В Кампаниях 13-17/2020
+                  p.conditionsPres__itemContentText.conditionsPres__itemContentText--plus
+                    | +
+                  p.conditionsPres__itemContentText
+                    | <b>7 ПРИЗОВ</b> на выбор
+                    br/
+                    | в Кампаниях 13-17/2020
+
+          .content__privileges.privileges
+            h3.privileges__title
+              | Победители этапа автоматически получают привилегии:
+            .privileges__cols.colsFlex
+              .colsFlex__col.colsFlex__col--3.privileges__col
+                .privileges__colIn
+                  .privileges__imgWrapper
+                    include icons/headset-purple
+                  p.privileges__colTitle
+                    | Телефонная линия
+                  p.privileges__info
+                    | Бесплатная выделенная
+                    br/
+                    | телефонная линия
+                    br/
+                    a href="tel:88007007008"
+                      | 8 800 700 7008
+              .colsFlex__col.colsFlex__col--3.privileges__col
+                .privileges__colIn
+                  .privileges__imgWrapper
+                    include icons/sms-purple
+                  p.privileges__colTitle
+                    | Пакет бизнес СМС
+                  p.privileges__info
+                    | Бесплатная подписка
+                    | На «Пакет Бизнес СМС»
+              .colsFlex__col.colsFlex__col--3.privileges__col
+                .privileges__colIn
+                  .privileges__imgWrapper
+                    include icons/cat-purple
+                  p.privileges__colTitle
+                    | Набор каталогов
+                  p.privileges__info
+                    | Набор каталогов
+                    | по специальной цене
+
+
+    include scripts
