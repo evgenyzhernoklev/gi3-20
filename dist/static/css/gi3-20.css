@@ -617,6 +617,10 @@ sup {
 }
 
 .bountyGood--card .bountyGood__imgWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   margin-top: 50px;
   margin-bottom: 34px;
   padding: 0;
@@ -634,6 +638,16 @@ sup {
   height: 330px;
   line-height: 300px;
   font-size: 0;
+}
+
+.bountyGood__imgWrapperText {
+  font: 700 45px/29px 'Montserrat', Arial, sans-serif;
+  text-align: center;
+  color: #7f28c4;
+}
+
+.bountyGood__imgWrapperText .currency {
+  margin-left: 4px;
 }
 
 .bountyGood__img {
