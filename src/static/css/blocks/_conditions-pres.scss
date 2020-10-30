@@ -1,5 +1,9 @@
 .conditionsPres {
-  margin: 50px 0 0;
+  margin: 50px 0 60px;
+
+  &--mt0 {
+    margin-top: 0;
+  }
 
   &__cols {
     margin: 23px 0 0;
@@ -76,7 +80,7 @@
       content: '';
   		display: inline-block;
   		position: absolute;
-  		bottom: 0;
+  		bottom: -13px;
   		left: 50%;
   		margin-left: -22px;
   		width: 44px;
@@ -100,6 +104,21 @@
       font-size: 42px;
       color: $black;
       line-height: 0.72;
+    }
+  }
+
+  &__info {
+    margin: 0 auto;
+    padding: 15px 20px;
+    font: 500 18px/1.5 $font-montserrat;
+    text-align: center;
+    color: $gray;
+    border: solid 1px $gray-light;
+    border-top: 0;
+    background-color: $white-light;
+
+    .conditionsPres__cols + & {
+      width: 99%;
     }
   }
 }

@@ -169,6 +169,13 @@
   text-align: center;
   color: #ffffff;
   background-color: #f09f87;
+
+	&--textBig {
+		margin-top: 10px;
+		font-size: 20px;
+	  font-weight: 700;
+	  line-height: 1.4;
+	}
 }
 
 .bounty__itemLineCondition {
@@ -237,6 +244,9 @@
 	.bountyGood--onlyTitle {
 		padding-bottom: 0;
 	}
+	.bountyGood--noPrice {
+		
+	}
 
 .bountyGood__imgWrapper {
 	margin: 0 auto 65px;
@@ -247,6 +257,7 @@
 }
 
 .bountyGood__img {
+	width: 100%;
 	max-width: 250px;
 	max-height: 300px;
   vertical-align: middle;

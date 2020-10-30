@@ -1,18 +1,15 @@
 .privileges {
   margin: 30px 0 0;
-  padding: 30px 20px 72px;
   text-align: center;
-  border: solid 1px #e4eded;
-  background-color: $white;
 
   &__title {
-    margin-bottom: 39px;
-    font: 700 28px/1.2 $font-montserrat;
-    color: $gray;
+    margin-bottom: 15px;
   }
 
   &__cols {
-    margin: 0 18%;
+    padding: 41px 7% 35px;
+    border: solid 2px $gray-light;
+    background-color: $white-light;
   }
 
   &__col {
@@ -24,34 +21,38 @@
   }
 
   &__imgWrapper {
+    position: relative;
     margin-bottom: 10px;
     height: 60px;
-    line-height: 60px;
   }
 
   .icon {
     display: inline-block;
     max-width: 50px;
     max-height: 55px;
-    vertical-align: middle;
-    fill: #ff326d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__colTitle {
-    margin-bottom: 10px;
-    font: 300 20px/1.2 $font-montserrat;
-    color: #344447;
+    margin-bottom: 7px;
+    font: 700 20px/1.4 $font-montserrat;
+    text-transform: uppercase;
+    color: $black;
   }
 
   &__info {
-    font-size: 14px;
-    line-height: 1.43;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $gray;
 
     a {
-      color: $black;
+      color: $gray;
 
       &:hover {
-        // color: $pink;
+        color: $purple;
       }
     }
   }
@@ -68,10 +69,6 @@
 @media ($mobile) {
   .privileges {
     padding-bottom: 40px;
-
-    &__title {
-      font-size: 24px;
-    }
 
     &__col {
       &:not(:last-child) {

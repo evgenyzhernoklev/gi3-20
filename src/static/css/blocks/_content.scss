@@ -35,6 +35,14 @@
     text-align: center;
     color: $black;
 
+    &--big {
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.33;
+      color: $gray;
+    }
+
     &--mb10 {
       margin-bottom: 10px;
     }
