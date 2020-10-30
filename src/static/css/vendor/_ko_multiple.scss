@@ -7,6 +7,9 @@
 	.bounty:first-child {
 		margin-top: 10px;
 	}
+	.bounty--mt0 {
+		margin-top: 0;
+	}
 	.content__in .bounty {
 		margin-left: -40px;
 		margin-right: -40px;
@@ -245,8 +248,34 @@
 		padding-bottom: 0;
 	}
 	.bountyGood--noPrice {
-		
+		padding-bottom: 176px;
 	}
+		.js-bounty-row-has-dropdown .bountyGood.bountyGood--noPrice {
+			padding-bottom: 225px;
+		}
+		.bountyGood--noPrice .bountyGood__code {
+			bottom: 127px;
+		}
+		.bountyGood--noPrice .bountyGood__dropdown {
+			bottom: 167px;
+		}
+	.bountyGood--card {
+
+	}
+		.bountyGood--card .bountyGood__imgWrapper {
+			margin-top: 50px;
+			margin-bottom: 34px;
+			padding: 0;
+			height: 150px;
+			line-height: 150px;
+			border-radius: 4px;
+		  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
+		  border: solid 1px $gray-light;
+		  background-color: $white-light;
+		}
+		.bountyGood--card {
+
+		}
 
 .bountyGood__imgWrapper {
 	margin: 0 auto 65px;

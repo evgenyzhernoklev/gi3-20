@@ -1,5 +1,5 @@
 .conditionsPres {
-  margin: 50px 0 60px;
+  margin: 50px 0 65px;
 
   &--mt0 {
     margin-top: 0;
@@ -119,6 +119,16 @@
 
     .conditionsPres__cols + & {
       width: 99%;
+    }
+  }
+
+  &__good {
+    &.bountyGood {
+      padding-bottom: 10px;
+    }
+
+    .bountyGood__dropdown {
+      bottom: -3px;
     }
   }
 }
