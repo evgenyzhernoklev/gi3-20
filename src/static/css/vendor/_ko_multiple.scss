@@ -262,6 +262,12 @@
 	.bountyGood--card {
 
 	}
+		.js-bounty-row-has-dropdown .bountyGood--card {
+			align-self: flex-end;
+		}
+		.js-bounty-row-has-dropdown .bountyGood.bountyGood--card {
+			padding-bottom: 201px;
+		}
 		.bountyGood--card .bountyGood__imgWrapper {
 			display: flex;
 			flex-wrap: wrap;
