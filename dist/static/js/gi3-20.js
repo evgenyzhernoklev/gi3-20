@@ -1553,4 +1553,3 @@ function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "funct
     exports["default"] = _default;
   }, {}]
 }, {}, ["/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/gi3-20.js"]);
-//# sourceMappingURL=maps/gi3-20.js.map
