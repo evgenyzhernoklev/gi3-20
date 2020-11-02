@@ -7,13 +7,13 @@
   }
 
   &__cols {
-    padding: 41px 7% 35px;
+    padding: 41px 7% 0;
     border: solid 2px $gray-light;
     background-color: $white-light;
   }
 
   &__col {
-
+    margin-bottom: 50px;
   }
 
   &__colIn {

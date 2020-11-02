@@ -632,6 +632,10 @@ sup {
   background-color: #f6f9f9;
 }
 
+.bountyGood--disabled .bountyGood__codeNumber {
+  color: #a2acae;
+}
+
 .bountyGood__imgWrapper {
   margin: 0 auto 65px;
   padding: 30px 0 0;
@@ -1668,9 +1672,13 @@ button {
 }
 
 .privileges__cols {
-  padding: 41px 7% 35px;
+  padding: 41px 7% 0;
   border: solid 2px #E4EDED;
   background-color: #f6f9f9;
+}
+
+.privileges__col {
+  margin-bottom: 50px;
 }
 
 .privileges__colIn {

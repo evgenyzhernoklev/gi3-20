@@ -277,6 +277,12 @@
 		  border: solid 1px $gray-light;
 		  background-color: $white-light;
 		}
+	.bountyGood--disabled {
+
+	}
+		.bountyGood--disabled .bountyGood__codeNumber {
+			color: #a2acae;
+		}
 
 .bountyGood__imgWrapper {
 	margin: 0 auto 65px;
