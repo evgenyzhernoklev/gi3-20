@@ -21,6 +21,10 @@
     padding: 30px 80px 28px 30px;
     font: 20px/1.4 $font-montserrat;
     color: $black;
+
+    &--font22 {
+      font-size: 22px;
+    }
   }
 
   &__stepTitle {

@@ -1,0 +1,25 @@
+.bountyProgram {
+  display: flex;
+  justify-content: center;
+
+  .bountyGood {
+    flex-basis: 32%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .bountyGood__title {
+    font: 700 20px/1.6 $font-montserrat;
+    color: $black;
+  }
+
+  .bountyGood__button {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 250px;
+  }
+}
