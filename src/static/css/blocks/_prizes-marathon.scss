@@ -1,5 +1,5 @@
 .prizesMarathon {
-  margin-bottom: 40px;
+  margin: 20px auto 40px;
   overflow: hidden;
 
   &__cols {
@@ -15,6 +15,7 @@
 
     &--img {
       flex-basis: 60%;
+      text-align: center;
 
       .prizesMarathon__colImg {
         width: 90%;
