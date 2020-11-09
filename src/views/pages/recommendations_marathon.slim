@@ -1,0 +1,80 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - recommendations marathon
+  body
+    .contentWrapper
+      .contentWrapper__content.content
+
+        include banners/recommendations_marathon
+
+        .content__in.content__in--small
+          h2.content__title
+            | Условия программы
+          p.content__subtitle
+            | Программа для Представителей в Кампаниях 15-16 2020
+          .content__rulesMarathon.rulesMarathon
+            .rulesMarathon__cols
+              .rulesMarathon__col
+                .rulesMarathon__colText
+                  | <b>Рекомендуй новых Представителей</b>
+                  |  с&nbsp;помощью программы «AVON для друзей»*
+                include icons/for-friends
+              .rulesMarathon__col
+                .rulesMarathon__colText
+                  | <b>Заверши 3&nbsp;обязательные тренировки марафона</b>
+                  |  на&nbsp;платформе
+                  |  для&nbsp;обучения Skill&nbsp;Cup
+                include icons/gift-box
+              .rulesMarathon__col
+                .rulesMarathon__colText
+                  | <b>Войди в&nbsp;ТОП&nbsp;100</b> рейтинга
+                  |  рекомендованных Представителей
+                  |  и&nbsp;получи <b>классный приз!</b>
+                include icons/skill-cup
+
+          .content__attention
+            | *Рекомендуемый должен выполнить условия программы «Avon для друзей»,
+            |  своевременно оплатить свой первый заказ. Рекомендация считается завершенной,
+            |  когда оплата за первый заказ рекомендованного поступила на счет компании Avon
+
+          h3.content__title.content__title--small
+            | Призы программы
+          .content__prizesMarathon.prizesMarathon
+            .prizesMarathon__cols
+              .prizesMarathon__col.prizesMarathon__col--img
+                img.prizesMarathon__colImg src="https://www.avon.ru/REPSuite/static/images/gi3-20/prizes/marathon/recommendations_marathon_prizes.jpg"
+              .prizesMarathon__col.prizesMarathon__col--info
+                ul.prizesMarathon__colList
+                  li.prizesMarathon__colListItem
+                    span
+                      | 5
+                    |  смартфонов Apple iPhone*
+                  li.prizesMarathon__colListItem
+                    span
+                      | 10
+                    |  часов Apple Watch*
+                  li.prizesMarathon__colListItem
+                    span
+                      | 15
+                    |  наушников Apple AirPods*
+                  li.prizesMarathon__colListItem
+                    span
+                      | 70
+                    |  наборов Avon Beauty Box
+            .prizesMarathon__buttons
+              a.prizesMarathon__button.linkButton.linkButton--purpleTransparent download="download" target="_blank" href="http://static.avon.ru/REPSuite/static/download/recommendations_marathon_202011_rating.pdf"
+                | Найди себя в рейтинге лучших
+              a.prizesMarathon__button.linkButton.linkButton--purpleTransparent download="download" target="_blank" href="http://static.avon.ru/REPSuite/static/download/recommendations_marathon_202011_faq.pdf"
+                | ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+
+        a.content__linkDownload.linkDownload[download="download" href="http://static.avon.ru/REPSuite/static/download/recommendations_marathon_202011_rules.pdf" target="_blank"]
+          span.linkDownload__title
+            | Правила программы
+          span.linkDownload__info
+            | PDF 90 КБ
+        p.content__note
+          span.content__noteHelper
+            | *
+          | Внешний вид, цвета и модели призов могут отличаться от их изображения

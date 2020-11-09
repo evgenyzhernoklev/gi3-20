@@ -1,0 +1,58 @@
+.prizesMarathon {
+  margin-bottom: 40px;
+  overflow: hidden;
+
+  &__cols {
+    margin: 25px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__col {
+    flex-basis: 100%;
+
+    &--img {
+      flex-basis: 60%;
+
+      .prizesMarathon__colImg {
+        width: 90%;
+      }
+    }
+    &--info {
+      flex-basis: 36%;
+    }
+  }
+
+  &__colList {
+
+  }
+
+  &__colListItem {
+    font: 700 20px/36px $font-montserrat;
+    color: $black;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    span {
+      font-size: 30px;
+      color: $purple;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 40px;
+  }
+
+  &__button {
+    flex-basis: 45.65%;
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+}
