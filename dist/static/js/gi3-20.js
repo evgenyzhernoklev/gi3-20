@@ -1440,6 +1440,7 @@ function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "funct
       };
     } // import Gallery    from "../js/gallery";
     // import Samples    from "../js/samples";
+    // import "../js/ko_multiple";
 
 
     $(document).ready(function () {
@@ -1553,3 +1554,4 @@ function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "funct
     exports["default"] = _default;
   }, {}]
 }, {}, ["/Users/evgenyzhernoklev/Projects/gi3-20/src/static/js/gi3-20.js"]);
+//# sourceMappingURL=maps/gi3-20.js.map

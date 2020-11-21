@@ -8,6 +8,8 @@ import Copy       from "../js/copy";
 // import Gallery    from "../js/gallery";
 // import Samples    from "../js/samples";
 
+// import "../js/ko_multiple";
+
 $(document).ready(function() {
   new Dropdowns();
   new Expand();
