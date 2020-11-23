@@ -3879,11 +3879,11 @@ input::-ms-reveal {
   font: 300 32px/1.4 "Montserrat", sans-serif;
   text-align: center;
   color: #181818 !important;
-  -webkit-transition: z-index 0.3s linear, -webkit-box-shadow 0.3s linear;
-  transition: z-index 0.3s linear, -webkit-box-shadow 0.3s linear;
-  -o-transition: box-shadow 0.3s linear, z-index 0.3s linear;
-  transition: box-shadow 0.3s linear, z-index 0.3s linear;
-  transition: box-shadow 0.3s linear, z-index 0.3s linear, -webkit-box-shadow 0.3s linear;
+  -webkit-transition: z-index 0.3s linear, color 0.3s linear, background-color 0.3s linear, -webkit-box-shadow 0.3s linear;
+  transition: z-index 0.3s linear, color 0.3s linear, background-color 0.3s linear, -webkit-box-shadow 0.3s linear;
+  -o-transition: box-shadow 0.3s linear, z-index 0.3s linear, color 0.3s linear, background-color 0.3s linear;
+  transition: box-shadow 0.3s linear, z-index 0.3s linear, color 0.3s linear, background-color 0.3s linear;
+  transition: box-shadow 0.3s linear, z-index 0.3s linear, color 0.3s linear, background-color 0.3s linear, -webkit-box-shadow 0.3s linear;
   cursor: pointer;
 }
 
@@ -3965,6 +3965,7 @@ input::-ms-reveal {
           flex-basis: 80%;
   padding: 0 20px;
   border: 0;
+  background-color: transparent;
 }
 
 .tabs__link--small .tabs__linkIn:after {

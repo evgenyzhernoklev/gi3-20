@@ -42,7 +42,10 @@
     font: 300 32px/1.4 $font-montserrat;
     text-align: center;
     color: $black !important;
-    transition: box-shadow $transition-normal, z-index $transition-normal;
+    transition: box-shadow $transition-normal,
+                z-index $transition-normal,
+                color $transition-normal,
+                background-color $transition-normal;
     cursor: pointer;
 
     &--2 {
@@ -103,6 +106,7 @@
         flex-basis: 80%;
         padding: 0 20px;
         border: 0;
+        background-color: transparent;
 
         &:after {
           display: none;
