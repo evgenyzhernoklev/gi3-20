@@ -6,6 +6,7 @@
 @import "utils/link-button";
 @import "utils/link-download";
 @import "utils/link-text";
+@import "utils/info-label";
 @import "utils/triangle-shadow";
 
 @import "vendor/ko_multiple";
@@ -13,17 +14,27 @@
 @import "includes/common";
 @import "includes/banners";
 
+@import "forms/reset";
+@import "forms/common";
+@import "forms/form-dropdown";
+
 @import "blocks/content-wrapper";
 @import "blocks/content";
 
+@import "blocks/balance";
 @import "blocks/bounty-program";
+@import "blocks/by-card";
 @import "blocks/catalogs";
 @import "blocks/conditions";
 @import "blocks/conditions-pres";
+@import "blocks/content-payments";
 @import "blocks/downloads";
 @import "blocks/dropdown";
 @import "blocks/expand-content";
 @import "blocks/how-to";
+@import "blocks/instructions-payments";
+@import "blocks/logo-wrapper";
+@import "blocks/payment-list";
 @import "blocks/privileges";
 @import "blocks/prizes-list";
 @import "blocks/prizes-marathon";
