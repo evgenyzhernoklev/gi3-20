@@ -156,7 +156,7 @@
       position: absolute;
       top: 6px;
       left: 6px;
-      @include background-image(checkmark, 12px, 10px);
+      @include icon-svg(checkmark, 12px, 10px);
       @include hide();
     }
   }
@@ -165,13 +165,9 @@
     position: absolute;
     top: 0px;
     right: 0;
-    @include background-image(question, 21px, 20px);
+    @include icon-svg(question, 21px, 20px);
     cursor: pointer;
     transition: background-image $transition-normal;
-
-    &:hover {
-      @include background-image(question-purple, 21px, 20px);
-    }
   }
 
   &__labelNote {
@@ -305,14 +301,8 @@
       &:before {
         top: -4px;
         left: -40px;
-        @include background-image(question, 24px, 24px);
+        @include icon-svg(question, 24px, 24px);
         transition: background-image $transition-normal;
-      }
-
-      &:hover {
-        &:before {
-          @include background-image(question-red, 24px, 24px);
-        }
       }
     }
 
@@ -320,7 +310,7 @@
       &:before {
         top: -2px;
         left: -40px;
-        @include background-image(credit-card, 29px, 20px);
+        @include icon-svg(credit-card, 29px, 20px);
       }
     }
 

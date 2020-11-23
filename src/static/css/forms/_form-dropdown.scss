@@ -13,7 +13,7 @@
       display: inline-block;
       vertical-align: middle;
       margin: -3px 0 0 4px;
-      @include background-image(arrow-dropdown-gray, 10px, 6px);
+      @include icon-svg(arrow-dropdown-gray, 10px, 6px);
       transition: transform $transition-normal;
     }
 

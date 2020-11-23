@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#979d9f}.cls-1{clip-rule:evenodd}.cls-3{clip-path:url(#clip-path)}.cls-4{clip-path:url(#clip-path-2)}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Path_98" d="M1222-1606.432l4.753 4.432.247-.23.247.23 4.753-4.432-1.681-1.568-3.319 3.095-3.319-3.095z" class="cls-1" data-name="Path 98"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Path_97" d="M0 0h1366v-2181H0z" class="cls-2" data-name="Path 97"/>
+        </clipPath>
+    </defs>
+    <g id="Group_86" class="cls-3" data-name="Group 86" transform="translate(-1222 1608)">
+        <g id="Group_85" class="cls-4" data-name="Group 85">
+            <path id="Path_96" d="M1237-1597v-16h-20v16z" class="cls-2" data-name="Path 96"/>
+        </g>
+    </g>
+</svg>
