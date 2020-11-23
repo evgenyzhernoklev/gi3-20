@@ -17,6 +17,15 @@
     }
   }
 
+  &__inTitle {
+    position: relative;
+    padding: 25px 100px 20px 30px;
+    font: 300 24px/1.2 $font-montserrat;
+    letter-spacing: 0.3px;
+    color: #344447;
+    border-bottom: 1px solid $gray-light;
+  }
+
   &__title {
     margin: 0 0 10px;
     font: 300 42px/1.29 $font-montserrat;
@@ -131,5 +140,22 @@
     color: #707677;
     border: solid 2px $purple;
     border-width: 2px 0;
+  }
+
+  &__linkBack {
+    font: 700 14px/1.2 $font-montserrat;
+    text-transform: uppercase;
+    color: #FF336D;
+    cursor: pointer;
+
+    &:hover {
+      color: #E22A68;
+    }
+
+    .content__inTitle & {
+      position: absolute;
+      top: 32px;
+      right: 30px;
+    }
   }
 }

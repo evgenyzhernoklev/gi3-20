@@ -1,4 +1,5 @@
 .logoWrapper {
+  position: relative;
   display: inline-block;
   width: 140px;
   height: 100px;
@@ -10,6 +11,10 @@
   .icon {
     max-width: 110px;
     max-height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &--small {

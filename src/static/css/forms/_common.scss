@@ -188,15 +188,14 @@
   }
 
   &__labelInfo {
-    font: 14px/1.29 $font-montserrat;
-    color: $gray-light;
+    font: 14px/1.43 $font-montserrat;
+    color: $gray;
 
     a {
-      color: $gray-light;
-      border-bottom: 1px solid $gray-light;
+      color: $purple;
 
       &:hover {
-        border-bottom-color: transparent;
+        color: $purple-hover;
       }
     }
 
