@@ -164,6 +164,9 @@
 		  flex-basis: 29.2%;
 			margin-right: 6.2%;
 		}
+	.bounty__itemLineRow--center {
+		justify-content: center;
+	}
 
 .bounty__itemLineTitle {
 	margin: 40px 40px 0;
@@ -350,6 +353,10 @@
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 }
+	.bountyGood__description--single {
+		margin-left: -90%;
+		margin-right: -90%;
+	}
 
 .bountyGood__dropdown {
 	position: absolute;

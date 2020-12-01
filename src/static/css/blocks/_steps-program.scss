@@ -1,6 +1,11 @@
 .stepsProgram {
   margin: 30px auto 50px;
 
+  sup {
+    vertical-align: super;
+    font-size: 70%;
+  }
+
   &__cols {
     display: flex;
     justify-content: space-between;

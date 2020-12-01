@@ -1,0 +1,70 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - mof_16_2020
+  body
+    .contentWrapper
+      .contentWrapper__content.content
+
+        h1.content__title
+          | Программа «Новогодний повторный заказ»
+        .content__stepsProgram.stepsProgram
+          .stepsProgram__cols
+            .stepsProgram__col.stepsProgram__step
+              .triangleShadow.triangleShadow--right
+                  span.triangleShadow__helper
+              .stepsProgram__stepIn.stepsProgram__stepIn--font22
+                span.stepsProgram__stepTitle
+                  | РАЗМЕСТИ ПОВТОРНЫЙ ЗАКАЗ
+                br/
+                | с 15 по 29 декабря от 5 000<i class="currency">₽</i><sup>*</sup>
+            .stepsProgram__col.stepsProgram__step
+              .stepsProgram__stepIn.stepsProgram__stepIn--font22
+                span.stepsProgram__stepTitle
+                  | ЗАКАЖИ призовой набор<sup>**</sup>
+                br/
+                | по коду
+                span.stepsProgram__stepTitle
+                  |  71527
+                |  всего за 150<i class="currency">₽</i>
+        h2.content__title.content__title--small
+          | Приз программы
+        p.content__imgWrapper
+          img.content__img src="https://www.avon.ru/REPSuite/static/images/gi3-20/banners/programs/mof_16_2020.png"
+
+        .content__in
+          .content__bountyProgram.bountyProgram
+            .bounty__itemLineGood.bountyGood
+              p.bountyGood__description.bountyGood__description--single
+                | Парфюмерная вода Little Black Dress Party для нее 50 мл, туалетная вода Full Speed Turbo 30 мл, Anew черная тканевая маска для лица 3 шт, увлажняющая маска-носочки для ног «Термальные источники» 1 пара
+              p.bountyGood__code
+                | Код для заказа:
+                span.bountyGood__codeNumber<
+                  | 71527
+              p.bountyGood__price
+                | 150
+                i.bountyGood__priceCurrency
+                  | ₽
+              a.bountyGood__button href="javascript:ad_to_order('LN:71527;Q:1');"
+                | Купить
+
+        p.content__text
+          a.linkDownload href="https://www.avon.ru/REPSuite/static/download/mof_16_2020.pdf" target="_blank"
+            span.linkDownload__title
+              | Скачать полные правила программы
+            span.linkDownload__info
+              | PDF 97 KB
+
+        p.content__note
+          span.content__noteHelper
+            | *
+          | По базе для расчета скидки
+        p.content__note
+          span.content__noteHelper
+            | *
+          | Товар со скидкой к цене, определенной в каталоге,
+          |  стоимостью 150₽. Стоимость приза не входит в базу
+          |  для расчета скидки и не подлежит скидке Представителя.
+
+    include scripts

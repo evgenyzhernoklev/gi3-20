@@ -613,6 +613,13 @@ sup {
   margin-right: 6.2%;
 }
 
+.bounty__itemLineRow--center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .bounty__itemLineTitle {
   margin: 40px 40px 0;
   padding: 14px 20px;
@@ -783,6 +790,11 @@ sup {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.bountyGood__description--single {
+  margin-left: -90%;
+  margin-right: -90%;
 }
 
 .bountyGood__dropdown {
@@ -1996,6 +2008,14 @@ input::-ms-reveal {
 .prizesList__title {
   font-size: 32px;
   line-height: 1.31;
+}
+
+.content__title + .content__imgWrapper,
+.downloads__title + .content__imgWrapper,
+.prizesList__title + .content__imgWrapper,
+.prizes__title + .content__imgWrapper,
+.rulesAnew__title + .content__imgWrapper {
+  margin-top: 30px;
 }
 
 .content__subtitle,
@@ -3784,6 +3804,11 @@ input::-ms-reveal {
 
 .stepsProgram {
   margin: 30px auto 50px;
+}
+
+.stepsProgram sup {
+  vertical-align: super;
+  font-size: 70%;
 }
 
 .stepsProgram__cols {
