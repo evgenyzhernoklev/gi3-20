@@ -757,6 +757,10 @@ sup {
   color: #546264;
 }
 
+.bountyGood__title--small {
+  font-size: 16px;
+}
+
 .bountyGood__label {
   display: inline-block;
   min-width: 90px;
@@ -793,8 +797,10 @@ sup {
 }
 
 .bountyGood__description--single {
-  margin-left: -90%;
-  margin-right: -90%;
+  position: relative;
+  margin: 0 -95% 5px;
+  padding: 0 18% 23px;
+  border-bottom: solid 1px #e4eded;
 }
 
 .bountyGood__dropdown {
@@ -2047,6 +2053,10 @@ input::-ms-reveal {
   font-size: 0;
 }
 
+.content__imgWrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .content__imgWrapper:before {
   content: '';
   position: absolute;
@@ -2057,6 +2067,10 @@ input::-ms-reveal {
   border: solid 2px #ffffff;
   -webkit-border-radius: 60px 0 60px 0;
           border-radius: 60px 0 60px 0;
+}
+
+.content__imgWrapper--noBorder:before {
+  content: none;
 }
 
 .content__img {
@@ -2247,6 +2261,11 @@ input::-ms-reveal {
 .bountyProgram .bountyGood__title {
   font: 700 20px/1.6 "Montserrat", sans-serif;
   color: #181818;
+}
+
+.bountyProgram .bountyGood__title--small {
+  font-size: 16px;
+  color: #546264;
 }
 
 .bountyProgram .bountyGood__button {

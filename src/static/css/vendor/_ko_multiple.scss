@@ -321,6 +321,9 @@
 	font: 700 16px/1.5 'Montserrat', Arial, sans-serif;
   color: #546264;
 }
+	.bountyGood__title--small {
+		font-size: 16px;
+	}
 
 .bountyGood__label {
 	display: inline-block;
@@ -354,8 +357,10 @@
 	-webkit-box-orient: vertical;
 }
 	.bountyGood__description--single {
-		margin-left: -90%;
-		margin-right: -90%;
+		position: relative;
+		margin: 0 -95% 5px;
+    padding: 0 18% 23px;
+    border-bottom: solid 1px #e4eded;
 	}
 
 .bountyGood__dropdown {

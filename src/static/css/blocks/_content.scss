@@ -72,6 +72,10 @@
     position: relative;
     font-size: 0;
 
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -81,6 +85,12 @@
       left: 10px;
       border: solid 2px $white;
       border-radius: 60px 0 60px 0;
+    }
+
+    &--noBorder {
+      &:before {
+        content: none;
+      }
     }
   }
 

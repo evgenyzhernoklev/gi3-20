@@ -1,0 +1,54 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - vosstanovlenie_16_2020
+  body
+    style
+      | .content__in--vosstanovlenie {text-align: center; background: #fff url('https://www.avon.ru/REPSuite/static/images/gi3-20/banners/programs/vosstanovlenie_16_2020_content.jpg') no-repeat center center; background-size: cover;}
+      | .content__text {text-transform: uppercase; font-weight: 700; color: #546264;}
+
+    .contentWrapper
+      .contentWrapper__content.content
+
+        h1.content__title
+          | Специальное новогоднее предложение
+          br/
+          | на восстановление
+        h2.content__subtitle
+          | С 1 по 29 декабря
+        p.content__imgWrapper
+          img.content__img src="https://www.avon.ru/REPSuite/static/images/gi3-20/banners/programs/vosstanovlenie_16_2020.jpg"
+
+        .content__in.content__in--vosstanovlenie
+          h3.content__title.content__title--small
+            | Приз программы
+          p.content__subtitle
+            | При заказе от 1200<i class="currency">₽</i>
+          img.content__img src="https://www.avon.ru/REPSuite/static/images/gi3-20/banners/programs/vosstanovlenie_16_2020_img.jpg"
+          p.content__text
+            | Скидка 25% на этот заказ
+
+        p.content__text
+          a.linkDownload href="https://www.avon.ru/REPSuite/static/download/vosstanovlenie_16_2020.pdf" target="_blank"
+            span.linkDownload__title
+              | Скачать полные правила программы
+            span.linkDownload__info
+              | PDF 88 KB
+
+        p.content__note
+          span.content__noteHelper
+            | *
+          | По базе для расчета скидки
+        p.content__note
+          span.content__noteHelper
+            | **
+          | Скидка не предоставляется на товары с фиксированной
+          |  скидкой и товары, не подлежащие скидке (каталоги, пробные образцы,
+          |  демо-продукты, бизнес-аксессуары, товары с символикой
+          |  Благотворительных программ Avon «Вместе против рака груди»
+          |  и «Вместе против домашнего насилия», продукция из брошюры
+          |  «Распродажа товаров из прошлых каталогов» и специальных
+          |  интернет-предложений не подлежат скидке).
+
+    include scripts
