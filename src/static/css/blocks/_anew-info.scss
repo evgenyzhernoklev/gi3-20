@@ -57,6 +57,7 @@
   }
 
   &__itemImgWrapper {
+    position: relative;
     margin-bottom: 39px;
     height: 320px;
     text-align: center;
@@ -64,6 +65,30 @@
     &--small {
       margin-bottom: 20px;
       height: 300px;
+    }
+  }
+
+  &__itemImgLabel {
+    display: inline-block;
+    min-width: 44px;
+    padding: 3px 5px;
+    position: absolute;
+    right: 3px;
+    bottom: 0;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+    font: 700 17px/1.18 $font-montserrat;
+    text-align: center;
+    color: $white;
+    background-color: $black;
+
+    &--red {
+      background-color: #e41c31;
+    }
+    &--yellowDark {
+      background-color: #be9359;
+    }
+    &--violet {
+      background-color: #594c9d;
     }
   }
 

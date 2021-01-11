@@ -2006,6 +2006,7 @@ input::-ms-reveal {
 }
 
 .anewInfo__itemImgWrapper {
+  position: relative;
   margin-bottom: 39px;
   height: 320px;
   text-align: center;
@@ -2014,6 +2015,32 @@ input::-ms-reveal {
 .anewInfo__itemImgWrapper--small {
   margin-bottom: 20px;
   height: 300px;
+}
+
+.anewInfo__itemImgLabel {
+  display: inline-block;
+  min-width: 44px;
+  padding: 3px 5px;
+  position: absolute;
+  right: 3px;
+  bottom: 0;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+  font: 700 17px/1.18 "Montserrat", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  background-color: #181818;
+}
+
+.anewInfo__itemImgLabel--red {
+  background-color: #e41c31;
+}
+
+.anewInfo__itemImgLabel--yellowDark {
+  background-color: #be9359;
+}
+
+.anewInfo__itemImgLabel--violet {
+  background-color: #594c9d;
 }
 
 .anewInfo__itemImg {
