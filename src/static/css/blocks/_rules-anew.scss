@@ -48,6 +48,10 @@
 
     &--noBG {
       background-color: transparent;
+
+      .icon {
+        margin-top: 10px;
+      }
     }
   }
 

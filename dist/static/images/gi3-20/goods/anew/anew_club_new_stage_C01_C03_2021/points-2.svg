@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="76.101" height="75.884" viewBox="0 0 76.101 75.884"><defs><linearGradient id="5paou5eioa" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#986f2c"/><stop offset=".478" stop-color="#f9dea3"/><stop offset="1" stop-color="#986f2c"/></linearGradient></defs><text fill="#2b2e34" font-family="Montserrat-Light, Montserrat" font-size="48" font-weight="300" transform="translate(24.628 46.03)"><tspan x="0" y="0">2</tspan></text><text fill="#2b2e34" font-family="Montserrat-Medium, Montserrat" font-size="14" font-weight="500" transform="translate(15.119 63.371)"><tspan x="0" y="0">балла</tspan></text><path fill="url(#5paou5eioa)" d="M801.688 985.738H752.9v-48.567c0-27 27.047-27.317 27.32-27.317H829v48.565c0 27.007-27.04 27.319-27.312 27.319zm-44.959-3.824h44.959c.956 0 23.493-.343 23.493-23.494v-44.742h-44.957c-1 0-23.5.366-23.5 23.493z" transform="translate(-752.904 -909.854)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="76.101" height="75.884" viewBox="0 0 76.101 75.884">
+    <defs>
+        <linearGradient id="5paou5eioa" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#986f2c"/>
+            <stop offset=".478" stop-color="#f9dea3"/>
+            <stop offset="1" stop-color="#986f2c"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <g>
+            <text fill="#2b2e34" font-family="Montserrat-Light, Montserrat" font-size="48px" font-weight="300" transform="translate(-200.907 -1445.108) translate(224.535 1438.138) translate(1 53)">
+                <tspan x="0" y="0">2</tspan>
+            </text>
+        </g>
+        <text fill="#2b2e34" font-family="Montserrat-Medium, Montserrat" font-size="14px" font-weight="500" transform="translate(-200.907 -1445.108) translate(216.026 1508.479)">
+            <tspan x="0" y="0">балла</tspan>
+        </text>
+        <g>
+            <path fill="url(#5paou5eioa)" d="M801.688 985.738H752.9v-48.567c0-27 27.047-27.317 27.32-27.317H829v48.565c0 27.007-27.04 27.319-27.312 27.319zm-44.959-3.824h44.959c.956 0 23.493-.343 23.493-23.494v-44.742h-44.957c-1 0-23.5.366-23.5 23.493z" transform="translate(-200.907 -1445.108) translate(200.907 1445.108) translate(-752.904 -909.854)"/>
+        </g>
+    </g>
+</svg>
