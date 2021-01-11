@@ -4,6 +4,10 @@
   border: solid 2px $gray-light;
   background-color: $white-light;
 
+  &--mt0 {
+    margin-top: 0;
+  }
+
   &__title {
     @extend .content__title;
   }
@@ -40,6 +44,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    &--noBG {
+      background-color: transparent;
     }
   }
 

@@ -31,6 +31,27 @@
     background: url('../images/gi3-20/banners/anew-club.jpg') no-repeat center center/cover;
   }
 
+  &--anew14_16 {
+    min-height: 270px;
+    margin-bottom: 30px;
+    padding: 0 150px 0 370px;
+    background: url('../images/gi3-20/banners/anew_club_prize_C14_C16/banner-top.jpg') no-repeat center center/cover;
+
+    .banner__img {
+      position: absolute;
+      top: 50%;
+      left: 150px;
+      transform: translateY(-50%);
+      width: 200px;
+    }
+
+    .banner__title {
+      font: 700 26px/1.38 $font-montserrat;
+      text-transform: uppercase;
+      color: $black;
+    }
+  }
+
   &--marathon {
     background: url('../images/gi3-20/banners/marathon.jpg') no-repeat center center/cover;
   }
