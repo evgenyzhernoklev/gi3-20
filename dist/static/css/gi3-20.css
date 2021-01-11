@@ -1040,6 +1040,10 @@ button {
   font-size: 75%;
 }
 
+.textBold {
+  font-weight: 700;
+}
+
 .banner {
   position: relative;
   display: flex;
@@ -1948,6 +1952,101 @@ input::-ms-reveal {
   right: 30px;
 }
 
+.anewInfo {
+  margin: 35px 4.6%;
+}
+
+.anewInfo--full {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anewInfo__cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anewInfo__col--2 {
+  flex-basis: 47.6%;
+}
+
+.anewInfo__col--220 {
+  flex-basis: 220px;
+}
+
+.anewInfo__col--260 {
+  flex-basis: 260px;
+}
+
+.anewInfo__item {
+  position: relative;
+}
+
+.anewInfo__item:after {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: 37%;
+  left: 108%;
+  font: 700 20px/1.2 "Montserrat", sans-serif;
+  color: #2b2e34;
+}
+
+.anewInfo__item--and:after {
+  content: 'ИЛИ';
+}
+
+.anewInfo__item--plus:after {
+  content: '';
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  top: 29%;
+  background: url("../images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/plus.svg") no-repeat center center/cover;
+}
+
+.anewInfo__itemImgWrapper {
+  margin-bottom: 39px;
+  height: 320px;
+  text-align: center;
+}
+
+.anewInfo__itemImgWrapper--small {
+  margin-bottom: 20px;
+  height: 300px;
+}
+
+.anewInfo__itemImg {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.anewInfo__itemTitle {
+  position: relative;
+  font: 700 16px/1.5 "Montserrat", sans-serif;
+  text-align: center;
+  color: #546264;
+}
+
+.anewInfo__itemTitle--withIcon {
+  display: flex;
+  align-items: center;
+  font: 700 20px/1.4 "Montserrat", sans-serif;
+  color: #181818;
+}
+
+.anewInfo__itemTitleIcon {
+  margin-right: 19px;
+}
+
+.anewInfo__itemNote {
+  margin-top: 22px;
+  font: italic 400 14px/1.43 "Montserrat", sans-serif;
+  color: #a2acae;
+}
+
 .balance {
   display: flex;
   justify-content: space-between;
@@ -2694,6 +2793,10 @@ input::-ms-reveal {
   margin-bottom: 15px;
 }
 
+.prizesList__title--textBlack {
+  color: #181818;
+}
+
 .prizesList__note {
   padding: 22px 30px;
   font: 700 20px/1.4 "Montserrat", sans-serif;
@@ -2719,6 +2822,48 @@ input::-ms-reveal {
 
 .prizesList__noteTitle {
   text-transform: uppercase;
+}
+
+.prizesList__text {
+  margin: 20px auto;
+  font: 500 18px/1.4 "Montserrat", sans-serif;
+  text-align: center;
+  color: #181818;
+}
+
+.prizesList__price {
+  margin-bottom: 53px;
+  text-align: center;
+  font: 700 30px/19px "Montserrat", sans-serif;
+}
+
+.prizesList__price > .currency {
+  margin-left: 2px;
+  font-size: 22px;
+}
+
+.prizesList__priceOld {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  font: 500 20px/19px "Montserrat", sans-serif;
+  color: #707677;
+}
+
+.prizesList__priceOld:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  bottom: 10px;
+  left: -1px;
+  right: -1px;
+  background-color: #707677;
+}
+
+.prizesList__priceOld .currency {
+  padding-left: 2px;
+  font-size: 12px;
 }
 
 .prizesList__bounty .bounty__itemLineRow {
@@ -3209,6 +3354,10 @@ input::-ms-reveal {
   margin-bottom: 38px;
 }
 
+.rulesAnew__col--small {
+  flex-basis: 35%;
+}
+
 .rulesAnew__colIn {
   padding: 0 10px 0 68px;
 }
@@ -3259,6 +3408,26 @@ input::-ms-reveal {
   margin: 9px auto 0;
   font: 700 16px/1.75 "Montserrat", sans-serif;
   color: #7f28c4;
+}
+
+.rulesAnew__colList {
+  position: absolute;
+  width: 200px;
+  margin-left: 25px;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+.rulesAnew__colListItem {
+  font: 700 16px/1.2 "Montserrat", sans-serif;
+  background: -webkit-linear-gradient(246deg, #986f2c 0%, #f9dea3 52%, #986f2c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rulesAnew__colListItem:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .rulesMarathon {

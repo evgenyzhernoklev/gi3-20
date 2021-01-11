@@ -1,0 +1,100 @@
+.anewInfo {
+  margin: 35px 4.6%;
+
+  &--full {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__cols {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    &--2 {
+      flex-basis: 47.6%;
+    }
+
+    &--220 {
+      flex-basis: 220px;
+    }
+
+    &--260 {
+      flex-basis: 260px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:after {
+      display: inline-block;
+      position: absolute;
+      z-index: 10;
+      top: 37%;
+      left: 108%;
+      font: 700 20px/1.2 $font-montserrat;
+      color: #2b2e34;
+    }
+
+    &--and {
+      &:after {
+        content: 'ИЛИ';
+      }
+    }
+
+    &--plus {
+      &:after {
+        content: '';
+        width: 76px;
+        height: 76px;
+        position: absolute;
+        top: 29%;
+        background: url('../images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/plus.svg') no-repeat center center/cover;
+      }
+    }
+  }
+
+  &__itemImgWrapper {
+    margin-bottom: 39px;
+    height: 320px;
+    text-align: center;
+
+    &--small {
+      margin-bottom: 20px;
+      height: 300px;
+    }
+  }
+
+  &__itemImg {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+
+  &__itemTitle {
+    position: relative;
+    font: 700 16px/1.5 $font-montserrat;
+    text-align: center;
+    color: $gray;
+
+    &--withIcon {
+      display: flex;
+      align-items: center;
+      font: 700 20px/1.4 $font-montserrat;
+      color: $black;
+    }
+  }
+
+  &__itemTitleIcon {
+    margin-right: 19px;
+  }
+
+  &__itemNote {
+    margin-top: 22px;
+    font: italic 400 14px/1.43 $font-montserrat;
+    color: #a2acae;
+  }
+}

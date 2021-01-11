@@ -28,19 +28,25 @@ html lang="ru"
                 h2.rulesAnew__title
                   | Правила программы
                 .rulesAnew__cols
-                  .rulesAnew__col
+                  .rulesAnew__col.rulesAnew__col--small
                     .rulesAnew__colIn style="padding-left: 75px;"
                       .rulesAnew__colIconWrapper.rulesAnew__colIconWrapper--noBG
                         include icons/rules-star
                       p.rulesAnew__colText
                         span.rulesAnew__colTextBold
-                          | Ты можешь обменять Баллы
+                          | Покупай продукты anew
+                          br/
+                          | И зарабатывай баллы
                         br/
-                        | Заработанные в период кампаний 14-16/2020*
-                        br/
-                        span.rulesAnew__colTextBold
-                          | на ценные призы прямо сейчас!
-                  .rulesAnew__col
+                        | В период кампаний 01-03/2021*
+                      ul.rulesAnew__colList
+                        li.rulesAnew__colListItem
+                          | 5 баллов - 1 уровень
+                        li.rulesAnew__colListItem
+                          | 10 баллов - 2 уровень
+                        li.rulesAnew__colListItem
+                          | 15 баллов - 3 уровень
+                  .rulesAnew__col.rulesAnew__col--small
                     .rulesAnew__colIn style="padding-left: 75px;"
                       .rulesAnew__colIconWrapper.rulesAnew__colIconWrapper--noBG
                         include icons/rules-gift
@@ -48,15 +54,44 @@ html lang="ru"
                         span.rulesAnew__colTextBold
                           | Забирай призы
                         br/
-                        | в период кампаний 01-03/2021
+                        | в период кампаний 04-06/2021
 
               .content__prizesList.prizesList
-                h3.prizesList__title
-                  | Забирай призы
+                h3.prizesList__title.prizesList__title--textBlack
+                  | <span class="textBold">Шаг 1</span> – зарабатывай баллы
+                p.prizesList__note.prizesList__note--gold style="padding-top: 10px; padding-bottom: 10px;"
+                  | Получай баллы за покупку продуктов Anew
+                .prizesList__anewInfo.anewInfo
+                  .anewInfo__cols
+                    .anewInfo__col.anewInfo__col--2
+                      .anewInfo__item
+                        .anewInfo__itemImgWrapper
+                          img.anewInfo__itemImg src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/good_1.jpg"
+                        p.anewInfo__itemTitle.anewInfo__itemTitle--withIcon
+                          img.anewInfo__itemTitleIcon src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/points-2.svg"
+                          | за Protinol, любые сыворотки
+                          br/
+                          | и&nbsp;новинки 4 квартала 2020 года –
+                          br/
+                          | дневные и&nbsp;ночные кремы
+                    .anewInfo__col.anewInfo__col--2
+                      .anewInfo__item
+                        .anewInfo__itemImgWrapper
+                          img.anewInfo__itemImg src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/good_2.jpg"
+                        p.anewInfo__itemTitle.anewInfo__itemTitle--withIcon
+                          img.anewInfo__itemTitleIcon src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/poits-1.svg"
+                          | за все остальные продукты Anew*
+                        p.anewInfo__itemNote
+                          | * При покупке тканевой маски для лица «Максимальная Молодость» (код 1379668) балл начисляется при покупке от&nbsp;3&#8209;х&nbsp;штук»
+
+                h3.prizesList__title.prizesList__title--textBlack
+                  | <span class="textBold">Шаг 2</span> – забирай призы
                 .prizesList__note.prizesList__note--gold
                   p.prizesList__noteTitle
                     | Уровень 1
-                  | Если у тебя 5 баллов – закажи набор из&nbsp;ночной маски Anew и&nbsp;3&nbsp;пробных образцов сыворотки&nbsp;с&nbsp;витамином&nbsp;С по&nbsp;специальной цене 149
+                  | Набери 5 баллов – и закажи набор «Твой профессиональный уход»
+                  br/
+                  | по специальной цене 149
                   i.currency
                     | ₽
                 .prizesList__bounty.bounty
@@ -65,18 +100,18 @@ html lang="ru"
                       .bounty__itemLine
                         .bounty__itemLineCols
                           .bounty__itemLineRow
-                            .bounty__itemLineGood.bountyGood
-                              .bountyGood__imgWrapper style="margin: 0 -54px 25px;"
-                                img.bountyGood__img style="max-width: none; width: 100%;" src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_prize_C14_C16/65832.jpg"
-                              p.bountyGood__title
-                                | Набор из ночной маски Anew
-                                |  и&nbsp;3&nbsp;пробных образцов
-                                |  сыворотки&nbsp;с&nbsp;витамином&nbsp;С
-                              p.bountyGood__code
-                                | Код для заказа:
-                                span.bountyGood__codeNumber<
-                                  | 65832
-                              p.bountyGood__price
+                            .bounty__itemLineGood.bountyGood style="padding-bottom: 90px;"
+                              .bountyGood__imgWrapper style="margin: 0 -54px 25px; padding: 0;"
+                                img.bountyGood__img style="max-width: none; width: 100%;" src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/good_3.jpg"
+                              p.bountyGood__title style="padding: 0;"
+                                | Черная тканевая маска для
+                                br/
+                                | Лица «Защита и увлажнение»
+                                br/
+                                | +
+                                br/
+                                | Подушечки для пилинга кожи лица «Ровный тон и укрепление»
+                              p.bountyGood__price style="bottom: 40px;"
                                 span.bountyGood__priceOld
                                   | 1 300
                                   i.bountyGood__priceCurrency
@@ -84,76 +119,56 @@ html lang="ru"
                                 | 149
                                 i.bountyGood__priceCurrency
                                   | ₽
-                              a.bountyGood__button href="javascript:ad_to_order('LN:65832;Q:1');"
-                                | Заказать
 
                 .prizesList__note.prizesList__note--gold
                   p.prizesList__noteTitle
                     | Уровень 2
-                  | Если у тебя 10 баллов – закажи набор из новинок 14 каталога - дневного и ночного крема на выбор.
-                  br/
-                  | по специальной цене 349
+                  | Набери 10 баллов – закажи набор «Твой ночной уход»: Ночная маска для&nbsp;лица&nbsp;+ 1&nbsp;сыворотка на&nbsp;выбор по&nbsp;специальной цене 249
                   i.currency
                     | ₽
-                .prizesList__bounty.bounty
-                  .bounty__content
-                    .bounty__item.is-active
-                      .bounty__itemLine
-                        .bounty__itemLineCols
-                          .bounty__itemLineRow
-                            .bounty__itemLineGood.bountyGood
-                              .bountyGood__imgWrapper style="margin: 0 -82.5% 25px; padding: 0;"
-                                img.bountyGood__img style="max-width: none; width: 100%;" src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_prize_C14_C16/65832_2.jpg"
-                              p.bountyGood__title style="padding: 0;"
-                                | Набор из новинок 14 каталога -
-                                br/
-                                | дневного и ночного крема на выбор
-                              p.bountyGood__code
-                                | Код для заказа:
-                                span.bountyGood__codeNumber<
-                                  | 65832
-                              p.bountyGood__price
-                                span.bountyGood__priceOld
-                                  | 2 400
-                                  i.bountyGood__priceCurrency
-                                    | ₽
-                                | 349
-                                i.bountyGood__priceCurrency
-                                  | ₽
-                              a.bountyGood__button href="javascript:ad_to_order('LN:65832;Q:1');"
-                                | Заказать
+                p.prizesList__text
+                  | Набрав 10 баллов, ты сможешь заказать призы 1-го и 2-го уровня
+                .prizesList__anewInfo.anewInfo.anewInfo--full
+                  .anewInfo__cols
+                    .anewInfo__col.anewInfo__col--260
+                      .anewInfo__item.anewInfo__item--plus
+                        .anewInfo__itemImgWrapper.anewInfo__itemImgWrapper--small
+                          img.anewInfo__itemImg src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/good_4.jpg"
+                        .anewInfo__itemTitle
+                          | Ночная маска для лица «Защита и&nbsp;восстановление»
+                    .anewInfo__col.anewInfo__col--220
+                      .anewInfo__item.anewInfo__item--and
+                        .anewInfo__itemImgWrapper.anewInfo__itemImgWrapper--small
+                          img.anewInfo__itemImg src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/good_5.jpg"
+                        .anewInfo__itemTitle
+                          | Сыворотка-корректор морщин с ретинолом
+                    .anewInfo__col.anewInfo__col--220
+                      .anewInfo__item.anewInfo__item--and
+                        .anewInfo__itemImgWrapper.anewInfo__itemImgWrapper--small
+                          img.anewInfo__itemImg src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/good_6.jpg"
+                        .anewInfo__itemTitle
+                          | Сыворотка для лица с&nbsp;витамином&nbsp;С «Максимальное сияние»
+                    .anewInfo__col.anewInfo__col--220
+                      .anewInfo__item
+                        .anewInfo__itemImgWrapper.anewInfo__itemImgWrapper--small
+                          img.anewInfo__itemImg src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_new_stage_C01_C03_2021/good_7.jpg"
+                        .anewInfo__itemTitle
+                          | воротка-уход с&nbsp;концентратом гиалурона,
+                .prizesList__price
+                  span.prizesList__priceOld
+                    | 2 400
+                    i.currency ₽
+                  | 249
+                  i.currency ₽
 
                 .prizesList__note.prizesList__note--gold
                   p.prizesList__noteTitle
                     | Уровень 3
-                  | Если у тебя 15 баллов – закажи набор из&nbsp;Сыворотки с&nbsp;ретинолом, подушечек для пилинга и&nbsp;7&nbsp;пробных образцов Protinol по специальной цене 449
+                  | Набери 15 баллов – закажи набор «Protinol: твоя упругая кожа»: Гидрогелевая маска&nbsp;+
+                  |  пробный&nbsp;образец&nbsp;+ ночной и&nbsp;дневной крем на выбор по специальной цене 399
                   i.currency
                     | ₽
-                .prizesList__bounty.bounty
-                  .bounty__content
-                    .bounty__item.is-active
-                      .bounty__itemLine
-                        .bounty__itemLineCols
-                          .bounty__itemLineRow
-                            .bounty__itemLineGood.bountyGood
-                              .bountyGood__imgWrapper style="margin: 0 -54px 25px;"
-                                img.bountyGood__img style="max-width: none; width: 100%;" src="https://www.avon.ru/REPSuite/static/images/gi3-20/goods/anew/anew_club_prize_C14_C16/65832_3.jpg"
-                              p.bountyGood__title
-                                | Набор из Сыворотки с&nbsp;ретинолом, подушечек для&nbsp;пилинга и&nbsp;7&nbsp;пробных образцов Protinol
-                              p.bountyGood__code
-                                | Код для заказа:
-                                span.bountyGood__codeNumber<
-                                  | 65832
-                              p.bountyGood__price
-                                span.bountyGood__priceOld
-                                  | 1 700
-                                  i.bountyGood__priceCurrency
-                                    | ₽
-                                | 449
-                                i.bountyGood__priceCurrency
-                                  | ₽
-                              a.bountyGood__button href="javascript:ad_to_order('LN:65832;Q:1');"
-                                | Заказать
+
 
           p.content__note
             | В акции не участвуют товары интернет-распродаж, мини-версии и пробные образцы.

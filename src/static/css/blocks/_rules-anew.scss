@@ -22,6 +22,10 @@
     position: relative;
     flex-basis: 48%;
     margin-bottom: 38px;
+
+    &--small {
+      flex-basis: 35%;
+    }
   }
 
   &__colIn {
@@ -74,5 +78,26 @@
     margin: 9px auto 0;
     font: 700 16px/1.75 $font-montserrat;
     color: $purple;
+  }
+
+  &__colList {
+    position: absolute;
+    width: 200px;
+    margin-left: 25px;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+
+  &__colListItem {
+    font: 700 16px/1.2 $font-montserrat;
+
+    background: -webkit-linear-gradient(246deg, #986f2c 0%, #f9dea3 52%, #986f2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }

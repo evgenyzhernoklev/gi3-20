@@ -7,6 +7,10 @@
     @extend .content__title;
     @extend .content__title--small;
     margin-bottom: 15px;
+
+    &--textBlack {
+      color: $black;
+    }
   }
 
   &__note {
@@ -34,6 +38,48 @@
 
   &__noteTitle {
     text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 20px auto;
+    font: 500 18px/1.4 $font-montserrat;
+    text-align: center;
+    color: $black;
+  }
+
+  &__price {
+    margin-bottom: 53px;
+    text-align: center;
+    font: 700 30px/19px $font-montserrat;
+
+    & > .currency {
+      margin-left: 2px;
+      font-size: 22px;
+    }
+  }
+
+  &__priceOld {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    font: 500 20px/19px $font-montserrat;
+    color: #707677;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 1px;
+      position: absolute;
+      bottom: 10px;
+      left: -1px;
+      right: -1px;
+      background-color: #707677;
+    }
+
+    .currency {
+      padding-left: 2px;
+      font-size: 12px;
+    }
   }
 
   &__bounty {
